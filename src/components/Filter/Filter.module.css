@@ -1,0 +1,88 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 25px;
+}
+
+.section .active svg {
+    transform: rotate(90deg);
+}
+
+.section .active ul {
+    max-height: 300px;
+    transition: max-height 1s ease-in-out;
+}
+
+.section div ul {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+}
+
+.section div select {
+    border: 1px solid #00000070;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    width: 270px;
+}
+
+.title svg {
+    width: 30px;
+    height: 30px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.list li {
+    display: flex;
+    gap: 14px;
+    font-size: 17px;
+    color: #515b6f;
+    width: 260px;
+}
+
+.list li input {
+    width: 20px;
+    display: flex;
+    flex-shrink: 0;
+}
+
+.list li input[type="checkbox"] {
+    accent-color: #515b6f;
+}
+
+.reset {
+    background: #515b6f;
+    padding: 6px 0;
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.reset svg {
+    fill: #fff;
+    width: 20px;
+}
+
+.reset:hover{
+    background: #515b6fd0;
+}

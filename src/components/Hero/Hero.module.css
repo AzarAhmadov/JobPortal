@@ -1,6 +1,6 @@
 .hero {
     background-color: #f7f7fd;
-    padding: 70px 0;
+    padding: 60px 0;
     animation: back 5s infinite alternate;
     transition-timing-function: ease-in-out;
 }
@@ -26,6 +26,7 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    padding: 0 15px;
 }
 
 .title {
@@ -40,7 +41,7 @@
 }
 
 .title span {
-    color: #2e5a86;
+    color: #515b6f;
     position: relative;
 }
 
@@ -90,7 +91,7 @@
 
 .form .search {
     color: #fff;
-    background: #2e5a86;
+    background: #515b6f;
     font-size: 20px;
     padding: 8px 14px;
     border-radius: 40px;
@@ -99,5 +100,5 @@
 }
 
 .form .search:hover {
-    background: #2e5a86b9;
+    background: #515b6fd4;
 }

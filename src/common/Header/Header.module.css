@@ -6,6 +6,7 @@
 .row {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,22 +16,47 @@
     display: flex;
     align-items: center;
     font-size: 25px;
-    gap: 5px;
+    gap: 3px;
     color: #000;
     font-family: "Rajdhani", sans-serif;
     font-weight: 500;
 }
 
+.logo span {
+    color: #515b6f;
+}
+
+.logo svg {
+    fill: #2e5a86;
+}
+
 .list {
     display: flex;
-    gap: 20px;
+    gap: 15px;
     align-items: center;
 }
 
 .list li a {
     font-size: 18px;
-    color: #34495E;
+    color: #515b6f;
     transition: 300ms all;
+    position: relative;
+    transition: 500ms all;
+}
+
+.list li a.active {
+    color: #000;
+}
+
+.list li a.active::after {
+    position: absolute;
+    height: 2px;
+    content: "";
+    bottom: -30px;
+    left: 0;
+    background-color: #2e5a86;
+    width: 100%;
+    transition: 400ms all;
 }
 
 .list li a:hover {
@@ -39,7 +65,7 @@
 }
 
 .create {
-    background: #2e5a86;
+    background: #515b6f;
     padding: 8px 14px;
     border-radius: 20px;
     display: flex;
@@ -50,7 +76,7 @@
 }
 
 .create:hover {
-    background: #000000c0;
+    background: #515b6fde;
 }
 
 .create svg {
@@ -71,7 +97,7 @@
 }
 
 .mode svg {
-    width: 18px;
+    width: 22px;
 }
 
 .mode:hover {
