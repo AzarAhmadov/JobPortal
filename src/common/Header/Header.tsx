@@ -3,7 +3,7 @@
 import React from 'react'
 import styles from './Header.module.css'
 import Link from 'next/link'
-import { usePathname } from 'next/navigation';
+import { usePathname, useSearchParams } from 'next/navigation';
 
 const Header: React.FC = () => {
 
