@@ -6,7 +6,7 @@ import styles from '../Vacancy.module.css'
 import { VacanciesData } from '@/constants/data'
 import { useParams } from 'next/navigation'
 
-const page: React.FC = () => {
+const Page: React.FC = () => {
 
     const { slug } = useParams();
     const vacancy = VacanciesData.find(item => item.path === slug);
@@ -91,4 +91,4 @@ const page: React.FC = () => {
     )
 }
 
-export default page
+export default Page

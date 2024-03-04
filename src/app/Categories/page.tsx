@@ -2,7 +2,7 @@ import Heading from '@/common/Heading/Heading'
 import Categories from '@/components/Categories/Categories'
 import React from 'react'
 
-const page = () => {
+const Page = () => {
     return (
         <>
             <Heading />
@@ -11,4 +11,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page

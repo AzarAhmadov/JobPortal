@@ -3,7 +3,7 @@ import Heading from '@/common/Heading/Heading'
 import CatagoryFilter from '@/components/CatagoryFilter/CatagoryFilter'
 import styles from '../Categories.module.css'
 
-const page = () => {
+const Page = () => {
     return (
         <>
             <Heading />
@@ -16,4 +16,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page

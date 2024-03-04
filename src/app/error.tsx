@@ -2,7 +2,7 @@
 
 import React from 'react'
 
-const error: React.FC = () => {
+const Error: React.FC = () => {
     return (
         <div>
 
@@ -10,4 +10,4 @@ const error: React.FC = () => {
     )
 }
 
-export default error
+export default Error
