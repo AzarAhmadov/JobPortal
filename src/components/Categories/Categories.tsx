@@ -1,16 +1,17 @@
 import React from 'react'
 import styles from './Categories.module.css'
-import { CategoriesData } from '@/constants/data'
+import { CategoriesData, VacanciesData } from '@/constants/data'
 import Link from 'next/link'
 
 const Categories = () => {
+
     return (
         <section className={styles.content}>
             <ul className={`${styles.list} container font-poppions-medium `}>
                 {
                     CategoriesData.map((el, idx: number) => (
                         <li key={idx}>
-                            <Link href={'/'}>
+                            <Link href={`Categories/${el.path}`}>
                                 <span dangerouslySetInnerHTML={{ __html: el.icon }} />
                                 <span className={styles.title}> {el.title}</span>
                                 <div>

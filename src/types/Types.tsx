@@ -1,7 +1,9 @@
 export type Vacancy = {
+    id: number,
     img: string;
     company_name: string;
     job: string;
+    path: string;
     detail_jobs: {
         location: string;
         time: string;
@@ -9,8 +11,8 @@ export type Vacancy = {
     }[];
     salary?: string;
     desc: string;
+    category: string;
 };
-
 
 export type CategoryType = {
     title: string;
