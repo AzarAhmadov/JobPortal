@@ -12,8 +12,8 @@ const Vacancies: React.FC = () => {
     const search = (searchParams.get('query') || '').toLowerCase().trim();
 
     const filteredVacancies = VacanciesData.filter(vacancy => {
-        const jobTitle = vacancy.job.toLowerCase();
-        return jobTitle.includes(search);
+        const jobTitle = `${vacancy.job || ''} ${vacancy.company_name || ''} ${vacancy.category || ''}`.toLowerCase();
+        return jobTitle.includes(search.toLowerCase());
     });
 
     return (
@@ -31,7 +31,7 @@ const Vacancies: React.FC = () => {
                 }
             </h3>
             {
-                filteredVacancies.map((el, idx: number) => (
+                filteredVacancies.reverse().map((el, idx: number) => (
                     <VacanciesCards el={el} key={idx} />
                 ))
             }
