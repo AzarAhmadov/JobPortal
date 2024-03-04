@@ -1,14 +1,37 @@
-import React from 'react'
+'use client'
+
+import React, { useEffect } from 'react'
 import styles from './Vacancies.module.css'
 import { VacanciesData } from '@/constants/data'
 import VacanciesCards from './VacanciesCards'
+import { useSearchParams } from 'next/navigation'
 
 const Vacancies: React.FC = () => {
+
+    const searchParams = useSearchParams();
+    const search = (searchParams.get('query') || '').toLowerCase().trim();
+
+    const filteredVacancies = VacanciesData.filter(vacancy => {
+        const jobTitle = vacancy.job.toLowerCase();
+        return jobTitle.includes(search);
+    });
+
     return (
         <div className={styles.rowVacancies}>
-            <h3 className={`${styles.title_jobs} font-poppions-medium`}> 4 Jobs </h3>
+            <h3 className={`${styles.title_jobs} font-poppions-medium`}>
+                {filteredVacancies.length > 0 ? `${filteredVacancies.length} Jobs` : 'No search results were found or the vacancy is already inactive. Change the criteria and try again.'}
+                {
+                    filteredVacancies.length !== 0 && search &&
+                    <div className='font-poppions-light'>
+                        Result for :
+                        <span>
+                            {search}
+                        </span>
+                    </div>
+                }
+            </h3>
             {
-                VacanciesData.map((el, idx: number) => (
+                filteredVacancies.map((el, idx: number) => (
                     <VacanciesCards el={el} key={idx} />
                 ))
             }

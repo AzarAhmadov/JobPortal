@@ -1,10 +1,10 @@
 .apply {
     display: flex;
     border: 1px solid rgb(214, 221, 235);
-    padding: 15px;
+    padding: 17px;
     border-radius: 5px;
     background: #fff;
-    max-width: 850px;
+    width: 100%;
     margin: 20px auto;
 }
 
@@ -47,8 +47,18 @@
     background-color: #6661f4;
     color: #fff;
     border-radius: 5px;
-    padding: 10px 40px;
+    padding: 10px 45px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
+
+.row a svg {
+    width: 20px;
+    fill: #fff;
+}
+
 
 .row a:hover {
     background-color: #6661f4cc;
