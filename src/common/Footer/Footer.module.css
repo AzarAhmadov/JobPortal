@@ -1,0 +1,32 @@
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    gap: 3px;
+    color: #000;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 500;
+}
+
+.logo span {
+    color: #6661f4;
+}
+
+.logo svg {
+    fill: #6661f4;
+    margin-right: 10px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #00000019;
+    padding: 18px 0;
+}
+
+.footer p {
+    border-left: 2px solid #6661f4;
+    padding-left: 10px;
+    font-size: 18px;
+}

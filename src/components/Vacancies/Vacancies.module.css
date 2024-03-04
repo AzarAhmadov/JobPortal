@@ -10,34 +10,37 @@
     transition: 400ms all;
 }
 
+.content {
+    position: relative;
+}
+
 .row:hover {
-    transform: scale(0.98);
+    transform: scale(.99);
 }
 
 .salary {
     font-size: 16px;
-    position: relative;
-    top: 10px;
     color: #585858;
+
 }
 
 .like {
     position: absolute;
     top: 13px;
     right: 13px;
-    background-color: #00000012;
+    background-color: #0000000a;
     border: 1px solid #0000001f;
     display: grid;
     place-items: center;
     padding: 3px;
-    border-radius: 5px;
+    border-radius: 7px;
     fill: #000;
     cursor: pointer;
 }
 
 .detail {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
     width: 100%;
 }

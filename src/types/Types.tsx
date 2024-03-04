@@ -10,3 +10,10 @@ export type Vacancy = {
     salary?: string;
     desc: string;
 };
+
+
+export type CategoryType = {
+    title: string;
+    path: string;
+    icon: React.ReactNode;
+}

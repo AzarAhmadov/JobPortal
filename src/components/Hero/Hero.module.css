@@ -1,22 +1,20 @@
 .hero {
     background-color: #f7f7fd;
-    padding: 60px 0;
-    animation: back 5s infinite alternate;
-    transition-timing-function: ease-in-out;
+    padding: 70px 0;
+    position: relative;
+    overflow: hidden;
 }
 
-@keyframes back {
-    0% {
-        background-color: #f7f7fd;
-    }
-
-    50% {
-        background-color: rgb(237, 230, 230);
-    }
-
-    100% {
-        background-color: #dadae0;
-    }
+.hero::after {
+    background-color: #fff;
+    transform: rotate(10deg);
+    height: 200px;
+    width: 200px;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    content: "";
 }
 
 .row {
@@ -41,18 +39,9 @@
 }
 
 .title span {
-    color: #515b6f;
-    position: relative;
-}
-
-.title span::after {
-    width: 99%;
-    position: absolute;
-    left: 0;
-    transform: rotate(179deg);
-    bottom: 10px;
-    content: "";
-    border: 1px dashed #2e5a86;
+    color: #26A4FF;
+    display: flex;
+    flex-direction: column;
 }
 
 .form {
@@ -91,7 +80,7 @@
 
 .form .search {
     color: #fff;
-    background: #515b6f;
+    background: #6661f4;
     font-size: 20px;
     padding: 8px 14px;
     border-radius: 40px;
@@ -100,5 +89,5 @@
 }
 
 .form .search:hover {
-    background: #515b6fd4;
+    background: #6661f4cf;
 }

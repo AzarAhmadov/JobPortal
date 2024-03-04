@@ -21,7 +21,7 @@
 .section div ul {
     overflow: hidden;
     max-height: 0;
-    transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+    transition: max-height 1s cubic-bezier(0, 1, 0, 1);
 }
 
 .section div select {
@@ -67,11 +67,11 @@
 }
 
 .list li input[type="checkbox"] {
-    accent-color: #515b6f;
+    accent-color: #6661f4;
 }
 
 .reset {
-    background: #515b6f;
+    background: #6661f4;
     padding: 6px 0;
     color: #fff;
     border-radius: 5px;
@@ -90,5 +90,5 @@
 }
 
 .reset:hover {
-    background: #515b6fd0;
+    background: #6661f4d8;
 }
