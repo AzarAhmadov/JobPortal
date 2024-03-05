@@ -7,6 +7,7 @@ import { VacanciesData } from '@/constants/data';
 import { useParams } from 'next/navigation';
 
 const Page = () => {
+
     const { slug } = useParams();
     const vacancy = VacanciesData.find(item => item.path === slug);
 

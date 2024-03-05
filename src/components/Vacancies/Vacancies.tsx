@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useEffect } from 'react'
+import React, { Suspense } from 'react'
 import styles from './Vacancies.module.css'
 import { VacanciesData } from '@/constants/data'
 import VacanciesCards from './VacanciesCards'
@@ -19,9 +19,13 @@ const Vacancies: React.FC = () => {
     return (
         <div className={styles.rowVacancies}>
             <h3 className={`${styles.title_jobs} font-poppions-medium`}>
-                {filteredVacancies.length > 0
-                    ? `${filteredVacancies.length} Jobs`
-                    : <p className={`${styles.notFound} font-poppions-light`}>no results found :(</p>}
+                {
+                    filteredVacancies.length > 0 ? (
+                        `${filteredVacancies.length} Jobs`
+                    ) : (
+                        <p className={`${styles.notFound} font-poppions-light`}>no results found :(</p>
+                    )
+                }
                 {
                     filteredVacancies.length !== 0 && search &&
                     <div className='font-poppions-light'>
@@ -32,11 +36,9 @@ const Vacancies: React.FC = () => {
                     </div>
                 }
             </h3>
-            {
-                filteredVacancies.reverse().map((el, idx: number) => (
-                    <VacanciesCards el={el} key={idx} />
-                ))
-            }
+            {filteredVacancies.reverse().map((el, idx: number) => (
+                <VacanciesCards el={el} key={idx} />
+            ))}
         </div>
     )
 }

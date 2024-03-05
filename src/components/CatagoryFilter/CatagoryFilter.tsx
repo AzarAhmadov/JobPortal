@@ -20,7 +20,7 @@ const CatagoryFilter: React.FC = () => {
     if (filterByCategory.length === 0) {
         return <NotFound />;
     }
-    
+
     return (
         <>
             {filterByCategory.map((el, idx) => (

@@ -3,7 +3,7 @@ import { Vacancy } from '@/types/Types'
 import styles from './Vacancies.module.css'
 import Link from 'next/link'
 export interface VacancyType {
-    el: Vacancy,
+    el: Vacancy
 }
 
 const VacanciesCards: React.FC<VacancyType> = ({ el }) => {
