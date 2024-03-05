@@ -54,7 +54,7 @@ const Hero: React.FC = () => {
                             defaultValue={searchParams.get('query') ?? ''}
                             ref={inputRef}
                         />
-                        <button className={styles.search}>
+                        <button className={`${styles.search} font-poppions-light`}>
                             Search
                         </button>
                     </div>

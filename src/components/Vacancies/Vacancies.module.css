@@ -130,3 +130,8 @@
     margin-top: 5px;
     color: #585858;
 }
+
+.notFound {
+    text-align: center;
+    width: 100%;
+}

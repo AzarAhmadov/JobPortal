@@ -2,10 +2,10 @@
 
 import React from 'react';
 import styles from './CatagoryFilter.module.css';
-import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import { VacanciesData } from '@/constants/data';
 import { useRouter } from 'next/navigation';
+import NotFound from '@/app/not-found';
 
 const CatagoryFilter: React.FC = () => {
 
@@ -17,6 +17,10 @@ const CatagoryFilter: React.FC = () => {
         router.push(`/Vacancy/${path}`);
     };
 
+    if (filterByCategory.length === 0) {
+        return <NotFound />;
+    }
+    
     return (
         <>
             {filterByCategory.map((el, idx) => (
@@ -32,7 +36,6 @@ const CatagoryFilter: React.FC = () => {
                         <p className='font-poppions-thin'>{el.desc}</p>
                     </div>
                     <span className={`${styles.detail} font-poppions-light`}>{el.detail_jobs.map((detail) => detail.time)}</span>
-                    <button className='font-poppions-medium'>{el.category}</button>
                 </div>
             ))}
         </>

@@ -19,7 +19,9 @@ const Vacancies: React.FC = () => {
     return (
         <div className={styles.rowVacancies}>
             <h3 className={`${styles.title_jobs} font-poppions-medium`}>
-                {filteredVacancies.length > 0 ? `${filteredVacancies.length} Jobs` : 'No search results were found or the vacancy is already inactive. Change the criteria and try again.'}
+                {filteredVacancies.length > 0
+                    ? `${filteredVacancies.length} Jobs`
+                    : <p className={`${styles.notFound} font-poppions-light`}>no results found :(</p>}
                 {
                     filteredVacancies.length !== 0 && search &&
                     <div className='font-poppions-light'>
