@@ -1,6 +1,6 @@
 'use client'
 
-import React, { Suspense } from 'react'
+import React from 'react'
 import styles from './Vacancies.module.css'
 import { VacanciesData } from '@/constants/data'
 import VacanciesCards from './VacanciesCards'
