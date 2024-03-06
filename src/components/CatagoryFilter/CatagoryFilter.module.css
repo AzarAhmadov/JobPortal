@@ -29,7 +29,12 @@
 
 .card h4 {
     color: #000;
-    margin-top: 13px;
+    margin-top: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 17px;
 }
 
 .card ul {
@@ -37,7 +42,7 @@
     display: flex;
     gap: 7px;
     font-size: 14px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     align-items: center;
     color: #515B6F;
 }
@@ -60,4 +65,18 @@
 
 .card:hover {
     transform: scale(1.1);
+}
+
+.date {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    gap: 6px;
+    color: #515B6F;
+}
+
+.date svg {
+    width: 14px;
+    fill: #515B6F;
 }

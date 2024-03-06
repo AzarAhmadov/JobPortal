@@ -1,5 +1,6 @@
 import Footer from '@/common/Footer/Footer';
 import Header from '@/common/Header/Header';
+import MobileMenu from '@/components/MobileMenu/MobileMenu';
 import '@/css/globals.css'
 import { Analytics } from "@vercel/analytics/react"
 
@@ -14,6 +15,7 @@ export default function RootLayout({
         <div>
           <Header />
           {children}
+          {/* <MobileMenu /> */}
         </div>
         <Footer />
         <Analytics />

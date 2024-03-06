@@ -27,6 +27,7 @@ export const VacanciesData = [
                 time_post: "29 min ago"
             },
         ],
+        date: '22-02-2024',
         salary: "4000-5000",
         category: "enginnering",
         desc: "Stripe is looking for Social Media Marketing expert to help manage our online networks. You will be responsible for monitoring our social media channels, creating content, finding effective ways to engage the community and incentivize others to engage on our channels.",
@@ -45,6 +46,7 @@ export const VacanciesData = [
                 time_post: "19 min ago"
             },
         ],
+        date: '22-02-2024',
         salary: "2000-3000",
         category: "service",
         desc: "Stripe is looking for Social Media Marketing expert to help manage our online networks. You will be responsible for monitoring our social media channels, creating content, finding effective ways to engage the community and incentivize others to engage on our channels.r",
@@ -63,6 +65,7 @@ export const VacanciesData = [
                 time_post: "19 min ago"
             },
         ],
+        date: '22-02-2024',
         salary: "2000-3000",
         category: "engineering",
         desc: "Stripe is looking for Social Media Marketing expert to help manage our online networks. You will be responsible for monitoring our social media channels, creating content, finding effective ways to engage the community and incentivize others to engage on our channels.r",
@@ -81,6 +84,7 @@ export const VacanciesData = [
                 time_post: "19 min ago"
             },
         ],
+        date: '22-02-2024',
         salary: "2000-3000",
         category: "design",
         desc: "Stripe is looking for Social Media Marketing expert to help manage our online networks. You will be responsible for monitoring our social media channels, creating content, finding effective ways to engage the community and incentivize others to engage on our channels.r",
@@ -90,7 +94,7 @@ export const VacanciesData = [
         id: 5,
         img: 'https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8ed3d547-94ff-48e1-9f20-8c14a7030a02_2000x2000.jpeg',
         company_name: 'Apple',
-        job: 'Front-End Developer',
+        job: '"Lənkəran" filialının Kredit şöbəsinin mütəxəssisi',
         path: 'Front-End-Developer-5',
         detail_jobs: [
             {
@@ -99,6 +103,7 @@ export const VacanciesData = [
                 time_post: "19 min ago"
             },
         ],
+        date: '22-02-2024',
         salary: "2000-3000",
         category: "design",
         desc: "Stripe is looking for Social Media Marketing expert to help manage our online networks. You will be responsible for monitoring our social media channels, creating content, finding effective ways to engage the community and incentivize others to engage on our channels.r",
@@ -156,3 +161,20 @@ export const CategoriesData = [
         desc: "756 jobs available"
     },
 ]
+
+export const jobType = [
+    { id: 'Commission', label: 'Commission' },
+    { id: 'Freelance', label: 'Freelance' },
+    { id: 'Full-time', label: 'Full-time' },
+    { id: 'Internship', label: 'Internship' },
+    { id: 'Part-time', label: 'Part-time' },
+    { id: 'Volunteer', label: 'Volunteer' }
+]
+
+export const categories = [
+    { id: 'Construction', label: 'Construction and Real Estate' },
+    { id: 'Design', label: 'Design, Arts, Creative' },
+    { id: 'Education', label: 'Education' },
+    { id: 'Finance', label: 'Finance, Business and Administration' },
+    { id: 'Healthcare', label: 'Healthcare Services' }
+];

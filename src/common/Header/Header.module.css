@@ -1,6 +1,11 @@
 .header {
     padding: 20px 0;
     border-bottom: 1px solid #0000000e;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-color: hsla(0, 0%, 100%, .4);
+    backdrop-filter: blur(5px);
 }
 
 .row {
@@ -12,10 +17,20 @@
     align-items: center;
 }
 
+.bar {
+    width: 25px;
+    background: transparent;
+    display: none;
+}
+
+.row div {
+    display: flex;
+}
+
 .logo {
     display: flex;
     align-items: center;
-    font-size: 25px;
+    font-size: 25px !important;
     gap: 3px;
     color: #000;
     font-family: "Rajdhani", sans-serif;
@@ -28,6 +43,7 @@
 
 .logo svg {
     fill: #6661f4;
+    margin-right: 10px;
 }
 
 .list {
@@ -59,6 +75,21 @@
 
 .list li a:hover {
     color: #6661f4;
+}
+
+.select {
+    color: #000;
+    border: 1px solid #515b6f3a;
+    border-radius: 10px;
+    width: 57px;
+    padding-left: 8px;
+    height: 40px;
+    font-size: 18px;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' style='fill: rgba(0, 0, 0, 1); transform: none; msFilter: none;'%3E%3Cpath d='M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 3px top 50%;
+    background-size: 21px auto;
 }
 
 .create {
@@ -99,4 +130,29 @@
 
 .mode:hover {
     background: #f0efefd2;
+}
+
+@media only screen and (max-width:992px) {
+
+    .header{
+        padding: 15px 0;
+    }
+
+    .logo {
+        font-size: 22px !important;
+    }
+
+    .bar {
+        display: block;
+        fill: #6661f4;
+        border: 1px solid #515b6f21;
+        display: flex;
+        padding: 5px;
+        width: 33px;
+        border-radius: 5px;
+    }
+
+    .header ul {
+        display: none;
+    }
 }

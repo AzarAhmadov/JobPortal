@@ -30,3 +30,18 @@
     padding-left: 10px;
     font-size: 18px;
 }
+
+@media only screen and (max-width:992px) {
+
+    .footer {
+        padding: 10px 0;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .footer p {
+        font-size: 15px;
+    }
+}

@@ -5,6 +5,8 @@ import styles from './Vacancies.module.css'
 import { VacanciesData } from '@/constants/data'
 import VacanciesCards from './VacanciesCards'
 import { useSearchParams } from 'next/navigation'
+import Image from 'next/image'
+import Link from 'next/link'
 
 const Vacancies: React.FC = () => {
 
@@ -23,7 +25,11 @@ const Vacancies: React.FC = () => {
                     filteredVacancies.length > 0 ? (
                         `${filteredVacancies.length} Jobs`
                     ) : (
-                        <p className={`${styles.notFound} font-poppions-light`}>no results found :(</p>
+                        <p className={`${styles.noResults} font-poppions-light`}>
+                            <img src="https://cdn-icons-png.flaticon.com/512/6134/6134065.png" alt="not-found" />
+                            We can’t find what you are looking for, in the meantime you can browse jobs or return back to homepage
+                            <Link href={'/'}> Home page </Link>
+                        </p>
                     )
                 }
                 {
@@ -35,11 +41,13 @@ const Vacancies: React.FC = () => {
                         </span>
                     </div>
                 }
-            </h3>
-            {filteredVacancies.reverse().map((el, idx: number) => (
-                <VacanciesCards el={el} key={idx} />
-            ))}
-        </div>
+            </h3 >
+            {
+                filteredVacancies.reverse().map((el, idx: number) => (
+                    <VacanciesCards el={el} key={idx} />
+                ))
+            }
+        </div >
     )
 }
 

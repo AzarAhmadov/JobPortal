@@ -9,6 +9,7 @@ export type Vacancy = {
         time: string;
         time_post: string;
     }[];
+    date: string;
     salary?: string;
     desc: string;
     category: string;

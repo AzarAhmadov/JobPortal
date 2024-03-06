@@ -6,21 +6,32 @@ import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 
 const Heading: React.FC = () => {
-
     const path_name = usePathname();
     const normalizedPath = path_name.replace(/-\d+/g, '');
+
+    const getPathParts = () => {
+        const pathParts = normalizedPath.substring(1).split('/');
+        return pathParts;
+    };
 
     return (
         <div className={styles.banner}>
             <ul className={`${styles.list} container font-poppions-light`}>
                 <li>
                     <Link href='/'> Home </Link>
+                    <span className={styles.circle}></span>
                 </li>
                 <li>
-                    {normalizedPath.split('/').map((part, index) => (
+                    {getPathParts().map((part, index, partsArray) => (
                         <React.Fragment key={index}>
-                            {index > 0 && <span></span>}
-                            {part}
+                            {index > 0 && <span className={styles.circle}></span>}
+                            {index === partsArray.length - 1 ? (
+                                <span>{part}</span>
+                            ) : (
+                                <Link href={part === 'Vacancies' ? '/' : `/${part}`}>
+                                    {part}
+                                </Link>
+                            )}
                         </React.Fragment>
                     ))}
 

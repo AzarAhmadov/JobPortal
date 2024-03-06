@@ -15,21 +15,19 @@
 }
 
 .row:hover {
-    transform: scale(.99);
+    background-color: #a3c6e14e;
 }
 
 .salary {
     font-size: 16px;
     color: #585858;
-
+    white-space: nowrap;
 }
 
 .like {
     position: absolute;
     top: 13px;
     right: 13px;
-    background-color: #0000000a;
-    border: 1px solid #0000001f;
     display: grid;
     place-items: center;
     padding: 3px;
@@ -99,24 +97,30 @@
     font-size: 20px;
     margin-bottom: 5px;
     color: #000;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .list {
     display: flex;
+    align-items: center;
     margin-top: 10px;
-    gap: 20px;
+    gap: 13px;
     color: #585858;
+    font-size: 15px;
 }
 
 .list li {
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 5px;
 }
 
 .list li svg {
-    width: 14px;
-    height: 14px;
+    width: 13px;
+    height: 13px;
     fill: #585858;
 }
 
@@ -133,4 +137,91 @@
 .notFound {
     text-align: center;
     width: 100%;
+}
+
+.noResults {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    padding: 0 50px;
+    font-size: 20px;
+    color: #585858;
+}
+
+.noResults img {
+    width: 300px;
+}
+
+.noResults a {
+    border: 1px solid #6661f4;
+    padding: 8px 20px;
+    color: #6661f4;
+    border-radius: 4px;
+    transition: 300ms all;
+}
+
+.noResults a:hover {
+    background: #6661f4;
+    color: #fff;
+}
+
+@media only screen and (max-width:578px) {
+    .company_name {
+        font-size: 15px;
+        margin-bottom: 3px;
+    }
+
+    .job {
+        margin-bottom: 0;
+        font-size: 16px;
+    }
+
+    .img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .list {
+        margin-top: 5px;
+    }
+
+    .list li {
+        font-size: 12px;
+    }
+
+    .list li svg {
+        width: 11px;
+        height: 11px;
+    }
+
+    .row {
+        padding: 11px 15px;
+        align-items: center;
+    }
+
+    .noResults {
+        padding: 0 10px;
+        font-size: 15px;
+    }
+
+    .noResults img {
+        width: 170px;
+    }
+
+    .rowVacancies h3 {
+        font-size: 17px;
+        gap: 10px;
+    }
+
+    .rowVacancies h3 div {
+        padding-left: 10px;
+        color: #585858;
+    }
+
+    .rowVacancies h3 div span {
+        margin-left: 10px;
+    }
+
 }

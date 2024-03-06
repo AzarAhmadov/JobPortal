@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import styles from './Filter.module.css'
+import { categories, jobType } from "@/constants/data";
 
 const Filter: React.FC = () => {
     const [activeSection, setActiveSection] = useState<number | null>(0);
@@ -13,6 +14,7 @@ const Filter: React.FC = () => {
     return (
         <section className={styles.section}>
             <div className={styles.content}>
+
                 <div className={`${styles.section} ${activeSection === 0 ? styles.active : ''}`}>
                     <h3 onClick={() => toggleSection(0)} className={`${styles.title} font-poppions-light`}>
                         Type of Employment
@@ -20,30 +22,12 @@ const Filter: React.FC = () => {
                     </h3>
 
                     <ul className={`${styles.list} font-poppions-thin`}>
-                        <li>
-                            <input type="checkbox" id="Commission" />
-                            <label htmlFor="Commission">Commission</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="Freelance" />
-                            <label htmlFor="Freelance">Freelance</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="Full-time" />
-                            <label htmlFor="Full-time">Full-time</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="Internship" />
-                            <label htmlFor="Internship">Internship</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="Part-time" />
-                            <label htmlFor="Part-time">Part-time</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="Volunteer" />
-                            <label htmlFor="Volunteer">Volunteer</label>
-                        </li>
+                        {jobType.map(item => (
+                            <li key={item.id}>
+                                <input type="checkbox" id={item.id} />
+                                <label htmlFor={item.id}>{item.label}</label>
+                            </li>
+                        ))}
                     </ul>
                 </div>
 
@@ -54,26 +38,12 @@ const Filter: React.FC = () => {
                     </h3>
 
                     <ul className={`${styles.list} font-poppions-thin`}>
-                        <li>
-                            <input type="checkbox" id="Construction" />
-                            <label htmlFor="Construction">Construction and Real Estate</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="Design" />
-                            <label htmlFor="Design">Design, Arts, Creative</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="Education" />
-                            <label htmlFor="Education">Education</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="Finance" />
-                            <label htmlFor="Finance">Finance, Business and Administration</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="Healthcare" />
-                            <label htmlFor="Healthcare">Healthcare Services</label>
-                        </li>
+                        {categories.map(item => (
+                            <li key={item.id}>
+                                <input type="checkbox" id={item.id} />
+                                <label htmlFor={item.id}>{item.label}</label>
+                            </li>
+                        ))}
                     </ul>
                 </div>
 
@@ -90,6 +60,11 @@ const Filter: React.FC = () => {
                         </li>
                     </ul>
                 </div>
+
+                <button className={`${styles.send} font-poppions-light`}>
+                    Search
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" /></svg>
+                </button>
 
                 <button className={`${styles.reset} font-poppions-light`}>
                     Reset

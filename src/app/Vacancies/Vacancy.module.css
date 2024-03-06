@@ -1,7 +1,7 @@
 .apply {
     display: flex;
     border: 1px solid rgb(214, 221, 235);
-    padding: 17px;
+    padding: 25px 20px;
     border-radius: 5px;
     background: #fff;
     width: 100%;
@@ -17,7 +17,7 @@
     height: 90px;
     object-fit: cover;
     border-radius: 5px;
-    margin-right: 15px;
+    margin-right: 20px;
 }
 
 .row {
@@ -47,7 +47,7 @@
     background-color: #6661f4;
     color: #fff;
     border-radius: 5px;
-    padding: 10px 45px;
+    padding: 13px 40px;
     font-size: 18px;
     display: flex;
     align-items: center;
@@ -79,8 +79,9 @@
 }
 
 .detailRow div h3 {
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 17px;
+    color: #3e3d3d;
 }
 
 .detailRow div p {
@@ -145,4 +146,18 @@
     color: #fff;
     font-size: 18px;
     border-radius: 50px;
+}
+
+.date {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    gap: 6px;
+    color: #515B6F;
+}
+
+.date svg {
+    width: 14px;
+    fill: #515B6F;
 }

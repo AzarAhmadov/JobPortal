@@ -1,4 +1,5 @@
 .banner {
+    margin-top: 85px;
     width: 100%;
     padding: 50px 0;
     background: #F8F8FD;
@@ -23,7 +24,7 @@
     z-index: 1;
 }
 
-.list li span {
+.circle {
     width: 6px;
     height: 6px;
     background-color: #00000094;
@@ -37,10 +38,14 @@
     align-items: center;
 }
 
-.list li:last-child {
-    color: #00000092;
-}
-
 .list li a {
     color: #000;
+}
+
+.list li span {
+    color: #000;
+}
+
+.list li a:last-child {
+    cursor: text;
 }

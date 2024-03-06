@@ -3,6 +3,7 @@
     padding: 70px 0;
     position: relative;
     overflow: hidden;
+    margin-top: 80px;
 }
 
 .hero::after {
@@ -36,6 +37,7 @@
 .desc {
     font-size: 17px;
     color: #787878;
+    text-align: center;
 }
 
 .title span {
@@ -90,4 +92,67 @@
 
 .form .search:hover {
     background: #6661f4cf;
+}
+
+@media only screen and (max-width:992px) {
+    .hero {
+        margin-top: 64px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .hero {
+        padding: 15px 0;
+    }
+
+    .hero h1 {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .hero p {
+        font-size: 13px;
+    }
+
+    .hero h1 span svg {
+        width: 110px;
+    }
+
+    .row {
+        gap: 10px;
+    }
+
+    .hero::after {
+        height: 55px;
+        width: 55px;
+        bottom: -10px;
+        right: -10px;
+        content: "";
+    }
+
+    .form {
+        width: 100%;
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+
+    .form input {
+        font-size: 14px;
+    }
+
+    .form input::placeholder {
+        font-size: 14px;
+    }
+
+    .form div {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .form .search {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
 }
