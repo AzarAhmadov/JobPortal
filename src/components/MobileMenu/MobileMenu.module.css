@@ -5,11 +5,12 @@
     height: calc(100% - 64px);
     left: 0;
     z-index: 10;
-    background-color: hsla(0, 0%, 100%, .4);
+    background-color: hsla(0, 0%, 100%, 0.666);
     backdrop-filter: blur(5px);
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
+    transition: 400ms all;
 }
 
 .nav svg {
@@ -57,10 +58,12 @@
     justify-content: space-between;
     align-items: center;
     font-size: 18px;
+    color: #000;
 }
 
 .bottom li svg {
     width: 28px;
+    fill: #000;
     height: 28px;
 }
 
@@ -75,4 +78,5 @@
     background-repeat: no-repeat;
     background-position: right 0px top 50%;
     background-size: 33px auto;
+    background-color: transparent;
 }

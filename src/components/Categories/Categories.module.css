@@ -91,3 +91,52 @@
 .list li a:hover svg {
     fill: #fff;
 }
+
+@media only screen and (max-width:992px) {
+    .list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width:568px) {
+
+    .content {
+        padding: 15px 0;
+    }
+
+    .list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .list li a div svg {
+        width: 15px;
+    }
+
+    .list li a {
+        padding: 15px;
+        height: fit-content;
+    }
+
+    .list li a svg {
+        width: 30px;
+        margin-bottom: 10px;
+        height: 30px;
+    }
+
+    .list li a span {
+        margin-bottom: 3px;
+        font-size: 16px;
+    }
+
+    .list li a p {
+        font-size: 13px;
+    }
+
+}

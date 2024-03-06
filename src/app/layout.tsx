@@ -15,7 +15,6 @@ export default function RootLayout({
         <div>
           <Header />
           {children}
-          {/* <MobileMenu /> */}
         </div>
         <Footer />
         <Analytics />

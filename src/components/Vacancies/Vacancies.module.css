@@ -26,8 +26,8 @@
 
 .like {
     position: absolute;
-    top: 13px;
-    right: 13px;
+    top: 11px;
+    right: 11px;
     display: grid;
     place-items: center;
     padding: 3px;

@@ -134,7 +134,7 @@
 
 @media only screen and (max-width:992px) {
 
-    .header{
+    .header {
         padding: 15px 0;
     }
 
@@ -143,13 +143,18 @@
     }
 
     .bar {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         fill: #6661f4;
         border: 1px solid #515b6f21;
-        display: flex;
-        padding: 5px;
+        height: 33px;
         width: 33px;
         border-radius: 5px;
+    }
+
+    .bar svg {
+        width: 20px;
     }
 
     .header ul {
