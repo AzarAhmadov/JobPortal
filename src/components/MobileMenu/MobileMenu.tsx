@@ -5,8 +5,8 @@ import styles from './MobileMenu.module.css'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 interface MobileProps {
-    toggle: any
-    isToggled: any
+    toggle: () => void
+    isToggled: boolean
 }
 
 const MobileMenu: React.FC<MobileProps> = ({ toggle, isToggled }) => {

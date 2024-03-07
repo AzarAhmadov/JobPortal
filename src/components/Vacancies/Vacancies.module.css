@@ -54,6 +54,25 @@
 
 .title_jobs {
     font-size: 27px;
+    position: relative;
+}
+
+.title_jobs button {
+    display: none;
+    background: #fff;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid #2b2b2b31;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.title_jobs button svg {
+    width: 25px;
+    fill: #2b2b2b;
+    height: 25px;
 }
 
 .img {
@@ -147,6 +166,7 @@
     padding: 0 50px;
     font-size: 20px;
     color: #585858;
+    white-space: normal !important;
 }
 
 .noResults img {
@@ -164,6 +184,30 @@
 .noResults a:hover {
     background: #6661f4;
     color: #fff;
+}
+
+@media only screen and (max-width:992px) {
+    .title_jobs {
+        white-space: nowrap;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        font-size: 16px !important;
+    }
+
+    .rowVacancies h3 div {
+        text-align: start;
+        font-size: 15px;
+        white-space: normal !important;
+    }
+
+    .rowVacancies h3 div span {
+        margin-left: 5px !important;
+    }
+
+    .title_jobs button {
+        display: flex;
+    }
 }
 
 @media only screen and (max-width:578px) {
