@@ -16,7 +16,7 @@
     transition: 400ms all;
 }
 
-.filter.active{
+.filter.active {
     opacity: 1;
     visibility: visible;
 }

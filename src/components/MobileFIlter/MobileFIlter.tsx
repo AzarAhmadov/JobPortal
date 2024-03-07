@@ -29,7 +29,6 @@ const MobileFIlter: React.FC<ToogleProps> = ({ toggle, isToggled }) => {
                                 ))
                             }
 
-
                         </ul>
                     </div>
 
@@ -56,8 +55,8 @@ const MobileFIlter: React.FC<ToogleProps> = ({ toggle, isToggled }) => {
                         </h3>
                         <ul className={`${styles.list} font-poppions-thin`}>
                             <li>
-                                <input type="checkbox" id="salary" />
-                                <label htmlFor="salary">Show only with salary</label>
+                                <input type="checkbox" id="salaryRange" />
+                                <label htmlFor="salaryRange">Show only with salary</label>
                             </li>
                         </ul>
                     </div>

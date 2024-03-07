@@ -66,13 +66,13 @@
     transform: translateY(-50%);
     border: 1px solid #2b2b2b31;
     border-radius: 5px;
-    padding: 2px;
+    padding: 3px;
 }
 
 .title_jobs button svg {
-    width: 25px;
+    width: 27px;
     fill: #2b2b2b;
-    height: 25px;
+    height: 27px;
 }
 
 .img {
