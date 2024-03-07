@@ -6,15 +6,16 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 interface MobileProps {
     toggle: any
+    isToggled: any
 }
 
-const MobileMenu: React.FC<MobileProps> = ({ toggle }) => {
+const MobileMenu: React.FC<MobileProps> = ({ toggle, isToggled }) => {
 
     const pathname = usePathname();
     const isActive = (path: string) => path === pathname;
 
     return (
-        <nav className={`${styles.nav} ${toggle ? styles.active : ''}`}>
+        <nav className={`${styles.nav} ${isToggled ? styles.active : styles.nav}`}>
             <div>
                 <ul className='font-poppions-thin'>
                     <li onClick={toggle}>

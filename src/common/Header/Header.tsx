@@ -66,9 +66,7 @@ const Header: React.FC = () => {
                 </div>
             </header>
 
-            {
-                isToggled && <MobileMenu toggle={toggle} />
-            }
+            <MobileMenu toggle={toggle} isToggled={isToggled} />
         </>
     )
 }
