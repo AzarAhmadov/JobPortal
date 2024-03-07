@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import styles from './MobileFIlter.module.css'
 import { categories, jobType } from "@/constants/data";
 import { ToogleProps } from '../MobileMenu/MobileMenu';
@@ -79,4 +79,4 @@ const MobileFIlter: React.FC<ToogleProps> = ({ toggle, isToggled }) => {
     )
 }
 
-export default MobileFIlter
+export default memo(MobileFIlter)

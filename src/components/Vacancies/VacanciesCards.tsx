@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import { Vacancy } from '@/types/Types'
 import styles from './Vacancies.module.css'
 import Link from 'next/link'
@@ -50,4 +50,4 @@ const VacanciesCards: React.FC<VacancyType> = async ({ el }) => {
     )
 }
 
-export default VacanciesCards
+export default memo(VacanciesCards)

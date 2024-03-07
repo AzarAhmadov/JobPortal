@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import React, { memo } from 'react'
 import styles from './MobileMenu.module.css'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -63,4 +63,4 @@ const MobileMenu: React.FC<ToogleProps> = ({ toggle, isToggled }) => {
     )
 }
 
-export default MobileMenu
+export default memo(MobileMenu)
