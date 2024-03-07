@@ -24,7 +24,7 @@
     white-space: nowrap;
 }
 
-.like {
+.save {
     position: absolute;
     top: 11px;
     right: 11px;
@@ -48,7 +48,8 @@
     height: 5px;
     border-radius: 50%;
     background-color: #585858c1;
-    margin-left: 10px;
+    margin-left: 8px;
+    margin-right: 14px;
 }
 
 .title_jobs {
@@ -106,7 +107,6 @@
     display: flex;
     align-items: center;
     margin-top: 10px;
-    gap: 13px;
     color: #585858;
     font-size: 15px;
 }
