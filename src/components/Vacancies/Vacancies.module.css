@@ -187,17 +187,25 @@
 }
 
 @media only screen and (max-width:992px) {
+    .title_jobs button {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width:578px) {
+
     .title_jobs {
         white-space: nowrap;
         text-align: center;
         display: flex;
         align-items: center;
-        font-size: 16px !important;
+        font-size: 18px !important;
     }
 
     .rowVacancies h3 div {
         text-align: start;
         font-size: 15px;
+        max-width: 240px;
         white-space: normal !important;
     }
 
@@ -205,12 +213,7 @@
         margin-left: 5px !important;
     }
 
-    .title_jobs button {
-        display: flex;
-    }
-}
 
-@media only screen and (max-width:578px) {
     .company_name {
         font-size: 15px;
         margin-bottom: 3px;

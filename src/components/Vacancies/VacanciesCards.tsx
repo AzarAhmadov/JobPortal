@@ -17,7 +17,9 @@ const VacanciesCards: React.FC<VacancyType> = ({ el }) => {
                 <div className={styles.detail}>
                     <div>
                         <h5 className={`${styles.company_name} font-poppions-light`}>{el.company_name}</h5>
-                        <h4 className={`${styles.job} font-poppions-medium`}>{el.job}</h4>
+                        <h4 className={`${styles.job} font-poppions-medium`}>
+                            {el.job.length > 45 ? el.job.slice(0, 45) + '...' : el.job}
+                        </h4>
                         <ul className={`${styles.list} font-poppions-light`}>
                             {
                                 el.detail_jobs.map((el, idx) => (

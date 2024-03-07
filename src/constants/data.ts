@@ -137,8 +137,8 @@ export const VacanciesData = [
         id: 4,
         img: 'https://static-00.iconduck.com/assets.00/samsung-icon-2048x2048-1ej4ectz.png',
         company_name: 'Samsung',
-        job: 'Front-End Developer',
-        path: 'Front-End-Developer-4',
+        job: 'Risk koordinatoru (Şimal-qərb regionu üzrə)',
+        path: 'Risk-koordinatoru',
         detail_jobs: [
             {
                 location: 'Marseille, France',
