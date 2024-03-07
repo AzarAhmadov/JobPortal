@@ -126,7 +126,7 @@ export const VacanciesData = [
         salary: "2000-3000",
         category: "design",
         desc: "Stripe is looking for Social Media Marketing expert to help manage our online networks. You will be responsible for monitoring our social media channels, creating content, finding effective ways to engage the community and incentivize others to engage on our channels.r",
-        list: `<ul class='font-poppions-light'> <li> <Check /> Lorem ipsum dolor sit.  </li> <li> <Check /> You get energy from people and building the ideal work environment </li> <li> <Check /> Lorem ipsum dolor sit. </li> <li> <Check /> You get energy from people and building the ideal work environment </li> </ul>`
+        list: `<ul class='font-poppions-light'> <li> <Check /> ~ Lorem ipsum dolor sit.  </li> <li> <Check /> You get energy from people and building the ideal work environment </li> <li> <Check /> Lorem ipsum dolor sit. </li> <li> <Check /> You get energy from people and building the ideal work environment </li> </ul>`
     },
     {
         id: 4,

@@ -202,11 +202,11 @@
 
     .noResults {
         padding: 0 10px;
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .noResults img {
-        width: 170px;
+        width: 130px;
     }
 
     .rowVacancies h3 {
