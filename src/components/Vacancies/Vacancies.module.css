@@ -10,6 +10,47 @@
     transition: 400ms all;
 }
 
+.skeletonAreaRow {
+    display: flex;
+    gap: 17px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    height: fit-content;
+    width: 100%;
+    padding: 18px;
+    border-radius: 5px;
+}
+
+.skeletonAreaRow ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.skeleton {
+    animation: customSkeletonAnimation 1.2s infinite alternate;
+    height: 20px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.skeletonAreaRow .img {
+    animation: customSkeletonAnimation 1.2s infinite alternate;
+    height: 70px;
+    border-radius: 4px;
+    width: 70px;
+}
+
+@keyframes customSkeletonAnimation {
+    0% {
+        background-color: rgba(0, 0, 0, 0.063);
+    }
+
+    100% {
+        background-color: rgba(0, 0, 0, 0.181);
+    }
+}
+
 .content {
     position: relative;
 }
@@ -193,6 +234,27 @@
 }
 
 @media only screen and (max-width:578px) {
+
+    .skeletonAreaRow {
+        align-items: center;
+    }
+
+    .skeletonAreaRow ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .skeleton {
+        height: 12px;
+    }
+
+    .skeletonAreaRow .img {
+        height: 45px;
+        width: 45px;
+    }
+
 
     .title_jobs {
         white-space: nowrap;

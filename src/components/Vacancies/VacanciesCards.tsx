@@ -6,7 +6,9 @@ export interface VacancyType {
     el: Vacancy
 }
 
-const VacanciesCards: React.FC<VacancyType> = ({ el }) => {
+const VacanciesCards: React.FC<VacancyType> = async ({ el }) => {
+
+    await new Promise(resolve => setTimeout(resolve, 200));
 
     return (
         <section className={styles.content}>

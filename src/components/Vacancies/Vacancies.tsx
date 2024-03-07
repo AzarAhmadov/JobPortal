@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import React, { Suspense } from 'react'
 import styles from './Vacancies.module.css'
 import { VacanciesData } from '@/constants/data'
 import VacanciesCards from './VacanciesCards'
@@ -8,6 +8,7 @@ import { useSearchParams } from 'next/navigation'
 import Link from 'next/link'
 import useToggle from '@/hooks/useToggle'
 import MobileFIlter from '../MobileFIlter/MobileFIlter'
+import Loading from './loading'
 
 const Vacancies: React.FC = () => {
 
@@ -59,7 +60,9 @@ const Vacancies: React.FC = () => {
                 </h3>
                 {
                     filteredVacancies.reverse().map((el, idx: number) => (
-                        <VacanciesCards el={el} key={idx} />
+                        <Suspense fallback={<Loading />}>
+                            <VacanciesCards el={el} key={idx} />
+                        </Suspense>
                     ))
                 }
             </div>
