@@ -28,7 +28,6 @@ const MobileFIlter: React.FC<ToogleProps> = ({ toggle, isToggled }) => {
                                     </li>
                                 ))
                             }
-
                         </ul>
                     </div>
 
