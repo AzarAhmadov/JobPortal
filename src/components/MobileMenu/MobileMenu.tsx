@@ -4,12 +4,12 @@ import React from 'react'
 import styles from './MobileMenu.module.css'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-interface MobileProps {
-    toggle: () => void
-    isToggled: boolean
+export interface ToogleProps {
+    toggle?: () => void
+    isToggled?: boolean
 }
 
-const MobileMenu: React.FC<MobileProps> = ({ toggle, isToggled }) => {
+const MobileMenu: React.FC<ToogleProps> = ({ toggle, isToggled }) => {
 
     const pathname = usePathname();
     const isActive = (path: string) => path === pathname;

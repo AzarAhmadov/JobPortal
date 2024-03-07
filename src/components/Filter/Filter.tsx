@@ -5,7 +5,7 @@ import styles from './Filter.module.css'
 import { categories, jobType } from "@/constants/data";
 
 const Filter: React.FC = () => {
-    
+
     const [activeSection, setActiveSection] = useState<number | null>(0);
 
     const toggleSection = (sectionIndex: number) => {

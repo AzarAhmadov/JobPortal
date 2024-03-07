@@ -270,4 +270,9 @@
         margin-left: 10px;
     }
 
+
+    .rowVacancies {
+        gap: 14px;
+    }
+
 }

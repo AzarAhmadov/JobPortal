@@ -1,0 +1,138 @@
+.filter {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: hsla(0, 0%, 100%, .4);
+    backdrop-filter: blur(5px);
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 400ms all;
+}
+
+.filter.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.filter .content {
+    background: #f8f8fd;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 15px 20px;
+}
+
+.filter .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    padding-bottom: 15px;
+}
+
+.filter .top svg {
+    width: 18px;
+    fill: #515b6f;
+}
+
+.row div {
+    margin: 20px 0;
+}
+
+.row div:first-child {
+    margin-top: 0;
+}
+
+.row div h3 {
+    font-size: 16px;
+    color: #515b6f;
+}
+
+.row {
+    max-height: 400px;
+    overflow: auto;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.list li {
+    display: flex;
+    gap: 10px;
+    font-size: 15px;
+    color: #515b6f;
+    width: 100%;
+}
+
+.list li input {
+    width: 20px;
+    display: flex;
+    flex-shrink: 0;
+}
+
+.list li input[type="checkbox"] {
+    accent-color: #6661f4;
+}
+
+.send {
+    background: #000;
+    padding: 6px 0;
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 17px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.send svg {
+    fill: #fff;
+    width: 15px;
+}
+
+.send:hover {
+    background: #000000c7;
+}
+
+.reset {
+    background: #6661f4;
+    padding: 6px 0;
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 17px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.reset svg {
+    fill: #fff;
+    width: 20px;
+}
+
+.reset:hover {
+    background: #6661f4d8;
+}
+
+.action {
+    background: #f8f8fd;
+    padding-top: 20px;
+}

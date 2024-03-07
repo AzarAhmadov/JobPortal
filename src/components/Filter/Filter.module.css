@@ -70,7 +70,6 @@
     accent-color: #6661f4;
 }
 
-
 .send {
     background: #000;
     padding: 6px 0;
@@ -122,5 +121,4 @@
     .section {
         display: none;
     }
-
 }
