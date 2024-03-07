@@ -26,7 +26,11 @@ const Heading: React.FC = () => {
                         <React.Fragment key={index}>
                             {index > 0 && <span className={styles.circle}></span>}
                             {index === partsArray.length - 1 ? (
-                                <span>{part}</span>
+                                <span className={styles.span}>
+                                    <span className={styles.span}>
+                                        {part.length > 22 ? part.slice(0, 22) + '...' : part}
+                                    </span>
+                                </span>
                             ) : (
                                 <Link href={part === 'Vacancies' ? '/' : `/${part}`}>
                                     {part}

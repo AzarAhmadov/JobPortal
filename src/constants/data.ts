@@ -69,7 +69,12 @@ export const VacanciesData = [
         salary: "2000-3000",
         category: "engineering",
         desc: "Stripe is looking for Social Media Marketing expert to help manage our online networks. You will be responsible for monitoring our social media channels, creating content, finding effective ways to engage the community and incentivize others to engage on our channels.r",
-        list: `<ul class='font-poppions-light'> <li> <Check /> Lorem ipsum dolor sit.  </li> <li> <Check /> You get energy from people and building the ideal work environment </li> <li> <Check /> Lorem ipsum dolor sit. </li> <li> <Check /> You get energy from people and building the ideal work environment </li> </ul>`
+        list: `
+        <ul class='font-poppions-light'> 
+        <li> - Fluency in written and spoken English (Fluency in written and spoken French is desirable);  </li>
+         <li> - Proven experience in B2G sales support, government procurement, or related roles is desirable; </li> 
+         <li> - Bachelor's degree in Business, Marketing, or a related field; </li> 
+         </ul>`
     },
     {
         id: 4,
@@ -151,8 +156,8 @@ export const VacanciesData = [
         id: 5,
         img: 'https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8ed3d547-94ff-48e1-9f20-8c14a7030a02_2000x2000.jpeg',
         company_name: 'Apple',
-        job: '"Lənkəran" filialının Kredit şöbəsinin mütəxəssisi',
-        path: 'Front-End-Developer-5',
+        job: 'Nəqliyyat çilingəri',
+        path: 'neqliyyat-cilinger',
         detail_jobs: [
             {
                 location: 'San Diego, US',

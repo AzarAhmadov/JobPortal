@@ -5,7 +5,20 @@
     border-radius: 5px;
     background: #fff;
     width: 100%;
-    margin: 20px auto;
+    margin: 20px auto 0;
+}
+
+.line {
+    border-bottom: 1px solid #3e3d3d22;
+    padding: 20px 0;
+}
+
+.line:first-child {
+    padding-top: 0;
+}
+
+.line:last-child {
+    border-bottom: none;
 }
 
 .job {
@@ -59,7 +72,6 @@
     fill: #fff;
 }
 
-
 .row a:hover {
     background-color: #6661f4cc;
 }
@@ -72,10 +84,8 @@
 
 .detailRow {
     display: flex;
-}
-
-.detailRow div {
-    margin-bottom: 35px;
+    gap: 45px;
+    padding: 20px 0;
 }
 
 .detailRow div h3 {
@@ -160,4 +170,170 @@
 .date svg {
     width: 14px;
     fill: #515B6F;
+}
+
+.rightArea {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.bookMark {
+    width: 50px;
+    height: 50px;
+    border-right: 1px solid #3e3d3d42;
+    padding-right: 15px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:992px) {
+
+    .detailRow {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .left h3 {
+        font-size: 13px;
+    }
+
+    .right {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .line:last-child {
+        border-bottom: 1px solid #3e3d3d22;
+    }
+
+    .detailRow div h3 {
+        font-size: 20px;
+    }
+
+    .detailRow div p {
+        font-size: 15px;
+        line-height: 27px;
+    }
+
+    .detailRow div ul li {
+        font-size: 15px;
+        line-height: 27px;
+    }
+}
+
+@media only screen and (max-width:800px) {
+
+    .detailRow {
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+
+    .apply {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+        position: relative;
+        margin-bottom: 0;
+        padding: 15px 20px;
+    }
+
+    .apply img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .row {
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .bookMark {
+        position: absolute;
+        top: 5px;
+        right: 0px;
+        border: none;
+    }
+
+    .rightArea {
+        width: 100%;
+    }
+
+    .job {
+        margin: 15px auto;
+        text-align: start;
+        font-size: 19px;
+    }
+
+    .row a {
+        margin-top: 15px;
+        justify-content: center;
+        width: 100%;
+        padding: 10px 0;
+        font-size: 16px;
+        display: flex;
+    }
+
+    .row a svg {
+        width: 17px;
+    }
+
+    .top div {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 5px;
+        padding-left: 11px;
+    }
+
+    .top div h4 {
+        position: relative;
+        padding-left: 7px;
+    }
+
+    .top div h4::after {
+        width: 5px;
+        height: 5px;
+        position: absolute;
+        top: 50%;
+        left: -9px;
+        transform: translateY(-50%);
+        background: #515B6F;
+        border-radius: 50%;
+        content: "";
+    }
+
+    .top div span {
+        position: relative;
+        padding-left: 7px;
+    }
+
+    .top div span::after {
+        width: 5px;
+        height: 5px;
+        position: absolute;
+        top: 50%;
+        left: -10px;
+        transform: translateY(-50%);
+        background: #515B6F;
+        border-radius: 50%;
+        content: "";
+    }
+
+    .circle {
+        display: none;
+    }
+
+    .right ul li {
+        margin-bottom: 5px;
+    }
+
+    .right ul li span {
+        font-size: 16px;
+    }
 }
