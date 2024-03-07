@@ -8,8 +8,6 @@ export interface VacancyType {
 
 const VacanciesCards: React.FC<VacancyType> = async ({ el }) => {
 
-    await new Promise(resolve => setTimeout(resolve, 200));
-
     return (
         <section className={styles.content}>
             <Link className={styles.row} href={`Vacancies/${el.path}`}>
