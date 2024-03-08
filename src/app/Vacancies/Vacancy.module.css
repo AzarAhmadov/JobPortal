@@ -265,7 +265,7 @@
     }
 
     .job {
-        margin: 15px auto;
+        margin: 15px auto 0;
         text-align: start;
         font-size: 19px;
     }
@@ -287,8 +287,10 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        gap: 5px;
+        gap: 8px;
         padding-left: 11px;
+        font-size: 16px;
+        margin-top: 10px;
     }
 
     .top div h4 {
@@ -341,5 +343,9 @@
         width: 40px;
         height: 40px;
         padding-right: 10px;
+    }
+
+    .date {
+        font-size: 15px;
     }
 }
