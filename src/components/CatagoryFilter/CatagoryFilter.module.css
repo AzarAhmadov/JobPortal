@@ -24,7 +24,8 @@
     border: 1px solid #6661f4;
     padding: 4px 10px;
     color: #6661f4;
-    font-size: 14px;
+    font-size: 13px;
+    border-radius: 5px;
 }
 
 .card h4 {
@@ -92,9 +93,8 @@
     }
 
     .detail {
-        border: 1px solid #6661f4;
-        padding: 3px 7px;
-        font-size: 11px;
+        padding: 2px 7px;
+        font-size: 10px;
     }
 
     .card ul {
