@@ -81,3 +81,59 @@
     fill: #515B6F;
 }
 
+@media only screen and (max-width:578px) {
+    .card img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .card h4 {
+        font-size: 13px;
+    }
+
+    .detail {
+        border: 1px solid #6661f4;
+        padding: 3px 7px;
+        font-size: 11px;
+    }
+
+    .card ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3px;
+        font-size: 11px;
+    }
+
+    .card ul li {
+        position: relative;
+        padding-left: 10px;
+    }
+
+    .card ul li::after {
+        width: 4px;
+        height: 4px;
+        background: #515B6F;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 1px;
+        content: "";
+    }
+
+    .circle {
+        display: none;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+
+    .date{
+        font-size: 12px;
+    }
+
+    .date svg{
+        width: 12px;
+    } 
+}
