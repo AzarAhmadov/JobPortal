@@ -1,13 +1,13 @@
 .nav {
     position: fixed;
-    top: 64px;
+    top: 63px;
     width: 100%;
     height: 0;
     overflow: hidden;
     transition: height 0.3s ease-in-out;
     left: 0;
     z-index: 10;
-    display: flex;
+    display: none;
     justify-content: flex-start;
     flex-direction: column;
     transition: 300ms all;
@@ -91,4 +91,10 @@
     background-position: right 0px top 50%;
     background-size: 33px auto;
     background-color: transparent;
+}
+
+@media only screen and (max-width:992px) {
+    .nav {
+        display: flex;
+    }
 }
