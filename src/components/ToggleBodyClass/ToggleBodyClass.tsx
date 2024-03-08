@@ -1,5 +1,5 @@
 
-import React, { useEffect } from 'react';
+import React, { useEffect, memo } from 'react';
 import { ToogleProps } from '../MobileMenu/MobileMenu';
 
 const ToggleBodyClass: React.FC<ToogleProps> = ({ isToggled }) => {
@@ -11,4 +11,4 @@ const ToggleBodyClass: React.FC<ToogleProps> = ({ isToggled }) => {
     return null;
 }
 
-export default ToggleBodyClass;
+export default memo(ToggleBodyClass);
