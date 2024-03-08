@@ -50,8 +50,8 @@ const Header: React.FC = () => {
                                 </button>
                             </li>
                             <select className={`${styles.select} font-poppions-light`} name="lang" id="lang">
-                                <option value="en">🇺🇸 En</option>
-                                <option value="az">🇦🇿 Az</option>
+                                <option value="en">🇺🇸 ENG</option>
+                                <option value="az">🇦🇿 AZE</option>
                             </select>
                         </ul>
 
