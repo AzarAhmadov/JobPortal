@@ -4,6 +4,7 @@ import React, { memo } from 'react'
 import styles from './MobileMenu.module.css'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import ToggleBodyClass from '../ToggleBodyClass/ToggleBodyClass'
 export interface ToogleProps {
     toggle?: () => void
     isToggled?: boolean
@@ -59,6 +60,8 @@ const MobileMenu: React.FC<ToogleProps> = ({ toggle, isToggled }) => {
                     </li>
                 </ul>
             </div>
+
+            <ToggleBodyClass isToggled={isToggled} />
         </nav>
     )
 }

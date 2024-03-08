@@ -19,6 +19,10 @@ body {
     min-height: 100vh;
 }
 
+body.active {
+    overflow: hidden !important;
+}
+
 body::-webkit-scrollbar {
     width: 3px;
 }

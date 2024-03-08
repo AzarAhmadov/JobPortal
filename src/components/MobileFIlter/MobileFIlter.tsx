@@ -2,9 +2,9 @@ import React, { memo } from 'react'
 import styles from './MobileFIlter.module.css'
 import { categories, jobType } from "@/constants/data";
 import { ToogleProps } from '../MobileMenu/MobileMenu';
+import ToggleBodyClass from '../ToggleBodyClass/ToggleBodyClass';
 
 const MobileFIlter: React.FC<ToogleProps> = ({ toggle, isToggled }) => {
-
     return (
         <section className={`${styles.filter} ${isToggled ? styles.active : styles.filter}`}>
             <div className={styles.content}>
@@ -74,6 +74,7 @@ const MobileFIlter: React.FC<ToogleProps> = ({ toggle, isToggled }) => {
                 </div>
 
             </div>
+            <ToggleBodyClass isToggled={isToggled} />
         </section>
     )
 }
