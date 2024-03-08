@@ -6,7 +6,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     place-items: center;
-    gap: 20px;
+    gap: 12px;
 }
 
 .list li {
@@ -112,7 +112,6 @@
 
     .list {
         grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
     }
 
     .list li a div svg {
