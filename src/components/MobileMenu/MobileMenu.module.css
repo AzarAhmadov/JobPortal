@@ -28,7 +28,7 @@
 .nav svg {
     width: 25px;
     height: 25px;
-    fill: #7C8493;
+    fill: #3d3d3d;
 }
 
 .nav ul {
@@ -46,7 +46,7 @@
     font-size: 18px;
     padding: 10px 15px;
     border-radius: 5px;
-    color: #7C8493;
+    color: #3d3d3d;
     transition: 300ms all;
 }
 
