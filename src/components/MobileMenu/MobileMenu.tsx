@@ -54,8 +54,8 @@ const MobileMenu: React.FC<ToogleProps> = ({ toggle, isToggled }) => {
                     </li>
                     <li>
                         <select className={`${styles.select} font-poppions-thin`} name="lang" id="lang">
-                            <option value="EN">EN</option>
-                            <option value="AZ">AZ</option>
+                            <option value="en">🇺🇸 En</option>
+                            <option value="az">🇦🇿 Az</option>
                         </select>
                     </li>
                 </ul>
