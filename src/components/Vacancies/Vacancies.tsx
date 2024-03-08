@@ -53,7 +53,7 @@ const Vacancies: React.FC = () => {
                     )}
                 </h3>
                 {filteredVacancies.reverse().map((el, idx: number) => (
-                    <Suspense fallback={<Loading />}>
+                    <Suspense key={idx} fallback={<Loading />}>
                         <VacanciesCards el={el} key={idx} />
                     </Suspense>
                 ))}
