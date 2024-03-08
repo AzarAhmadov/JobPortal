@@ -20,10 +20,14 @@
     color: #fff;
 }
 
-.error img {
-    width: 100%;
+.error .img {
+    width: 400px;
     height: 400px;
-    object-fit: cover;
+    position: relative;
+}
+
+.error .img img {
+    object-fit: contain;
 }
 
 .error h3 {

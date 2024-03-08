@@ -7,7 +7,7 @@ const NotFound: React.FC = () => {
     return (
         <section className={styles.error}>
             <div className={styles.img}>
-                <Image src="/images/notFound.png" alt="not-found" width={500} height={500} />
+                <Image src="/images/notFound.png" alt="not-found" fill />
             </div>
             <h3 className="font-poppions-light">Page Not Found</h3>
            
