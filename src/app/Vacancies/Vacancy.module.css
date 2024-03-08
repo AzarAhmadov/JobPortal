@@ -336,4 +336,10 @@
     .right ul li span {
         font-size: 16px;
     }
+
+    .bookMark {
+        width: 40px;
+        height: 40px;
+        padding-right: 10px;
+    }
 }

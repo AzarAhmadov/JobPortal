@@ -102,6 +102,7 @@
         align-items: flex-start;
         gap: 3px;
         font-size: 11px;
+        margin-bottom: 6px;
     }
 
     .card ul li {
@@ -129,11 +130,11 @@
         font-size: 12px;
     }
 
-    .date{
+    .date {
         font-size: 12px;
     }
 
-    .date svg{
+    .date svg {
         width: 12px;
-    } 
+    }
 }
