@@ -44,6 +44,12 @@
     color: #26A4FF;
     display: flex;
     flex-direction: column;
+    width: max-content;
+    text-align: center;
+}
+
+.title span svg {
+    width: 100%;
 }
 
 .form {

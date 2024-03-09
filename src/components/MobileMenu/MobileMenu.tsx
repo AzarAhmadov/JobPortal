@@ -5,6 +5,7 @@ import styles from './MobileMenu.module.css'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import ToggleBodyClass from '../ToggleBodyClass/ToggleBodyClass'
+import LocaleSwitcher from '../LocaleSwitcher/LocaleSwitcher'
 export interface ToogleProps {
     toggle?: () => void
     isToggled?: boolean
@@ -53,10 +54,7 @@ const MobileMenu: React.FC<ToogleProps> = ({ toggle, isToggled }) => {
                         </span>
                     </li>
                     <li>
-                        <select className={`${styles.select} font-poppions-thin`} name="lang" id="lang">
-                            <option value="en">🇺🇸 ENG</option>
-                            <option value="az">🇦🇿 AZE</option>
-                        </select>
+                       <LocaleSwitcher/>
                     </li>
                 </ul>
             </div>

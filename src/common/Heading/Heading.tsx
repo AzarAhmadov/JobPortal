@@ -6,12 +6,12 @@ import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 
 const Heading: React.FC = () => {
-    const path_name = usePathname();
-    const normalizedPath = path_name.replace(/-\d+/g, '');
+    const pathName = usePathname();
+    const normalizedPath = pathName.replace(/-\d+/g, '');
 
-    const getPathParts = () => {
+    const getPathParts = () => {    
         const pathParts = normalizedPath.substring(1).split('/');
-        return pathParts;
+        return pathParts.filter(part => !['en', 'az'].includes(part));
     };
 
     return (
@@ -38,7 +38,6 @@ const Heading: React.FC = () => {
                             )}
                         </React.Fragment>
                     ))}
-
                 </li>
             </ul>
         </div>
@@ -46,4 +45,3 @@ const Heading: React.FC = () => {
 };
 
 export default Heading;
-

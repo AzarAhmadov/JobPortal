@@ -6,13 +6,20 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation';
 import useToggle from '@/hooks/useToggle';
 import MobileMenu from '@/components/MobileMenu/MobileMenu';
+import LocaleSwitcher from '@/components/LocaleSwitcher/LocaleSwitcher';
+import { useScopedI18n } from '../../locales/client'
 
 const Header: React.FC = () => {
 
     const pathname = usePathname();
-    const isActive = (path: string) => path === pathname;
+
+    const isActive = (paths: string[]) => {
+        return paths.includes(pathname);
+    };
 
     const [isToggled, toggle] = useToggle(false);
+
+    const t = useScopedI18n('header')
 
     return (
         <>
@@ -24,10 +31,10 @@ const Header: React.FC = () => {
                         </Link>
                         <ul className={`${styles.list} font-poppions-light`}>
                             <li>
-                                <Link href='/' className={isActive('/') ? styles.active : ''}> Vacancies </Link>
+                                <Link href='/' className={isActive(['/az', '/en']) ? styles.active : ''}> {t('link_1')} </Link>
                             </li>
                             <li>
-                                <Link href='/Categories' className={isActive('/Categories') ? styles.active : ''}> Categories </Link>
+                                <Link href='/Categories' className={isActive(['/az/Categories', '/en/Categories']) ? styles.active : ''}> {t('link_2')} </Link>
                             </li>
                         </ul>
                     </div>
@@ -36,7 +43,7 @@ const Header: React.FC = () => {
                             <li>
                                 <Link className={styles.create} href={'/Create'}>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" /></svg>
-                                    Create a vacancy
+                                    {t('Create')}
                                 </Link>
                             </li>
                             <li>
@@ -49,10 +56,9 @@ const Header: React.FC = () => {
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.742 13.045a8.088 8.088 0 0 1-2.077.271c-2.135 0-4.14-.83-5.646-2.336a8.025 8.025 0 0 1-2.064-7.723A1 1 0 0 0 9.73 2.034a10.014 10.014 0 0 0-4.489 2.582c-3.898 3.898-3.898 10.243 0 14.143a9.937 9.937 0 0 0 7.072 2.93 9.93 9.93 0 0 0 7.07-2.929 10.007 10.007 0 0 0 2.583-4.491 1.001 1.001 0 0 0-1.224-1.224zm-2.772 4.301a7.947 7.947 0 0 1-5.656 2.343 7.953 7.953 0 0 1-5.658-2.344c-3.118-3.119-3.118-8.195 0-11.314a7.923 7.923 0 0 1 2.06-1.483 10.027 10.027 0 0 0 2.89 7.848 9.972 9.972 0 0 0 7.848 2.891 8.036 8.036 0 0 1-1.484 2.059z"></path></svg>
                                 </button>
                             </li>
-                            <select className={`${styles.select} font-poppions-light`} name="lang" id="lang">
-                                <option value="en">🇺🇸 ENG</option>
-                                <option value="az">🇦🇿 AZE</option>
-                            </select>
+                            <li>
+                                <LocaleSwitcher />
+                            </li>
                         </ul>
 
                         <button onClick={toggle} className={styles.bar}>
