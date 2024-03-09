@@ -6,7 +6,7 @@ export interface VacancyType {
     el: Vacancy
 }
 
-const VacanciesCards: React.FC<VacancyType> = async ({ el }) => {
+const VacanciesCards: React.FC<VacancyType> = ({ el }) => {
 
     return (
         <section className={styles.content}>
