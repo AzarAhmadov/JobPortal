@@ -16,8 +16,8 @@ export default function RootLayout({
                     <div>
                         <Header />
                         {children}
+                        <Footer />
                     </div>
-                    {/* <Footer /> */}
                 </I18nProviderClientProvider>
                 <Analytics />
             </body>

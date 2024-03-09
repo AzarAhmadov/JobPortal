@@ -1,11 +1,11 @@
 import React from 'react'
 import styles from './Footer.module.css'
 import Link from 'next/link'
-import { getScopedI18n } from '@/locales/server'
+import { useScopedI18n } from '@/locales/client'
 
-const Footer: React.FC = async () => {
+const Footer: React.FC = () => {
 
-    const t = await getScopedI18n('footer')
+    const t = useScopedI18n('footer')
 
     return (
         <footer className={styles.footer}>
