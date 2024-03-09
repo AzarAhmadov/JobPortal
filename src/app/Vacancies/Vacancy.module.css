@@ -8,13 +8,6 @@
     margin: 20px auto 0;
 }
 
-.loading {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-
 .line {
     border-bottom: 1px solid #3e3d3d22;
     padding: 20px 0;
