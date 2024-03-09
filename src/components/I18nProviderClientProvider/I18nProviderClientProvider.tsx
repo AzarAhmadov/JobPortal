@@ -3,7 +3,6 @@
 import React, { ReactNode } from 'react';
 import { usePathname } from 'next/navigation';
 import { I18nProviderClient } from '@/locales/client';
-
 interface Props {
     children: ReactNode;
 }
