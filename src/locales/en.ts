@@ -18,6 +18,24 @@ export default {
         search: 'Search',
         placeholder: 'Job title or keyword'
     },
+    detail: {
+        about_role: 'About this role',
+        last_date: 'Job Posted On',
+        JobType: 'Job Type',
+        Salary: 'Salary',
+        apply: 'Apply'
+    },
+    categories: {
+        design: "Design",
+        sales: "Sales",
+        marketing: "Marketing",
+        finance: "Finance",
+        technology: "Technology",
+        bussiness: "Bussiness",
+        service: "Services",
+        engineer: "Engineer",
+        available:"jobs available"
+    },
     footer: {
         text: "Find your dream job :)"
     }
