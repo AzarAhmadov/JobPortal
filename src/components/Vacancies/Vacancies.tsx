@@ -9,6 +9,7 @@ import Link from 'next/link'
 import useToggle from '@/hooks/useToggle'
 import MobileFIlter from '../MobileFIlter/MobileFIlter'
 import Loading from './loading'
+import Image from 'next/image'
 
 const Vacancies: React.FC = () => {
     const searchParams = useSearchParams();
@@ -31,7 +32,9 @@ const Vacancies: React.FC = () => {
                         </>
                     ) : (
                         <p className={`${styles.noResults} font-poppions-light`}>
-                            <img src="https://cdn-icons-png.flaticon.com/512/6134/6134065.png" alt="not-found" />
+                            <div>
+                                <Image fill src="/images/not-found.png" alt="not-found" />
+                            </div>
                             We can’t find what you are looking for, in the meantime you can browse jobs or return back to homepage
                             <Link href={'/'}> Home page </Link>
                         </p>

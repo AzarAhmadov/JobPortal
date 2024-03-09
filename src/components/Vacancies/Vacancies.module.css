@@ -210,8 +210,15 @@
     white-space: normal !important;
 }
 
+.noResults div {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border: none !important;
+}
+
 .noResults img {
-    width: 300px;
+    object-fit: contain;
 }
 
 .noResults a {
@@ -314,8 +321,9 @@
         font-size: 14px;
     }
 
-    .noResults img {
-        width: 130px;
+    .noResults div {
+        width: 150px;
+        height: 150px;
     }
 
     .rowVacancies h3 {

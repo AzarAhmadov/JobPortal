@@ -26,7 +26,7 @@ const CatagoryFilter: React.FC = () => {
             {filterByCategory.map((el, idx) => (
                 <div onClick={() => handleLinkClick(el.path)} className={styles.card} key={idx}>
                     <div>
-                        <img src={el.img} alt={el.job} />
+                        <img src={el.img} alt={el.job} loading='lazy' />
                         <h4 className='font-poppions-medium'>{el.job}</h4>
                         <ul className='font-poppions-light'>
                             <li>{el.company_name}</li>
