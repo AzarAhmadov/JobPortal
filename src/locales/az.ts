@@ -2,7 +2,14 @@ export default {
     header: {
         link_1: 'Vakansiyalar',
         link_2: 'Kateqoriyalar',
-        Create:'Vakansiya yarat'
+        Create: 'Vakansiya yarat'
+    },
+    mobile_menu: {
+        link_1: 'Vakansiyalar',
+        link_2: 'Kateqoriyalar',
+        link_3: 'Vakansiya yarat',
+        link_4: 'Seçilmişlər',
+        theme: 'Görünüşü dəyiş',
     },
     hero: {
         top_text: 'Xəyalındakı',

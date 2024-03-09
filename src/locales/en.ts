@@ -2,7 +2,14 @@ export default {
     header: {
         link_1: 'Vacancies',
         link_2: 'Categories',
-        Create:'Create a vacancy'
+        Create: 'Create a vacancy'
+    },
+    mobile_menu: {
+        link_1: 'Find jobs',
+        link_2: 'Categories',
+        link_3: 'Create a vacancy',
+        link_4: 'Selected',
+        theme: 'Change theme',
     },
     hero: {
         top_text: 'Find your',
