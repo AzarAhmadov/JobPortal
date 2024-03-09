@@ -39,6 +39,7 @@
 
 .list li a div svg {
     width: 20px;
+    height: 20px;
     margin: 0;
     transition: 300ms all;
 }
@@ -124,9 +125,9 @@
     }
 
     .list li a svg {
-        width: 30px;
+        width: 25px;
         margin-bottom: 10px;
-        height: 30px;
+        height: 25px;
     }
 
     .list li a span {

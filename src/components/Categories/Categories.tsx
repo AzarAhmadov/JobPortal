@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { CategoriesData, VacanciesData } from '@/constants/data'
 import Link from 'next/link'
@@ -17,7 +19,7 @@ const Categories = () => {
                     CategoriesData.map((el, idx: number) => (
                         <li key={idx}>
                             <Link href={`Categories/${el.path}`}>
-                                <span dangerouslySetInnerHTML={{ __html: el.icon }} />
+                                <i dangerouslySetInnerHTML={{ __html: el.icon }} />
                                 <span className={styles.title}> {el.title}</span>
                                 <div>
                                     <p className={`${styles.desc} font-poppions-light`}>
