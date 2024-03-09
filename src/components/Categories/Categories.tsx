@@ -1,7 +1,7 @@
 import React from 'react'
-import styles from './Categories.module.css'
 import { CategoriesData, VacanciesData } from '@/constants/data'
 import Link from 'next/link'
+import styles from './Categories.module.css'
 
 const Categories = () => {
 
