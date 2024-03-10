@@ -302,17 +302,18 @@
     }
 
     .img {
-        width: 45px;
-        height: 45px;
+        width: 50px;
+        height: 50px;
     }
 
     .list {
-        margin-top: 5px;
-        padding-bottom: 23px;
+        margin-top: 4px;
+        padding-bottom: 24px;
     }
 
     .list li {
         font-size: 12px;
+        gap: 4px;
     }
 
     .list li svg {
@@ -321,7 +322,8 @@
     }
 
     .row {
-        padding: 11px 15px;
+        padding: 8px 13px;
+        gap: 15px;
         align-items: center;
     }
 
@@ -350,12 +352,12 @@
     }
 
     .rowVacancies {
-        gap: 14px;
+        gap: 15px;
     }
 
     .salary {
         font-size: 12px;
-        bottom: 11px;
+        bottom: 9px;
         left: 79px;
     }
 }
