@@ -18,6 +18,7 @@ const Header: React.FC = () => {
     };
 
     const [isToggled, toggle] = useToggle(false);
+
     const [isToggledTheme, toggleTheme] = useToggle(
         localStorage.getItem('theme') === 'dark'
     );
@@ -30,7 +31,7 @@ const Header: React.FC = () => {
         } else {
             document.body.classList.remove('theme');
         }
-    }, [isToggledTheme]);
+    }, [isToggledTheme])
 
     const t = useScopedI18n('header')
 
@@ -89,7 +90,7 @@ const Header: React.FC = () => {
                         </button>
                     </div>
                 </div>
-            </header>
+            </header >
 
             <MobileMenu toggle={toggle} isToggled={isToggled} />
         </>

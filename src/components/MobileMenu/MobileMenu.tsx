@@ -30,10 +30,9 @@ const MobileMenu: React.FC<ToogleProps> = ({ toggle, isToggled }) => {
         } else {
             document.body.classList.remove('theme');
         }
-    }, [isToggledTheme]);
+    }, [isToggledTheme])
 
     const t = useScopedI18n('mobile_menu')
-
 
     return (
         <nav className={`${styles.nav} ${isToggled ? styles.active : styles.nav}`}>
