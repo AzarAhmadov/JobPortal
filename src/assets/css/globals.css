@@ -323,6 +323,11 @@ body.theme .Vacancy_bookMark__bdloz {
     border-right: 1px solid hsla(0, 0%, 100%, 0.221);
 }
 
+body.theme .Vacancies_noResults__aj1mU a {
+    color: #fff;
+    border: 1px solid #fff;
+}
+
 body.theme .Vacancies_noResults__aj1mU {
     color: #fff;
 }

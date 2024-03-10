@@ -31,16 +31,20 @@ const Vacancies: React.FC = () => {
                 <h3 className={`${styles.title_jobs} font-poppions-medium`}>
                     {filteredVacancies.length > 0 ? (
                         <>
-                            {t('job_title')}
+                            <p>
+                                {t('job_title')}
+                            </p>
                         </>
                     ) : (
-                        <p className={`${styles.noResults} font-poppions-light`}>
-                            <div>
+                        <article className={`${styles.noResults} font-poppions-light`}>
+                            <div className={styles.noImg}>
                                 <Image fill src="/images/not-found.png" alt="not-found" />
                             </div>
-                            {t('alert')}
+                            <p>
+                                {t('alert')}
+                            </p>
                             <Link href={'/'}> Home page </Link>
-                        </p>
+                        </article>
                     )}
 
                     {filteredVacancies.length !== 0 && search && (

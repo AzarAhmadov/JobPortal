@@ -213,11 +213,15 @@
     white-space: normal !important;
 }
 
-.noResults div {
+.noResults .noImg {
     width: 200px;
     height: 200px;
     position: relative;
     border: none !important;
+}
+
+.noResults p {
+    width: 100%;
 }
 
 .noResults img {
@@ -337,7 +341,7 @@
         font-size: 14px;
     }
 
-    .noResults div {
+    .noResults .noImg {
         width: 150px;
         height: 150px;
     }
