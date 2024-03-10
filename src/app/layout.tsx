@@ -12,15 +12,17 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className='body'>
-                <I18nProviderClientProvider>
-                    <div>
-                        <Header />
-                        {children}
-                    </div>
-                    <Footer />
-                </I18nProviderClientProvider>
+                <div className='row'>
+                    <I18nProviderClientProvider>
+                        <div>
+                            <Header />
+                            {children}
+                        </div>
+                        <Footer />
+                    </I18nProviderClientProvider>
+                </div>
                 <Analytics />
             </body>
-        </html>
+        </html >
     );
 }
