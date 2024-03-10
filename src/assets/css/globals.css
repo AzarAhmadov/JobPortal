@@ -39,7 +39,7 @@ body.theme header svg {
     fill: #fff;
 }
 
-body.theme .Header_logo__DuPmi svg   {
+body.theme .Header_logo__DuPmi svg {
     fill: #6661f4;
 }
 
@@ -319,6 +319,10 @@ body.theme .Header_bar__mfq_x {
     border: 1px solid #ffffff57;
 }
 
+body.theme .Vacancy_bookMark__bdloz {
+    border-right: 1px solid hsla(0, 0%, 100%, 0.221);
+}
+
 body::-webkit-scrollbar {
     width: 3px;
 }
@@ -373,4 +377,10 @@ body::-webkit-scrollbar-thumb {
 .font-georgia-light {
     font-weight: 400;
     font-family: 'Georgia', sans-serif;
+}
+
+@media only screen and (max-width:860px) {
+    body.theme .Vacancy_bookMark__bdloz {
+        border-right: none;
+    }
 }
