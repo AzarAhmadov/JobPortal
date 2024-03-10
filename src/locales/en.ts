@@ -20,7 +20,7 @@ export default {
     },
     detail: {
         about_role: 'About this role',
-        last_date: 'Job Posted On',
+        last_date: 'Apply Before',
         JobType: 'Job Type',
         Salary: 'Salary',
         apply: 'Apply'

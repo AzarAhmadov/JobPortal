@@ -279,6 +279,10 @@ body.theme .Vacancy_line__bBOS1 {
     border-bottom: 1px solid #ffffff36;
 }
 
+body.theme .Vacancy_line__bBOS1:last-child {
+    border-bottom: none;
+}
+
 body.theme .Vacancy_line__bBOS1:first-child {
     border-top: none;
 }
@@ -386,6 +390,12 @@ body::-webkit-scrollbar-thumb {
 .font-georgia-light {
     font-weight: 400;
     font-family: 'Georgia', sans-serif;
+}
+
+@media only screen and (max-width:992px) {
+    body.theme .Vacancy_line__bBOS1:last-child {
+        border-bottom: 1px solid #ffffff36;
+    }
 }
 
 @media only screen and (max-width:860px) {
