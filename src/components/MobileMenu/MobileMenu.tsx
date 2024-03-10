@@ -16,7 +16,10 @@ export interface ToogleProps {
 const MobileMenu: React.FC<ToogleProps> = ({ toggle, isToggled }) => {
 
     const pathname = usePathname();
-    const isActive = (path: string) => path === pathname;
+
+    const isActive = (paths: string[]) => {
+        return paths.includes(pathname);
+    };
 
     const [isToggledTheme, toggleTheme] = useToggle(
         localStorage.getItem('theme') === 'dark'
@@ -39,25 +42,25 @@ const MobileMenu: React.FC<ToogleProps> = ({ toggle, isToggled }) => {
             <div>
                 <ul className='font-poppions-thin'>
                     <li onClick={toggle}>
-                        <Link href={'/'} className={isActive('/') ? styles.active : ''}>
+                        <Link href='/' className={isActive(['/az', '/en']) ? styles.active : ''}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path><path d="M11.412 8.586c.379.38.588.882.588 1.414h2a3.977 3.977 0 0 0-1.174-2.828c-1.514-1.512-4.139-1.512-5.652 0l1.412 1.416c.76-.758 2.07-.756 2.826-.002z"></path></svg>
                             {t('link_1')}
                         </Link>
                     </li>
                     <li onClick={toggle}>
-                        <Link href={'/Categories'} className={isActive('/Categories') ? styles.active : ''}>
+                        <Link href='/Categories' className={isActive(['/az/Categories', '/en/Categories']) ? styles.active : ''}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 3H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM9 9H5V5h4v4zm11-6h-6a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zm-1 6h-4V5h4v4zm-9 4H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1zm-1 6H5v-4h4v4zm8-6c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4zm0 6c-1.103 0-2-.897-2-2s.897-2 2-2 2 .897 2 2-.897 2-2 2z"></path></svg>
                             {t('link_2')}
                         </Link>
                     </li>
                     <li onClick={toggle}>
-                        <Link href={'/Create'} className={isActive('/Create') ? styles.active : ''}>
+                        <Link href='/Create' className={isActive(['/az/Create', '/en/Create']) ? styles.active : ''}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 11h-6V5h-2v6H5v2h6v6h2v-6h6z"></path></svg>
                             {t('link_3')}
                         </Link>
                     </li>
                     <li onClick={toggle}>
-                        <Link href={'/Create'} className={isActive('/Create') ? styles.active : ''}>
+                        <Link href='/Selected' className={isActive(['/az/Selected', '/en/Selected']) ? styles.active : ''}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M18 2H6c-1.103 0-2 .897-2 2v18l8-4.572L20 22V4c0-1.103-.897-2-2-2zm0 16.553-6-3.428-6 3.428V4h12v14.553z"></path></svg>
                             {t('link_4')}
                         </Link>
