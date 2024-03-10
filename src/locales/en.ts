@@ -36,6 +36,16 @@ export default {
         engineer: "Engineer",
         available:"jobs available"
     },
+    job: {
+        job_title: "All jobs"
+    },
+    filter: {
+        job_type: "Type of Employment",
+        categories: "Categories",
+        salary: "Salary range",
+        search: "Search",
+        reset:"Reset"
+    },
     footer: {
         text: "Find your dream job :)"
     }

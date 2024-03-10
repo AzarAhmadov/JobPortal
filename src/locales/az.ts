@@ -34,7 +34,17 @@ export default {
         bussiness: "Biznes",
         service: "Xidmət sahələri",
         engineer: "Mühəndislik",
-        available:"İş mövcuddur"
+        available: "İş mövcuddur"
+    },
+    job: {
+        job_title: "Vakansiyalar"
+    },
+    filter: {
+        job_type: "Vakansiyanın növü",
+        categories: "Kateqoriyalar",
+        salary: "Maaş aralığı",
+        search: "Axtar",
+        reset: "Sıfırla"
     },
     footer: {
         text: "Xəyalındakı işə qovuş :)"

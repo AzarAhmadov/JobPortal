@@ -238,8 +238,8 @@ body.theme .Vacancies_detail__aq39E ul li span {
 }
 
 body.theme .Vacancy_apply__YuRCw {
-    background-color: #b0a6a665;
-    border: none;
+    background-color: #26384b;
+    border: 1px solid #ffffff32;
 }
 
 body.theme .Vacancy_top__ZzNob h4 {
@@ -276,6 +276,38 @@ body.theme .Vacancy_line__bBOS1 {
 
 body.theme .Vacancy_line__bBOS1:first-child {
     border-top: none;
+}
+
+body.theme .Filter_list__iQZFL label {
+    color: #fff;
+}
+
+body.theme .MobileFIlter_content__MDaIw {
+    background: #26384b;
+}
+
+body.theme .MobileFIlter_row__ywVa4 h3 {
+    color: #fff;
+}
+
+body.theme .MobileFIlter_row__ywVa4 label {
+    color: #ffffffe3;
+}
+
+body.theme .MobileFIlter_action__dTZYN {
+    background: transparent;
+}
+
+body.theme .Vacancy_right__xkgEO div {
+    border-top: 1px solid #ffffff36;
+}
+
+body.theme .Vacancy_right__xkgEO button {
+    background: #6661f4;
+}
+
+body.theme .Filter_title__XrX61 svg {
+    fill: #fff;
 }
 
 body::-webkit-scrollbar {

@@ -10,6 +10,7 @@ import useToggle from '@/hooks/useToggle'
 import MobileFIlter from '../MobileFIlter/MobileFIlter'
 import Loading from './loading'
 import Image from 'next/image'
+import { useScopedI18n } from '@/locales/client'
 
 const Vacancies: React.FC = () => {
     const searchParams = useSearchParams();
@@ -22,13 +23,15 @@ const Vacancies: React.FC = () => {
 
     const [isToggled, toggle] = useToggle(false);
 
+    const t = useScopedI18n('job')
+
     return (
         <>
             <div className={styles.rowVacancies}>
                 <h3 className={`${styles.title_jobs} font-poppions-medium`}>
                     {filteredVacancies.length > 0 ? (
                         <>
-                            {filteredVacancies.length} Jobs
+                            {t('job_title')}
                         </>
                     ) : (
                         <p className={`${styles.noResults} font-poppions-light`}>
