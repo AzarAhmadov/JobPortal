@@ -17,10 +17,265 @@ body {
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
+    transition: 300ms all;
 }
 
 body.active {
     overflow: hidden !important;
+}
+
+body.theme {
+    background: #26384b;
+    color: #fff;
+}
+
+body.theme header {
+    background: #26384b8f;
+    backdrop-filter: blur(5px);
+}
+
+body.theme header svg {
+    fill: #fff;
+}
+
+body.theme nav {
+    background: #26384bef;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.4px);
+    -webkit-backdrop-filter: blur(6.4px);
+}
+
+body.theme .Heading_banner__kin7g {
+    background: #26384bef;
+    color: #fff;
+    border-top: 1px solid #ffffff1f;
+    border-bottom: 1px solid #ffffff1f;
+}
+
+body.theme .Vacancy_bookMark__bdloz {
+    fill: #fff;
+}
+
+body.theme .Vacancy_row__rOZLd div h4::after {
+    background: #fff;
+}
+
+body.theme .Vacancy_row__rOZLd div span::after {
+    background: #fff;
+}
+
+body.theme .Heading_banner__kin7g::after {
+    display: none;
+}
+
+body.theme .Heading_banner__kin7g a {
+    color: #fff;
+}
+
+body.theme .Heading_banner__kin7g .Heading_circle__NKO2H {
+    background-color: #fff;
+}
+
+body.theme .Heading_banner__kin7g span {
+    color: #fff;
+}
+
+body.theme nav ul li a {
+    color: #fff;
+}
+
+body.theme nav ul li {
+    color: #fff;
+}
+
+body.theme nav ul li select {
+    color: #000;
+    background: #fff;
+    text-align: center;
+}
+
+body.theme .MobileMenu_bottom__QfnZZ button svg {
+    fill: #fff;
+}
+
+body.theme nav ul li a svg {
+    fill: #fff;
+}
+
+body.theme header a {
+    color: #fff;
+}
+
+body.theme footer {
+    color: #fff;
+    border-top: 1px solid #ffffff21;
+}
+
+body.theme footer a {
+    color: #fff;
+}
+
+body.theme .Categories_content__AU5T_ ul li a {
+    background: transparent;
+    border: 1px solid #ffffff5b;
+}
+
+body.theme .Categories_content__AU5T_ ul li span {
+    color: #fff;
+}
+
+body.theme .Categories_content__AU5T_ ul li p {
+    color: #fff;
+}
+
+body.theme .Hero_hero__1d92z {
+    background: #ffffff21;
+}
+
+body.theme .Hero_desc__rLZdS {
+    color: #fff;
+}
+
+body.theme .Hero_form__dZhvn {
+    background: #26384b;
+}
+
+body.theme .Hero_hero__1d92z::after {
+    background: #26384b;
+}
+
+body.theme .Hero_form__dZhvn input {
+    background: transparent !important;
+    color: #fff;
+    border-bottom: 1px solid #ffffff24;
+}
+
+body.theme .Hero_form__dZhvn svg {
+    fill: #fff;
+}
+
+body.theme .Hero_form__dZhvn input::placeholder {
+    color: #fff;
+}
+
+body.theme .Vacancies_row__vd9T7 {
+    border: 1px solid #ffffff2b;
+}
+
+body.theme .CatagoryFilter_card__bdeuG {
+    border: 1px solid #ffffff2b;
+    background: transparent;
+}
+
+body.theme .CatagoryFilter_card__bdeuG h4 {
+    color: #fff;
+}
+
+body.theme .CatagoryFilter_card__bdeuG ul {
+    color: #fff;
+}
+
+body.theme .CatagoryFilter_card__bdeuG .CatagoryFilter_salary__H_kTX {
+    color: #fff;
+}
+
+body.theme .CatagoryFilter_card__bdeuG svg {
+    fill: #fff;
+}
+
+body.theme .CatagoryFilter_card__bdeuG span {
+    color: #fff;
+}
+
+body.theme .CatagoryFilter_card__bdeuG p {
+    color: #ffffffd9;
+}
+
+body.theme .CatagoryFilter_card__bdeuG ul li::after {
+    background: #fff;
+}
+
+body.theme .Vacancies_title_jobs__Sm4XZ div {
+    color: #fff;
+    border-left: 1px solid #ffffff7e;
+}
+
+body.theme .Vacancies_save__EC255 {
+    fill: #fff;
+}
+
+body.theme .Vacancies_title_jobs__Sm4XZ button {
+    background: transparent;
+    border: 1px solid #ffffff44;
+}
+
+body.theme .Vacancies_title_jobs__Sm4XZ button svg {
+    fill: #fff;
+}
+
+body.theme .Vacancies_detail__aq39E h5 {
+    color: #fff;
+}
+
+body.theme .Vacancies_detail__aq39E h4 {
+    color: #fff;
+}
+
+body.theme .Vacancies_detail__aq39E ul {
+    color: #ffffff9d;
+}
+
+body.theme .Vacancies_detail__aq39E span {
+    color: #fff;
+}
+
+body.theme .Vacancies_detail__aq39E ul svg {
+    fill: #ffffff95;
+}
+
+body.theme .Vacancies_detail__aq39E ul li span {
+    background: #ffffff95;
+}
+
+body.theme .Vacancy_apply__YuRCw {
+    background-color: #b0a6a665;
+    border: none;
+}
+
+body.theme .Vacancy_top__ZzNob h4 {
+    color: #fff;
+}
+
+body.theme .Vacancy_top__ZzNob span {
+    color: #fff;
+}
+
+body.theme .Vacancy_top__ZzNob svg {
+    fill: #fff;
+}
+
+body.theme .Vacancy_right__xkgEO h3 {
+    color: #fff;
+}
+
+body.theme .Vacancy_left__6IbL7 h3 {
+    color: #fff;
+}
+
+body.theme .Vacancy_right__xkgEO p {
+    color: #fff;
+}
+
+body.theme .Vacancy_right__xkgEO ul li span {
+    color: #fff;
+}
+
+body.theme .Vacancy_line__bBOS1 {
+    border-bottom: 1px solid #ffffff36;
+}
+
+body.theme .Vacancy_line__bBOS1:first-child {
+    border-top: none;
 }
 
 body::-webkit-scrollbar {

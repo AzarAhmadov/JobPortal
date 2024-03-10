@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 
 const Heading: React.FC = () => {
+
     const pathName = usePathname();
     const normalizedPath = pathName.replace(/-\d+/g, '');
 
@@ -15,7 +16,7 @@ const Heading: React.FC = () => {
     };
 
     return (
-        <div className={styles.banner}>
+        <section className={styles.banner}>
             <ul className={`${styles.list} container font-poppions-light`}>
                 <li>
                     <Link href='/'> Home </Link>
@@ -40,7 +41,7 @@ const Heading: React.FC = () => {
                     ))}
                 </li>
             </ul>
-        </div>
+        </section>
     );
 };
 
