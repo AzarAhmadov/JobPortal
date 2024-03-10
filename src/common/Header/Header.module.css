@@ -133,13 +133,13 @@
         justify-content: center;
         fill: #6661f4;
         border: 1px solid #515b6f21;
-        height: 33px;
-        width: 33px;
+        height: 36px;
+        width: 36px;
         border-radius: 5px;
     }
 
     .bar svg {
-        width: 20px;
+        width: 22px;
     }
 
     .header ul {

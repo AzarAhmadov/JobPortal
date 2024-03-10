@@ -310,6 +310,10 @@ body.theme .Filter_title__XrX61 svg {
     fill: #fff;
 }
 
+body.theme .Header_bar__mfq_x {
+    border: 1px solid #ffffff57;
+}
+
 body::-webkit-scrollbar {
     width: 3px;
 }
