@@ -249,6 +249,11 @@
         align-items: center;
     }
 
+    .save {
+        top: 6px;
+        right: 6px;
+    }
+
     .skeletonAreaRow ul {
         display: flex;
         flex-direction: column;
