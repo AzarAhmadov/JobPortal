@@ -34,17 +34,18 @@ export default {
         bussiness: "Bussiness",
         service: "Services",
         engineer: "Engineer",
-        available:"jobs available"
+        available: "jobs available"
     },
     job: {
-        job_title: "All jobs"
+        job_title: "All jobs",
+        alert: "We can’t find what you are looking for, in the meantime you can browse jobs or return back to homepage"
     },
     filter: {
         job_type: "Type of Employment",
         categories: "Categories",
         salary: "Salary range",
         search: "Search",
-        reset:"Reset"
+        reset: "Reset"
     },
     footer: {
         text: "Find your dream job :)"

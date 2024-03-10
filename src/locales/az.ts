@@ -37,7 +37,8 @@ export default {
         available: "İş mövcuddur"
     },
     job: {
-        job_title: "Vakansiyalar"
+        job_title: "Vakansiyalar",
+        alert:"Axtardığınızı tapa bilmirik, bu vaxt işlərə baxa və ya əsas səhifəyə qayıda bilərsiniz"
     },
     filter: {
         job_type: "Vakansiyanın növü",

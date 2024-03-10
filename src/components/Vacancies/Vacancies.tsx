@@ -38,7 +38,7 @@ const Vacancies: React.FC = () => {
                             <div>
                                 <Image fill src="/images/not-found.png" alt="not-found" />
                             </div>
-                            We can’t find what you are looking for, in the meantime you can browse jobs or return back to homepage
+                            {t('alert')}
                             <Link href={'/'}> Home page </Link>
                         </p>
                     )}
