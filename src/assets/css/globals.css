@@ -32,6 +32,7 @@ body.theme {
 body.theme header {
     background: #26384b8f;
     backdrop-filter: blur(5px);
+    border-bottom: 1px solid #ffffff23;
 }
 
 body.theme header svg {
@@ -48,7 +49,7 @@ body.theme nav {
 body.theme .Heading_banner__kin7g {
     background: #26384bef;
     color: #fff;
-    border-top: 1px solid #ffffff1f;
+    /* border-top: 1px solid #ffffff1f; */
     border-bottom: 1px solid #ffffff1f;
 }
 
