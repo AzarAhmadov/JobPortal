@@ -11,6 +11,13 @@
     cursor: pointer;
 }
 
+.salary {
+    font-size: 14px;
+    color: #585858;
+    margin-bottom: 6px;
+    display: block;
+}
+
 .card img {
     width: 60px;
     height: 60px;
@@ -43,7 +50,7 @@
     display: flex;
     gap: 7px;
     font-size: 13px;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
     align-items: center;
     color: #515B6F;
 }
@@ -94,6 +101,10 @@
 
     .card h4 {
         font-size: 13px;
+    }
+
+    .salary {
+        font-size: 10px;
     }
 
     .detail {
