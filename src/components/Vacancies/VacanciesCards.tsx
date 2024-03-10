@@ -38,9 +38,9 @@ const VacanciesCards: React.FC<VacancyType> = ({ el }) => {
                             }
                         </ul>
                     </div>
-                    {/* <div>
-                        <span className={`${styles.salary} font-poppions-medium`}>{el.salary} AZN</span>
-                    </div> */}
+                    <div>
+                        <span className={`${styles.salary} font-poppions-medium`}>{el.salary}</span>
+                    </div>
                 </div>
             </Link>
             <div className={styles.save}>
