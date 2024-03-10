@@ -39,6 +39,10 @@ body.theme header svg {
     fill: #fff;
 }
 
+body.theme .Header_logo__DuPmi svg   {
+    fill: #6661f4;
+}
+
 body.theme nav {
     background: #26384bef;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
