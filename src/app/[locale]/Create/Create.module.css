@@ -1,3 +1,176 @@
-.create{
-    padding-top: 90px;
+.create {
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.create h2 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 28px;
+}
+
+.create h2 svg {
+    fill: #6661f4;
+    width: 30px;
+    height: 30px;
+}
+
+.create span,
+.content form select {
+    color: #6661f4;
+}
+
+.content {
+    max-width: 600px;
+    margin: 20px auto 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow:  rgba(236, 236, 236, 0.786)  3px 3px 6px 0px inset, rgba(236, 236, 236, 0.786) -3px -3px 6px 1px inset;
+}
+
+.content form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.content form input,
+.content form textarea,
+.content form select {
+    background: transparent;
+    border: 1px solid rgba(229, 229, 229, 0.374);
+    border-radius: 10px;
+    padding: 13px 10px;
+    box-shadow: 4px 10px 20px 0px rgba(0, 0, 0, 0.042);
+    color: #000;
+    font-size: 16px;
+}
+
+.content form label {
+    font-size: 18px;
+    margin-top: 13px;
+    color: #000;
+}
+
+.content form textarea {
+    resize: none;
+    height: 100px;
+    font-size: 16px;
+}
+
+.content form label:first-child {
+    margin-top: 0;
+}
+
+.content form input::placeholder {
+    color: #00000097;
+    font-size: 16px;
+}
+
+.content form textarea::placeholder {
+    color: #00000097;
+    font-size: 16px;
+}
+
+.content form select {
+    appearance: none;
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"%3E%3Cpath d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"%3E%3C/path%3E%3C/svg%3E');
+    background-position: right 5px center;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    color: #00000097;
+}
+
+.content form button {
+    border-radius: 25px;
+    box-shadow: 4px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    background: #6661f4;
+    color: #fff;
+    width: max-content;
+    margin: 15px auto 0;
+    padding: 8px 40px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 1px solid #6661f4;
+    transition: 400ms all;
+}
+
+.content form button:hover {
+    background: transparent;
+    border: 1px solid #6661f4;
+    color: #000;
+}
+
+.content form .formFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.content form .formFlex div {
+    width: 100%;
+}
+
+.content form .formFlex div input {
+    width: 100%;
+}
+
+.content form .formFlex span {
+    color: #000;
+}
+
+@media only screen and (max-width:578px) {
+    .create {
+        padding-top: 83px;
+    }
+
+    .content {
+        padding: 20px 15px;
+    }
+
+    .create h2 {
+        font-size: 21px;
+    }
+
+    .create h2 svg {
+        width: 25px;
+        height: 25px;
+    }
+
+    .content form label {
+        font-size: 15px;
+    }
+
+    .content form .formFlex {
+        gap: 7px;
+    }
+
+    .content form button {
+        width: 100%;
+        font-size: 17px;
+        padding: 6px 0;
+    }
+
+    .content form input,
+    .content form textarea,
+    .content form select {
+        font-size: 13px;
+    }
+
+    .content form textarea {
+        font-size: 13px;
+    }
+
+    .content form input::placeholder {
+        font-size: 13px;
+    }
+
+    .content form textarea::placeholder {
+        font-size: 13px;
+    }
+
 }
