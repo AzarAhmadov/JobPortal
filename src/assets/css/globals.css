@@ -50,8 +50,12 @@ body.theme nav {
     -webkit-backdrop-filter: blur(6.4px);
 }
 
+body.theme .MobileFIlter_top__jt49e svg{
+    fill: #fff;
+}
+
 body.theme .Heading_banner__kin7g {
-    background: #26384bef;
+    background: #ffffff21;
     color: #fff;
     /* border-top: 1px solid #ffffff1f; */
     border-bottom: 1px solid #ffffff1f;

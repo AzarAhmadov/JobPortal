@@ -246,12 +246,18 @@ export const jobType = [
 ]
 
 export const categories = [
-    { id: 'construction', label: 'Construction and Real Estate' },
-    { id: 'design', label: 'Design, Arts, Creative' },
-    { id: 'education', label: 'Education' },
+    { id: 'design', label: 'Design' },
+    { id: 'sales', label: 'Sales' },
+    { id: 'marketing', label: 'Marketing' },
     { id: 'finance', label: 'Finance' },
+    { id: 'technology', label: 'Technology' },
+    { id: 'engineer', label: 'Engineer' },
+    { id: 'bussiness', label: 'Bussiness' },
+    { id: 'service', label: 'Service' },
+    { id: 'education', label: 'Education' },
     { id: 'healthcare', label: 'Healthcare' },
-    { id: 'SosialServices', label: 'Services' },
+    { id: 'restaurants', label: 'Restaurants' },
+    { id: 'hr', label: 'Hr' },
 ];
 
 export const JobTranslations: JobKey[] = [

@@ -37,7 +37,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 22px;
+    font-size: 20px;
     padding-bottom: 15px;
 }
 
@@ -48,6 +48,10 @@
 
 .row div {
     margin: 20px 0;
+}
+
+.row div:last-child {
+    margin-bottom: 0;
 }
 
 .row div:first-child {

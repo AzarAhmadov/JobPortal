@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import styles from './Filter.module.css'
-import { JobCategories, JobTranslations, categories, jobType } from "@/constants/data";
+import { JobTranslations, categories, categoryTranslations, jobType } from "@/constants/data";
 import { useScopedI18n } from "@/locales/client";
 
 const Filter: React.FC = () => {
@@ -14,6 +14,7 @@ const Filter: React.FC = () => {
     };
 
     const t = useScopedI18n('filter')
+    const c = useScopedI18n('categories')
 
     return (
         <section className={styles.section}>
@@ -51,7 +52,7 @@ const Filter: React.FC = () => {
                                 <li key={idx}>
                                     <input type="checkbox" id={el.id} />
                                     <label htmlFor={el.id}>
-                                        {t(JobCategories[idx])}
+                                        {c(categoryTranslations[idx])}
                                     </label>
                                 </li>
                             ))

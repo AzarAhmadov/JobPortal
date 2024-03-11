@@ -11,8 +11,8 @@ export default {
         link_4: 'Selected',
         theme: 'Change theme',
     },
-    heading:{
-        home:"Home",
+    heading: {
+        home: "Home",
         categories: "Categories",
     },
     hero: {

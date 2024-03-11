@@ -1,5 +1,5 @@
 .create {
-    padding-top: 100px;
+    padding-top: 30px;
     padding-bottom: 30px;
 }
 
@@ -28,7 +28,7 @@
     margin: 20px auto 0;
     padding: 20px;
     border-radius: 10px;
-    box-shadow:  rgba(236, 236, 236, 0.786)  3px 3px 6px 0px inset, rgba(236, 236, 236, 0.786) -3px -3px 6px 1px inset;
+    box-shadow: rgba(236, 236, 236, 0.786) 3px 3px 6px 0px inset, rgba(236, 236, 236, 0.786) -3px -3px 6px 1px inset;
 }
 
 .content form {
@@ -125,7 +125,7 @@
 
 @media only screen and (max-width:578px) {
     .create {
-        padding-top: 83px;
+        padding-top: 20px;
     }
 
     .content {

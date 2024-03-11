@@ -1,6 +1,6 @@
 import React, { memo } from 'react'
 import styles from './MobileFIlter.module.css'
-import { JobCategories, JobTranslations, categories, jobType } from "@/constants/data";
+import { JobCategories, JobTranslations, categories, categoryTranslations, jobType } from "@/constants/data";
 import { ToogleProps } from '../MobileMenu/MobileMenu';
 import ToggleBodyClass from '../ToggleBodyClass/ToggleBodyClass';
 import { useScopedI18n } from '@/locales/client';
@@ -8,6 +8,7 @@ import { useScopedI18n } from '@/locales/client';
 const MobileFIlter: React.FC<ToogleProps> = ({ toggle, isToggled }) => {
 
     const t = useScopedI18n('filter')
+    const c = useScopedI18n('categories')
 
     return (
         <section className={`${styles.filter} ${isToggled ? styles.active : styles.filter}`}>
@@ -27,8 +28,8 @@ const MobileFIlter: React.FC<ToogleProps> = ({ toggle, isToggled }) => {
                             {
                                 jobType.map((el, idx) => (
                                     <li key={idx}>
-                                        <input type="checkbox" id={el.id} />
-                                        <label htmlFor={el.id}>
+                                        <input type="checkbox" id={`checkbox_${idx}`} />
+                                        <label htmlFor={`checkbox_${idx}`}>
                                             {t(JobTranslations[idx])}
                                         </label>
                                     </li>
@@ -46,9 +47,9 @@ const MobileFIlter: React.FC<ToogleProps> = ({ toggle, isToggled }) => {
                             {
                                 categories.map((el, idx) => (
                                     <li key={idx}>
-                                        <input type="checkbox" id={el.id} />
-                                        <label htmlFor={el.id}>
-                                            {t(JobCategories[idx])}
+                                        <input type="checkbox" id={el.label} />
+                                        <label htmlFor={el.label}>
+                                            {c(categoryTranslations[idx])}
                                         </label>
                                     </li>
                                 ))
@@ -63,8 +64,8 @@ const MobileFIlter: React.FC<ToogleProps> = ({ toggle, isToggled }) => {
 
                         <ul className={`${styles.list} font-poppions-thin`}>
                             <li>
-                                <input type="checkbox" id="salary" />
-                                <label htmlFor="salary">
+                                <input type="checkbox" id="salary_title" />
+                                <label htmlFor="salary_title">
                                     {t('salary_title')}
                                 </label>
                             </li>
