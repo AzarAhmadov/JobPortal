@@ -12,6 +12,86 @@
     font-size: 28px;
 }
 
+.quill {
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+.quill div {
+    border: 1px solid rgba(229, 229, 229, 0.374);
+}
+
+.quill div div h2 {
+    padding-top: 7px;
+    padding-bottom: 0;
+}
+
+.quill div div ul {
+    font-size: 18px;
+    padding-top: 7px;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+
+.quill div div ol {
+    font-size: 18px;
+    padding-top: 7px;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+
+.quill div div p {
+    padding-left: 0;
+    padding-top: 7px;
+    font-size: 18px;
+}
+
+.quill div:first-child span button {
+    border-radius: 0;
+    margin-top: 0px;
+    font-size: 20px;
+    padding: 0;
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    width: 25px;
+    height: 25px;
+}
+
+.quill div:first-child span button svg {
+    font-size: 20px;
+    padding: 0;
+    background-color: #fff;
+}
+
+.quill div:last-child {
+    min-height: 250px;
+    border: 1px solid rgba(229, 229, 229, 0.684);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.quill div:last-child div {
+    border: none;
+    min-height: 250px;
+    text-align: start;
+}
+
+.quill div:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 1px solid rgba(229, 229, 229, 0.684);
+    text-align: center;
+    padding-left: 10px;
+    padding-top: 0;
+}
+
+.quill div:first-child span button:hover {
+    border: none !important;
+}
+
 .create h2 svg {
     fill: #6661f4;
     width: 30px;
@@ -41,7 +121,7 @@
 .content form textarea,
 .content form select {
     background: transparent;
-    border: 1px solid rgba(229, 229, 229, 0.374);
+    border: 1px solid rgba(229, 229, 229, 0.684);
     border-radius: 10px;
     padding: 13px 10px;
     box-shadow: 4px 10px 20px 0px rgba(0, 0, 0, 0.042);
@@ -125,6 +205,24 @@
 }
 
 @media only screen and (max-width:578px) {
+
+    .quill div div ul {
+        font-size: 15px;
+    }
+
+    .quill div div ol {
+        font-size: 15px;
+    }
+
+    .quill div div p {
+        font-size: 15px;
+    }
+
+    .quill div:first-child span button {
+        width: 21px;
+        height: 21px;
+    }
+
     .create {
         padding-top: 20px;
     }

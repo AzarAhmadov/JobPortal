@@ -75,6 +75,7 @@ export default {
         title_2: "yarat",
         Company:"Şirkətin adı",
         Desc:"Şirkət haqqında",
+        Description:"Açıqlama",
         InputDesc:"Şirkət haqqında qısa məlumat verin",
         Logo:"Şirkətin logosu",
         Logoİnput:"Şirkətin logosunun url-ini yerləşdirin",

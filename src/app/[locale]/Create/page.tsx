@@ -1,11 +1,25 @@
+'use client'
+
 import React from 'react'
 import styles from './Create.module.css'
 import Heading from '@/common/Heading/Heading'
-import { getScopedI18n } from '@/locales/server'
+import ReactQuill from 'react-quill';
+import { useScopedI18n } from '@/locales/client'
+import 'react-quill/dist/quill.snow.css';
 
 const page: React.FC = async () => {
 
-    const t = await getScopedI18n('create')
+    const t = useScopedI18n('create')
+
+    const modules = {
+        toolbar: [
+            [{ 'header': '2' }],
+            ['bold'],['underline'],
+            [{ 'list': 'ordered' },],
+            [{ 'list': 'bullet' },],
+            ['link'],
+        ]
+    };
 
     return (
         <>
@@ -40,8 +54,8 @@ const page: React.FC = async () => {
                             <option value="6"> {t('Scholarship')} </option>
                         </select>
 
-                        <label htmlFor="type"> {t('category')} </label>
-                        <select name="type" className='font-poppions-light' id="category">
+                        <label htmlFor="category"> {t('category')} </label>
+                        <select name="category" className='font-poppions-light' id="category">
                             <option selected value='' hidden> {t('TypeText')} </option>
                             <option value="0"> {t('design')} </option>
                             <option value="1"> {t('sales')} </option>
@@ -69,6 +83,13 @@ const page: React.FC = async () => {
                                 <input type="text" id='Location' placeholder='azarahmadov.com' />
                             </div>
                         </div>
+
+                        <label> {t('Description')} </label>
+                        <ReactQuill
+                            theme="snow"
+                            modules={modules}
+                            className={`${styles.quill} font-poppions-light`}
+                        />
 
                         <label htmlFor="Salary"> {t('Salary')} </label>
                         <input type="number" id='Salary' placeholder='1000 AZN' />
