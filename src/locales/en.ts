@@ -33,12 +33,20 @@ export default {
         technology: "Technology",
         bussiness: "Bussiness",
         service: "Services",
-        engineer: "Engineer",
-        available: "jobs available"
+        available: "jobs available",
+        education: "Education",
+        healthcare: "Healthcare",
+        restaurants: "Restaurants",
+        engineer: "Programming",
+        hr: "Human Resource ",
     },
     job: {
         job_title: "All jobs",
         alert: "We can’t find what you are looking for, in the meantime you can browse jobs or return back to homepage"
+    },
+    notResult: {
+        not_result: "There is no vacancy in this category!",
+        link: "Go back"
     },
     filter: {
         job_type: "Type of Employment",

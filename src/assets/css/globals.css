@@ -371,6 +371,10 @@ body.theme .Create_content__XcY_8 form span {
     color: #fff;
 }
 
+body.theme .CatagoryFilter_circle__ca1w3 {
+    background-color: #fff;
+}
+
 body::-webkit-scrollbar {
     width: 3px;
 }

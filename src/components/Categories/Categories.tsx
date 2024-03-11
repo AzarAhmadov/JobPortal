@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import { CategoriesData, VacanciesData } from '@/constants/data'
+import { CategoriesData, VacanciesData, categoryTranslations } from '@/constants/data'
 import Link from 'next/link'
 import styles from './Categories.module.css'
 import { useScopedI18n } from '@/locales/client'
@@ -14,19 +14,6 @@ const Categories: React.FC = () => {
     }
 
     const t = useScopedI18n('categories');
-
-    type CategoryKey = 'service' | 'design' | 'sales' | 'marketing' | 'finance' | 'technology' | 'bussiness' | 'engineer';
-
-    const categoryTranslations: CategoryKey[] = [
-        'design',
-        'sales',
-        'marketing',
-        'finance',
-        'technology',
-        'bussiness',
-        'service',
-        'engineer'
-    ];
 
     return (
         <section className={styles.content}>

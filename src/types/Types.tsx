@@ -15,6 +15,8 @@ export type Vacancy = {
     category: string;
 };
 
+export type CategoryKey = 'design' | 'service' | 'sales' | 'marketing' | 'finance' | 'technology' | 'engineer' | 'bussiness' | 'service' | 'education' | 'healthcare' | 'restaurants' | 'hr';
+
 export type CategoryType = {
     title: string;
     path: string;
@@ -22,4 +24,5 @@ export type CategoryType = {
 }
 
 export type JobKey = 'commission' | 'freelance' | 'fullTime' | 'internship' | 'partTime' | 'volunteer' | 'Scholarship';
+
 export type JobCategoriesKey = 'construction' | 'design' | 'education' | 'finance' | 'healthcare' | 'SosialServices';

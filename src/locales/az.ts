@@ -33,8 +33,16 @@ export default {
         technology: "Texnologiya",
         bussiness: "Biznes",
         service: "Xidmət sahələri",
-        engineer: "Mühəndislik",
-        available: "İş mövcuddur"
+        available: "İş mövcuddur",
+        education: "Təhsil",
+        healthcare: "Səhiyyə",
+        restaurants: "İaşə",
+        engineer: "Programlaşdırma",
+        hr: "İnsan Resursları",
+    },
+    notResult: {
+        not_result: "Bu kateqoriya üzrə vakansiya mövcud deyil !",
+        link: "Geri dön"
     },
     job: {
         job_title: "Vakansiyalar",
@@ -59,8 +67,8 @@ export default {
         finance: "Maliyyə, Biznes və idarəetmə",
         healthcare: "Səhiyyə",
         SosialServices: "Xidmət sahələri",
-        salary_title:"Əmək haqqı qeyd olunan vakansiyalar",
-        more_filter:"Daha çox filter"
+        salary_title: "Əmək haqqı qeyd olunan vakansiyalar",
+        more_filter: "Daha çox filter"
 
     },
     footer: {

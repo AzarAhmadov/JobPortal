@@ -6,7 +6,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     place-items: center;
-    gap: 12px;
+    gap: 17px;
 }
 
 .list li {
@@ -108,11 +108,12 @@
 @media only screen and (max-width:568px) {
 
     .content {
-        padding: 15px 0;
+        padding: 20px 0;
     }
 
     .list {
         grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
     }
 
     .list li a div svg {
@@ -126,17 +127,17 @@
 
     .list li a svg {
         width: 25px;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
         height: 25px;
     }
 
     .list li a span {
         margin-bottom: 3px;
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .list li a p {
-        font-size: 13px;
+        font-size: 12px;
     }
 
 }

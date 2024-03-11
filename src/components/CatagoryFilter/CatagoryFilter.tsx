@@ -5,7 +5,8 @@ import styles from './CatagoryFilter.module.css';
 import { useParams } from 'next/navigation';
 import { VacanciesData } from '@/constants/data';
 import { useRouter } from 'next/navigation';
-import NotFound from '@/app/not-found';
+import Link from 'next/link';
+import { useScopedI18n } from '@/locales/client';
 
 const CatagoryFilter: React.FC = () => {
 
@@ -13,12 +14,22 @@ const CatagoryFilter: React.FC = () => {
     const filterByCategory = VacanciesData.filter(item => item.category === slug);
     const router = useRouter()
 
+    const t = useScopedI18n('notResult')
+
     const handleLinkClick = (path: string) => {
         router.push(`/Vacancies/${path}`);
     };
 
     if (filterByCategory.length === 0) {
-        return <NotFound />;
+        return <div className={`${styles.NoResult} font-poppions-light`}>
+            <img src='/images/not-found.png' alt='not-found' />
+            <p>
+                {t('not_result')}
+            </p>
+            <Link href="/Categories">
+                {t('link')}
+            </Link>
+        </div>
     }
 
     return (

@@ -11,6 +11,42 @@
     cursor: pointer;
 }
 
+.NoResult {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: calc(100% - 270px);
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    padding: 0 20px;
+}
+
+.NoResult img {
+    height: 200px;
+    margin-bottom: 15px;
+}
+
+.NoResult a {
+    border: 1px solid #6661f4;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: 300ms all;
+    background: #6661f4;
+    border: 1px solid #6661f4;
+}
+
+.NoResult a:hover{
+    transform: scale(1.1);
+}
+
 .salary {
     font-size: 14px;
     color: #585858;
@@ -87,6 +123,33 @@
 .date svg {
     width: 14px;
     fill: #515B6F;
+}
+
+@media only screen and (max-width:992px) {
+    .NoResult {
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 138px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        height: calc(100% - 186px);
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        padding: 0 20px;
+    }
+
+    .NoResult img {
+        height: 150px;
+        margin-bottom: 10px;
+    }
+
+    .NoResult a {
+        padding: 6px 25px;
+    }
 }
 
 @media only screen and (max-width:578px) {
