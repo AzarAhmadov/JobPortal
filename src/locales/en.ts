@@ -27,7 +27,9 @@ export default {
         last_date: 'Apply Before',
         JobType: 'Job Type',
         Salary: 'Salary',
-        apply: 'Apply'
+        apply: 'Apply',
+        desc: "Description",
+        category: "Category"
     },
     categories: {
         design: "Design",
@@ -42,7 +44,7 @@ export default {
         healthcare: "Healthcare",
         restaurants: "Restaurants",
         engineer: "Programming",
-        hr: "Human Resource ",
+        hr: "Human Resource",
     },
     job: {
         job_title: "All jobs",
@@ -73,6 +75,10 @@ export default {
         SosialServices: "Services",
         salary_title: "Show only with salary",
         more_filter: "More filter"
+    },
+    create: {
+        title_1: "Create a",
+        title_2: "vacancy"
     },
     footer: {
         text: "Find your dream job :)"

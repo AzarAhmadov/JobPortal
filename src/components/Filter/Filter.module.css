@@ -14,9 +14,9 @@
 }
 
 .section .active ul {
-    max-height: 330px;
+    max-height: 250px;
     overflow: auto;
-    transition: max-height 1s ease-in-out;
+    transition: max-height 400ms all;
 }
 
 .section div ul {

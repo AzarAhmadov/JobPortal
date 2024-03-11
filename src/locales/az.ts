@@ -27,7 +27,9 @@ export default {
         last_date: 'Son tarix',
         JobType: 'Vakansiya növü',
         Salary: 'Maaş',
-        apply: 'Müraciət et'
+        apply: 'Müraciət et',
+        desc:"Şirkət haqqında",
+        category:"Kateqoriya"
     },
     categories: {
         design: "Dizayn",
@@ -74,6 +76,10 @@ export default {
         salary_title: "Əmək haqqı qeyd olunan vakansiyalar",
         more_filter: "Daha çox filter"
 
+    },
+    create: {
+        title_1: "Vakansiya",
+        title_2: "yarat"
     },
     footer: {
         text: "Xəyalındakı işə qovuş :)"

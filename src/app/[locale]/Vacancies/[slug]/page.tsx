@@ -47,7 +47,7 @@ const Page = async () => {
                         <div className={styles.left}>
                             <div className={styles.line}>
                                 <h3 className='font-poppions-medium'>
-                                    Description
+                                    {t('desc')}
                                 </h3>
                                 <p className='font-poppions-thin'>
                                     {vacancy?.desc}
@@ -86,7 +86,7 @@ const Page = async () => {
                             </ul>
                             <div>
                                 <h3 className='font-poppions-medium'>
-                                    Category
+                                    {t('category')}
                                 </h3>
                                 <button>
                                     {vacancy?.category}
