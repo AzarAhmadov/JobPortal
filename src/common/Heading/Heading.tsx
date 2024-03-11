@@ -2,10 +2,9 @@
 
 import React from 'react';
 import styles from './Heading.module.css';
-import { usePathname, useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { useScopedI18n } from '@/locales/client';
-import { Router } from 'next/router';
 
 const Heading: React.FC = () => {
 
@@ -17,7 +16,7 @@ const Heading: React.FC = () => {
         return pathParts.filter(part => !['en', 'az'].includes(part));
     };
 
-    const t = useScopedI18n('heading')  
+    const t = useScopedI18n('heading')
 
     return (
         <section className={styles.banner}>
