@@ -38,14 +38,30 @@ export default {
     },
     job: {
         job_title: "Vakansiyalar",
-        alert:"Axtardığınızı tapa bilmirik, bu vaxt işlərə baxa və ya əsas səhifəyə qayıda bilərsiniz"
+        alert: "Axtardığınızı tapa bilmirik, bu vaxt işlərə baxa və ya əsas səhifəyə qayıda bilərsiniz"
     },
     filter: {
         job_type: "Vakansiyanın növü",
         categories: "Kateqoriyalar",
         salary: "Maaş aralığı",
         search: "Axtar",
-        reset: "Sıfırla"
+        reset: "Sıfırla",
+        commission: 'Komissiya',
+        freelance: 'Sərbəst',
+        fullTime: 'Daimi',
+        internship: 'Staj',
+        partTime: 'Yarımştat',
+        volunteer: 'Könüllü',
+        Scholarship: 'Təqaüd programı',
+        construction: "Tikinti və Daşınmaz əmlak",
+        design: "Dizayn, incəsənət, yaradıcılıq",
+        education: "Təhsil",
+        finance: "Maliyyə, Biznes və idarəetmə",
+        healthcare: "Səhiyyə",
+        SosialServices: "Xidmət sahələri",
+        salary_title:"Əmək haqqı qeyd olunan vakansiyalar",
+        more_filter:"Daha çox filter"
+
     },
     footer: {
         text: "Xəyalındakı işə qovuş :)"

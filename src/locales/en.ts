@@ -45,7 +45,22 @@ export default {
         categories: "Categories",
         salary: "Salary range",
         search: "Search",
-        reset: "Reset"
+        reset: "Reset",
+        commission: 'Commission',
+        freelance: 'Freelance',
+        fullTime: 'Full-time',
+        internship: 'Internship',
+        partTime: 'Part-time',
+        volunteer: 'Volunteer',
+        Scholarship: 'Scholarship',
+        construction: "Construction and Real Estate",
+        design: "Design, Arts, Creative",
+        education: "Education",
+        finance: "Finance, Business and Administration",
+        healthcare: "Healthcare Services",
+        SosialServices: "Services",
+        salary_title: "Show only with salary",
+        more_filter: "More filter"
     },
     footer: {
         text: "Find your dream job :)"

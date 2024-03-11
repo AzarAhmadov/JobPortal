@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import styles from './Filter.module.css'
-import { categories, jobType } from "@/constants/data";
+import { JobCategories, JobTranslations, categories, jobType } from "@/constants/data";
 import { useScopedI18n } from "@/locales/client";
 
 const Filter: React.FC = () => {
@@ -26,12 +26,16 @@ const Filter: React.FC = () => {
                     </h3>
 
                     <ul className={`${styles.list} font-poppions-thin`}>
-                        {jobType.map(item => (
-                            <li key={item.id}>
-                                <input type="checkbox" id={item.id} />
-                                <label htmlFor={item.id}>{item.label}</label>
-                            </li>
-                        ))}
+                        {
+                            jobType.map((el, idx) => (
+                                <li key={idx}>
+                                    <input type="checkbox" id={el.id} />
+                                    <label htmlFor={el.id}>
+                                        {t(JobTranslations[idx])}
+                                    </label>
+                                </li>
+                            ))
+                        }
                     </ul>
                 </div>
 
@@ -42,12 +46,16 @@ const Filter: React.FC = () => {
                     </h3>
 
                     <ul className={`${styles.list} font-poppions-thin`}>
-                        {categories.map(item => (
-                            <li key={item.id}>
-                                <input type="checkbox" id={item.id} />
-                                <label htmlFor={item.id}>{item.label}</label>
-                            </li>
-                        ))}
+                        {
+                            categories.map((el, idx) => (
+                                <li key={idx}>
+                                    <input type="checkbox" id={el.id} />
+                                    <label htmlFor={el.id}>
+                                        {t(JobCategories[idx])}
+                                    </label>
+                                </li>
+                            ))
+                        }
                     </ul>
                 </div>
 
@@ -60,7 +68,9 @@ const Filter: React.FC = () => {
                     <ul className={`${styles.list} font-poppions-thin`}>
                         <li>
                             <input type="checkbox" id="salary" />
-                            <label htmlFor="salary">Show only with salary</label>
+                            <label htmlFor="salary">
+                                {t('salary_title')}
+                            </label>
                         </li>
                     </ul>
                 </div>

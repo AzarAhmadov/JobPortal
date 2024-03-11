@@ -20,3 +20,6 @@ export type CategoryType = {
     path: string;
     icon: React.ReactNode;
 }
+
+export type JobKey = 'commission' | 'freelance' | 'fullTime' | 'internship' | 'partTime' | 'volunteer' | 'Scholarship';
+export type JobCategoriesKey = 'construction' | 'design' | 'education' | 'finance' | 'healthcare' | 'SosialServices';

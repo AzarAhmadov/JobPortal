@@ -1,17 +1,4 @@
-export const VacansyType = [
-    {
-        check: "",
-        title: "Daimi"
-    },
-    {
-        check: "",
-        title: "Frilans"
-    },
-    {
-        check: "",
-        title: "Tam ştat"
-    }
-]
+import { JobCategoriesKey, JobKey } from "@/types/Types";
 
 export const VacanciesData = [
     {
@@ -230,13 +217,34 @@ export const jobType = [
     { id: 'Full-time', label: 'Full-time' },
     { id: 'Internship', label: 'Internship' },
     { id: 'Part-time', label: 'Part-time' },
-    { id: 'Volunteer', label: 'Volunteer' }
+    { id: 'Volunteer', label: 'Volunteer' },
+    { id: 'Scholarship', label: 'Scholarship' }
 ]
 
 export const categories = [
-    { id: 'Construction', label: 'Construction and Real Estate' },
-    { id: 'Design', label: 'Design, Arts, Creative' },
-    { id: 'Education', label: 'Education' },
-    { id: 'Finance', label: 'Finance, Business and Administration' },
-    { id: 'Healthcare', label: 'Healthcare Services' }
+    { id: 'construction', label: 'Construction and Real Estate' },
+    { id: 'design', label: 'Design, Arts, Creative' },
+    { id: 'education', label: 'Education' },
+    { id: 'finance', label: 'Finance' },
+    { id: 'healthcare', label: 'Healthcare' },
+    { id: 'SosialServices', label: 'Services' },
+];
+
+export const JobTranslations: JobKey[] = [
+    'commission',
+    'freelance',
+    'fullTime',
+    'internship',
+    'partTime',
+    'volunteer',
+    'Scholarship',
+];
+
+export const JobCategories: JobCategoriesKey[] = [
+    'construction',
+    'design',
+    'education',
+    'healthcare',
+    'SosialServices',
+    'finance',
 ];
