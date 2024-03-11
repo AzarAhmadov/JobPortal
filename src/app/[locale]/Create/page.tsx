@@ -19,41 +19,60 @@ const page: React.FC = async () => {
                 <div className={styles.content}>
                     <form action="" className='font-poppions-light'>
 
-                        <label htmlFor="Company"> Company </label>
+                        <label htmlFor="Company"> {t("Company")} </label>
                         <input type="text" id='Company' placeholder='Apple' />
 
-                        <label htmlFor="Description"> Description </label>
-                        <textarea name="Description" placeholder='write about company' className='font-poppions-light' id="Description"></textarea>
+                        <label htmlFor="Description"> {t('Desc')} </label>
+                        <textarea name="Description" placeholder={t('InputDesc')} className='font-poppions-light' id="Description"></textarea>
 
-                        <label htmlFor="logo"> Company logo </label>
-                        <input type="text" id='logo' placeholder='add a company logo url' />
+                        <label htmlFor="logo"> {t('Logo')} </label>
+                        <input type="text" id='logo' placeholder={t('Logoİnput')} />
 
-                        <label htmlFor="type"> Job Type </label>
+                        <label htmlFor="type"> {t('Type')} </label>
                         <select name="type" className='font-poppions-light' id="type">
-                            <option selected value='' hidden> Job Type </option>
-                            <option value="0"> Commission</option>
-                            <option value="1"> Freelance </option>
-                            <option value="2"> Full time </option>
-                            <option value="3"> Part time </option>
+                            <option selected value='' hidden> {t('TypeText')} </option>
+                            <option value="0"> {t('commission')} </option>
+                            <option value="1"> {t('freelance')} </option>
+                            <option value="2"> {t('fullTime')} </option>
+                            <option value="3"> {t('internship')} </option>
+                            <option value="4"> {t('partTime')} </option>
+                            <option value="5"> {t('volunteer')} </option>
+                            <option value="6"> {t('Scholarship')} </option>
                         </select>
 
-                        <label htmlFor="Location"> Location </label>
+                        <label htmlFor="type"> {t('category')} </label>
+                        <select name="type" className='font-poppions-light' id="category">
+                            <option selected value='' hidden> {t('TypeText')} </option>
+                            <option value="0"> {t('design')} </option>
+                            <option value="1"> {t('sales')} </option>
+                            <option value="2"> {t('marketing')} </option>
+                            <option value="3"> {t('finance')} </option>
+                            <option value="4"> {t('technology')} </option>
+                            <option value="5"> {t('bussiness')} </option>
+                            <option value="6"> {t('education')} </option>
+                            <option value="7"> {t('healthcare')} </option>
+                            <option value="8"> {t('restaurants')} </option>
+                            <option value="9"> {t('engineer')} </option>
+                            <option value="10"> {t('hr')} </option>
+                        </select>
+
+                        <label htmlFor="Location"> {t('Location')} </label>
                         <input type="text" id='Location' placeholder='Baku, Azerbaijan' />
 
-                        <label>Method of application</label>
+                        <label> {t('ApplyMethod')} </label>
                         <div className={styles.formFlex}>
                             <div>
                                 <input type="text" placeholder='azar@gmail.com' />
                             </div>
-                            <span>or</span>
+                            <span>{t('or')}</span>
                             <div>
                                 <input type="text" id='Location' placeholder='azarahmadov.com' />
                             </div>
                         </div>
 
-                        <label htmlFor="Salary"> Salary </label>
+                        <label htmlFor="Salary"> {t('Salary')} </label>
                         <input type="number" id='Salary' placeholder='1000 AZN' />
-                        <button className='font-poppions-medium'> Send </button>
+                        <button className='font-poppions-medium'> {t('Send')} </button>
                     </form>
                 </div>
             </section>
