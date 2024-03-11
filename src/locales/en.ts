@@ -11,6 +11,10 @@ export default {
         link_4: 'Selected',
         theme: 'Change theme',
     },
+    heading:{
+        home:"Home",
+        categories: "Categories",
+    },
     hero: {
         top_text: 'Find your',
         bottom_line_text: 'dream job',

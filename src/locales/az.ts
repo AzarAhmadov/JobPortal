@@ -11,6 +11,10 @@ export default {
         link_4: 'Seçilmişlər',
         theme: 'Görünüşü dəyiş',
     },
+    heading: {
+        home: "Ana Səhifə",
+        categories: "Kategoriyalar",
+    },
     hero: {
         top_text: 'Xəyalındakı',
         bottom_line_text: 'işə qovuş',
