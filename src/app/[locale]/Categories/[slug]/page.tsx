@@ -1,5 +1,5 @@
 import React from 'react'
-import Heading from '@/common/Heading/Heading'
+import Heading from '../../../../common/Heading/Heading';
 import CatagoryFilter from '@/components/CatagoryFilter/CatagoryFilter'
 import styles from './Categories.module.css'
 
