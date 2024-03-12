@@ -3,7 +3,7 @@
 import React, { Suspense } from 'react'
 import styles from './Vacancies.module.css'
 import { VacanciesData } from '@/constants/data'
-import VacanciesCards from './VacanciesCards/VacanciesCards'
+import VacanciesCards from './VacanciesCards'
 import { useSearchParams } from 'next/navigation'
 import Link from 'next/link'
 import useToggle from '@/hooks/useToggle'
@@ -77,3 +77,4 @@ const Vacancies: React.FC = () => {
 };
 
 export default Vacancies;
+

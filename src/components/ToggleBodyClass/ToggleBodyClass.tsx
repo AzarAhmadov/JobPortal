@@ -1,4 +1,3 @@
-'use client'
 
 import React, { useEffect, memo } from 'react';
 import { ToogleProps } from '../MobileMenu/MobileMenu';

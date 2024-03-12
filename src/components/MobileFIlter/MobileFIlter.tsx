@@ -86,7 +86,6 @@ const MobileFIlter: React.FC<ToogleProps> = ({ toggle, isToggled }) => {
                 </div>
 
             </div>
-
             <ToggleBodyClass isToggled={isToggled} />
         </section>
     )

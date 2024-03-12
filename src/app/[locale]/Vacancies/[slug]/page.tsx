@@ -7,7 +7,7 @@ import { useParams } from 'next/navigation';
 import { useScopedI18n } from '@/locales/client'
 import { VacanciesData } from '@/constants/data';
 
-const Page = () => {
+const Page = async () => {
 
     const { slug } = useParams();
     const vacancy = VacanciesData.find(item => item.path === slug);
