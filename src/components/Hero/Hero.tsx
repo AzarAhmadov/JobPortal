@@ -4,6 +4,7 @@ import React, { useRef } from 'react'
 import styles from './Hero.module.css'
 import { useSearchParams, usePathname, useRouter } from 'next/navigation'
 import { useScopedI18n } from '@/locales/client'
+import { useDebouncedCallback } from 'use-debounce'
 
 const Hero: React.FC = () => {
 
@@ -12,7 +13,7 @@ const Hero: React.FC = () => {
     const { replace } = useRouter()
     const inputRef = useRef<HTMLInputElement | any>();
 
-    const handleSearch = (term: string) => {
+    const handleSearch = useDebouncedCallback((term: string) => {
         const params = new URLSearchParams(searchParams)
 
         if (term) {
@@ -22,7 +23,7 @@ const Hero: React.FC = () => {
         }
 
         replace(`${pathName}?${params.toString()}`)
-    }
+    }, 300)
 
     const handleSubmit = (event: any) => {
         event.preventDefault();
