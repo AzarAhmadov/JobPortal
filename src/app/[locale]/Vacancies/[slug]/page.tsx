@@ -1,11 +1,11 @@
 'use client'
 
 import React from 'react';
-import Heading from '../../../../common/Heading/Heading';
+import Heading from '@/common/Heading/Heading';
 import styles from '../Vacancy.module.css';
 import { useParams } from 'next/navigation';
-import { useScopedI18n } from '../../../../locales/client';
-import { VacanciesData } from '../../../../constants/data';
+import { useScopedI18n } from '@/locales/client'
+import { VacanciesData } from '@/constants/data';
 
 const Page = async () => {
 

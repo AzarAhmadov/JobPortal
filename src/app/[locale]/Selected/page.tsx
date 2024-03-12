@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Selected.module.css'
-import Heading from '../../../common/Heading/Heading';
+import Heading from '@/common/Header/Header';
 
 const page: React.FC = () => {
     return (

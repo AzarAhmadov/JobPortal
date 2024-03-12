@@ -3,9 +3,9 @@
 import React from 'react'
 import styles from './Create.module.css'
 import ReactQuill from 'react-quill';
-import { useScopedI18n } from '../../../locales/client'
+import { useScopedI18n } from '@/locales/client'
 import 'react-quill/dist/quill.snow.css';
-import Heading from '../../../common/Heading/Heading';
+import Heading from '@/common/Heading/Heading';
 
 const page: React.FC = async () => {
 
