@@ -7,13 +7,14 @@ import VacanciesCards from './VacanciesCards'
 import { useSearchParams } from 'next/navigation'
 import Link from 'next/link'
 import useToggle from '@/hooks/useToggle'
-import MobileFIlter from '../MobileFIlter/MobileFIlter'
+import dynamic from 'next/dynamic'
+const MobileFIlter = dynamic(() => import('../MobileFIlter/MobileFIlter'), { ssr: false });
 import Loading from './loading'
 import Image from 'next/image'
 import { useScopedI18n } from '@/locales/client'
 
 const Vacancies: React.FC = () => {
-    
+
     const searchParams = useSearchParams();
     const search = (searchParams.get('query') || '').toLowerCase().trim();
 

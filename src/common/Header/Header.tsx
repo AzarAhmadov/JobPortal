@@ -5,7 +5,8 @@ import styles from './Header.module.css'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation';
 import useToggle from '@/hooks/useToggle';
-import MobileMenu from '@/components/MobileMenu/MobileMenu';
+import dynamic from 'next/dynamic';
+const MobileMenu = dynamic(() => import('@/components/MobileMenu/MobileMenu'), { ssr: false });
 import LocaleSwitcher from '@/components/LocaleSwitcher/LocaleSwitcher';
 import { useScopedI18n } from '../../locales/client'
 

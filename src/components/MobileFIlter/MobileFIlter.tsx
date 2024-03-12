@@ -1,6 +1,6 @@
 import React, { memo } from 'react'
 import styles from './MobileFIlter.module.css'
-import { JobCategories, JobTranslations, categories, categoryTranslations, jobType } from "@/constants/data";
+import { JobTranslations, categories, categoryTranslations, jobType } from "@/constants/data";
 import { ToogleProps } from '../MobileMenu/MobileMenu';
 import ToggleBodyClass from '../ToggleBodyClass/ToggleBodyClass';
 import { useScopedI18n } from '@/locales/client';

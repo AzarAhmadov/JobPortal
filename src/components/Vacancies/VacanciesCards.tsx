@@ -12,7 +12,12 @@ const VacanciesCards: React.FC<VacancyType> = ({ el }) => {
         <section className={styles.content}>
             <Link className={styles.row} href={`Vacancies/${el.path}`}>
                 <div>
-                    <img className={styles.img} src={el.img} width={100} alt={el.company_name} loading='lazy' />
+                    <img
+                        className={styles.img}
+                        src={el.img}
+                        alt={el.company_name}
+                        loading='lazy'
+                    />
                 </div>
                 <div className={styles.detail}>
                     <div>
