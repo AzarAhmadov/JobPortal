@@ -9,6 +9,7 @@
     justify-content: space-between;
     transition: 300ms all;
     cursor: pointer;
+    user-select: none;
 }
 
 .NoResult {
@@ -108,7 +109,7 @@
 }
 
 .card:hover {
-    transform: scale(1.1);
+    background-color: #bad1e34e;
 }
 
 .date {
