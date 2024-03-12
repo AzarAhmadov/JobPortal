@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { Watch } from 'react-loader-spinner'
-import styles from '../../page.module.css'
+import styles from '../page.module.css'
 
 const loading = () => {
     return (
