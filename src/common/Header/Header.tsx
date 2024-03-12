@@ -93,7 +93,7 @@ const Header: React.FC = () => {
                         </button>
                     </div>
                 </div>
-            </header >
+            </header>
 
             <MobileMenu toggle={toggle} isToggled={isToggled} />
         </>
