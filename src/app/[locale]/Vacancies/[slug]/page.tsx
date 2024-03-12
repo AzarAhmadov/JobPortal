@@ -3,9 +3,9 @@
 import React from 'react';
 import Heading from '@/common/Heading/Heading';
 import styles from '../Vacancy.module.css';
-import { VacanciesData } from '@/constants/data';
 import { useParams } from 'next/navigation';
 import { useScopedI18n } from '@/locales/client';
+import { VacanciesData } from '@/constants/data';
 
 const Page = async () => {
 
