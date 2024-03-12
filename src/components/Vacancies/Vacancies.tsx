@@ -13,6 +13,7 @@ import Image from 'next/image'
 import { useScopedI18n } from '@/locales/client'
 
 const Vacancies: React.FC = () => {
+    
     const searchParams = useSearchParams();
     const search = (searchParams.get('query') || '').toLowerCase().trim();
 
