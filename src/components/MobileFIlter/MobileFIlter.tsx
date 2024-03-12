@@ -28,8 +28,8 @@ const MobileFIlter: React.FC<ToogleProps> = ({ toggle, isToggled }) => {
                             {
                                 jobType.map((el, idx) => (
                                     <li key={idx}>
-                                        <input type="checkbox" id={`checkbox_${idx}`} />
-                                        <label htmlFor={`checkbox_${idx}`}>
+                                        <input type="checkbox" id={`checkbox_${el.id}`} />
+                                        <label htmlFor={`checkbox_${el.id}`}>
                                             {t(JobTranslations[idx])}
                                         </label>
                                     </li>
