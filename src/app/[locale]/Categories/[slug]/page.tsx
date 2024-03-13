@@ -3,6 +3,12 @@ import Heading from '@/common/Heading/Heading';
 import CatagoryFilter from '@/components/CatagoryFilter/CatagoryFilter'
 import styles from './Categories.module.css'
 
+export const metadata = {
+    metadataBase: new URL("https://jobhubcenter.vercel.app/Categories"),
+    title: "Categories | Job Hub Center",
+    description: "Categories",
+};
+
 const Page = () => {
     return (
         <>
