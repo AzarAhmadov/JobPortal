@@ -1,6 +1,16 @@
 import { Analytics } from "@vercel/analytics/react"
 import '@/assets/css/globals.css'
 import I18nProviderClientProvider from "@/components/I18nProviderClientProvider/I18nProviderClientProvider";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    metadataBase: new URL("https://jobhubcenter.vercel.app/"),
+    title: {
+        default: "Job Hub Center",
+        template: `%s | Job Hub Center`,
+    },
+    description: "Job Portal is a new online platform for job seekers. You can easily find what you want.",
+};
 
 export default function RootLayout({
     children,
