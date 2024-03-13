@@ -30,20 +30,19 @@
 .logo {
     display: flex;
     align-items: center;
-    font-size: 25px !important;
-    gap: 3px;
+    font-size: 22px !important;
     color: #000;
-    font-family: "Rajdhani", sans-serif;
-    font-weight: 500;
 }
 
 .logo span {
     color: #6661f4;
+    margin-left: 6px;
 }
 
 .logo svg {
     fill: #6661f4;
     margin-right: 10px;
+    margin-left: 4px;
 }
 
 .list {
@@ -124,7 +123,7 @@
     }
 
     .logo {
-        font-size: 22px !important;
+        font-size: 20px !important;
     }
 
     .bar {

@@ -2,14 +2,12 @@
     display: flex;
     align-items: center;
     font-size: 25px;
-    gap: 3px;
     color: #000;
-    font-family: "Rajdhani", sans-serif;
-    font-weight: 500;
 }
 
 .logo span {
     color: #6661f4;
+    margin-left: 6px;
 }
 
 .logo svg {
