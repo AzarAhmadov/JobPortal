@@ -23,9 +23,14 @@
     border: 1px solid #0000003b;
     border-radius: 5px;
     display: flex;
-    padding: 3px;
+    padding: 4px;
     opacity: 0;
     visibility: hidden;
+}
+
+.rowVacancies button svg {
+    width: 25px;
+    height: 25px;
 }
 
 .rowVacancies h3 div span {
