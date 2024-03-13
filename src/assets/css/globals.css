@@ -383,6 +383,22 @@ body.theme .CatagoryFilter_circle__ca1w3 {
     background-color: #fff;
 }
 
+body.theme .FilterButton_rowVacancies__YBlkN h3 div {
+    color: #fff;
+}
+
+body.theme .FilterButton_rowVacancies__YBlkN h3 div {
+    border-left: 1px solid #ffffff7a;
+}
+
+body.theme .FilterButton_rowVacancies__YBlkN button {
+    border: 1px solid #ffffff7b;
+}
+
+body.theme .FilterButton_rowVacancies__YBlkN button svg {
+    fill: #fff;
+}
+
 body::-webkit-scrollbar {
     width: 3px;
 }

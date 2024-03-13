@@ -1,5 +1,6 @@
 import { Analytics } from "@vercel/analytics/react"
 import '@/assets/css/globals.css'
+import I18nProviderClientProvider from "@/components/I18nProviderClientProvider/I18nProviderClientProvider";
 
 export default function RootLayout({
     children,
@@ -9,12 +10,14 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className='body'>
-                <div className='row'>
-                    <div>
-                        {children}
+                <I18nProviderClientProvider>
+                    <div className='row'>
+                        <div>
+                            {children}
+                        </div>
                     </div>
-                </div>
-                <Analytics />
+                    <Analytics />
+                </I18nProviderClientProvider>
             </body>
         </html>
     );

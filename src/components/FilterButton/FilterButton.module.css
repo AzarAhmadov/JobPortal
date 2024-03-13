@@ -1,0 +1,64 @@
+.rowVacancies {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.rowVacancies h3 {
+    display: flex;
+    font-size: 24px;
+    gap: 10px;
+    align-items: center;
+}
+
+.rowVacancies h3 div {
+    border-left: 1px solid #00000021;
+    padding-left: 10px;
+    color: #585858;
+}
+
+.rowVacancies button {
+    background: transparent;
+    border: 1px solid #0000003b;
+    border-radius: 5px;
+    display: flex;
+    padding: 3px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.rowVacancies h3 div span {
+    margin-left: 10px;
+}
+
+@media only screen and (max-width:992px) {
+    .rowVacancies button {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@media only screen and (max-width:578px) {
+    .rowVacancies h3 div {
+        text-align: start;
+        font-size: 13px;
+        max-width: 240px;
+        white-space: normal !important;
+    }
+
+    .rowVacancies h3 {
+        font-size: 17px;
+        gap: 8px;
+    }
+
+    .rowVacancies h3 div {
+        padding-left: 8px;
+        color: #585858;
+        font-size: 15px;
+    }
+
+    .rowVacancies h3 div span {
+        margin-left: 8px;
+    }
+}

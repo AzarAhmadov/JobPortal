@@ -36,7 +36,12 @@
     }
 
     .logo {
-        font-size: 18px;
+        font-size: 17px;
+    }
+
+    .logo svg {
+       width: 21px;
+       margin-left: 2px;
     }
 
     .footer p {
