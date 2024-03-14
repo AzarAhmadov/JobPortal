@@ -1,6 +1,7 @@
 import Heading from '../../../common/Heading/Heading';
 import Categories from '@/components/Categories/Categories'
 import React from 'react'
+import { getScopedI18n } from '@/locales/server'
 
 export const metadata = {
     metadataBase: new URL("https://jobhubcenter.vercel.app/Categories"),
@@ -8,10 +9,13 @@ export const metadata = {
     description: "Categories",
 };
 
-const Page = () => {
+const Page = async () => {
+
+    const h = await getScopedI18n('heading')
+
     return (
         <>
-            <Heading />
+            <Heading link={h('categories')} path='' />
             <Categories />
         </>
     )

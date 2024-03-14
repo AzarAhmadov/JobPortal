@@ -14,6 +14,9 @@ export default {
     heading: {
         home: "Home",
         categories: "Categories",
+        vacancies: "Vacancies",
+        create: "Create a vacancy",
+        selected:"Selected"
     },
     hero: {
         top_text: 'Find your',
@@ -81,7 +84,7 @@ export default {
         title_2: "vacancy",
         Company: "Company name",
         Desc: "About company",
-        Description:"Description",
+        Description: "Description",
         InputDesc: "Write about company",
         Logo: "Company logo",
         Logoİnput: "Add a company logo url",

@@ -1,5 +1,7 @@
+import Heading from '@/common/Heading/Heading';
+import Selected from '@/components/Selected/Selected';
+import { getScopedI18n } from '@/locales/server';
 import React from 'react'
-import Heading from '@/common/Header/Header';
 
 export const metadata = {
     metadataBase: new URL("https://jobhubcenter.vercel.app/Selected"),
@@ -7,13 +9,14 @@ export const metadata = {
     description: "vacancies you have selected",
 };
 
-const page: React.FC = () => {
+const page: React.FC = async () => {
+
+    const h = await getScopedI18n('heading')
+
     return (
         <>
-            <Heading />
-            <div>
-                Selected
-            </div>
+            <Heading link={h('selected')} path='' />
+            <Selected />
         </>
     )
 }

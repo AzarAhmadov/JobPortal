@@ -5,11 +5,11 @@ import styles from './Create.module.css'
 import ReactQuill from 'react-quill';
 import { useScopedI18n } from '@/locales/client'
 import 'react-quill/dist/quill.snow.css';
-import Heading from '@/common/Heading/Heading';
 
 const CreateVacancy: React.FC = () => {
 
     const t = useScopedI18n('create')
+    const h = useScopedI18n('heading')
 
     const modules = {
         toolbar: [
@@ -23,7 +23,6 @@ const CreateVacancy: React.FC = () => {
 
     return (
         <>
-            <Heading />
             <section className={`${styles.create} container`}>
                 <h2 className='font-poppions-light'>
                     {t('title_1')}

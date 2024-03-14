@@ -7,16 +7,17 @@ import { useParams } from 'next/navigation';
 import { useScopedI18n } from '@/locales/client'
 import { VacanciesData } from '@/constants/data';
 
-const Page = async () => {
+const Page = () => {
 
     const { slug } = useParams();
     const vacancy = VacanciesData.find(item => item.path === slug);
 
     const t = useScopedI18n('detail')
+    const h = useScopedI18n('heading')
 
     return (
         <>
-            <Heading />
+            <Heading link={h('vacancies')} path='/' />
             <div className='container'>
                 <div className={styles.apply}>
                     <img src={vacancy?.img} alt={vacancy?.company_name} />
