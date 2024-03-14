@@ -3,7 +3,7 @@ export const VacanciesData = [
         id: 1,
         img: 'https://blog.hubspot.com/hs-fs/hubfs/image8-2.jpg?width=600&name=image8-2.jpg',
         company_name: 'Google',
-        job: 'Software Developer',
+        job: 'Software Developer ',
         path: `Software-Developer-1`,
         detail_jobs: [
             {

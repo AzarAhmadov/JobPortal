@@ -26,7 +26,7 @@ const VacanciesCards: React.FC<VacancyType> = async ({ el }) => {
                     <div>
                         <h5 className={`${styles.company_name} font-poppions-light`}>{el.company_name}</h5>
                         <h4 className={`${styles.job} font-poppions-medium`}>
-                            {el.job.length > 45 ? el.job.slice(0, 45) + '...' : el.job}
+                            {el.job.length > 30 ? el.job.slice(0, 30) + '...' : el.job}
                         </h4>
                         <ul className={`${styles.list} font-poppions-light`}>
                             {
