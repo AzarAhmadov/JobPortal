@@ -1,9 +1,10 @@
 import React, { memo } from 'react'
 import styles from './MobileFIlter.module.css'
-import { JobTranslations, categories, categoryTranslations, jobType } from "@/constants/data";
+import { categories, jobType } from "@/constants/data";
 import { ToogleProps } from '../MobileMenu/MobileMenu';
 import ToggleBodyClass from '../ToggleBodyClass/ToggleBodyClass';
 import { useScopedI18n } from '@/locales/client';
+import { getCategory, getLand } from '@/lib/utils/renderFunction';
 
 const MobileFIlter: React.FC<ToogleProps> = ({ toggle, isToggled }) => {
 
@@ -30,7 +31,7 @@ const MobileFIlter: React.FC<ToogleProps> = ({ toggle, isToggled }) => {
                                     <li key={idx}>
                                         <input type="checkbox" id={`checkbox_${el.id}`} />
                                         <label htmlFor={`checkbox_${el.id}`}>
-                                            {t(JobTranslations[idx])}
+                                            {getLand(el.label, t)}
                                         </label>
                                     </li>
                                 ))
@@ -49,7 +50,7 @@ const MobileFIlter: React.FC<ToogleProps> = ({ toggle, isToggled }) => {
                                     <li key={idx}>
                                         <input type="checkbox" id={el.label} />
                                         <label htmlFor={el.label}>
-                                            {c(categoryTranslations[idx])}
+                                            {getCategory(el.id, c)}
                                         </label>
                                     </li>
                                 ))
@@ -86,7 +87,7 @@ const MobileFIlter: React.FC<ToogleProps> = ({ toggle, isToggled }) => {
                 </div>
 
             </div>
-            
+
             <ToggleBodyClass isToggled={isToggled} />
         </section>
     )

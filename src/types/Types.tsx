@@ -14,15 +14,3 @@ export type Vacancy = {
     desc: string;
     category: string;
 };
-
-export type CategoryKey = 'design' | 'service' | 'sales' | 'marketing' | 'finance' | 'technology' | 'engineer' | 'bussiness' | 'service' | 'education' | 'healthcare' | 'restaurants' | 'hr';
-
-export type CategoryType = {
-    title: string;
-    path: string;
-    icon: React.ReactNode;
-}
-
-export type JobKey = 'Commission' | 'Freelance' | 'Full Time' | 'Internship' | 'Part Time' | 'Volunteer' | 'Scholarship';
-
-export type JobCategoriesKey = 'construction' | 'design' | 'education' | 'finance' | 'healthcare' | 'SosialServices';

@@ -89,7 +89,15 @@ const Page = () => {
                                 </li>
                                 <li>
                                     <span className={`${styles.title} font-poppions-thin`}>{t('Salary')}</span>
-                                    <span className={`${styles.desc} font-poppions-medium`}>{vacancy?.salary}</span>
+                                    {vacancy?.salary && vacancy?.salary.length > 0 ? (
+                                        <span className={`${styles.desc} font-poppions-medium`}>
+                                            {vacancy.salary}
+                                        </span>
+                                    ) : (
+                                        <span className={`${styles.desc} font-poppions-medium`}>
+                                            {t('salaryText')}
+                                        </span>
+                                    )}
                                 </li>
                             </ul>
                             <div>

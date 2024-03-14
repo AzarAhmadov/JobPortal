@@ -1,10 +1,11 @@
 'use client'
 
 import React from 'react'
-import { CategoriesData, VacanciesData, categoryTranslations } from '@/constants/data'
+import { CategoriesData, VacanciesData } from '@/constants/data'
 import Link from 'next/link'
 import styles from './Categories.module.css'
 import { useScopedI18n } from '@/locales/client'
+import { getCategory } from '@/lib/utils/renderFunction'
 
 const Categories: React.FC = () => {
 
@@ -24,7 +25,7 @@ const Categories: React.FC = () => {
                             <Link href={`Categories/${el.path}`}>
                                 <i dangerouslySetInnerHTML={{ __html: el.icon }} />
                                 <span className={styles.title}>
-                                    {t(categoryTranslations[idx])}
+                                    {getCategory(el.path, t)}
                                 </span>
                                 <div>
                                     <p className={`${styles.desc} font-poppions-light`}>

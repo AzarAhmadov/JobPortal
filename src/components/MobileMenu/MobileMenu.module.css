@@ -19,7 +19,7 @@
 
 .nav.active {
     overflow: hidden;
-    height: calc(100% - 64px);
+    height: calc(100% - 60px);
 }
 
 .nav svg {

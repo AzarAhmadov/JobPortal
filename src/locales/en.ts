@@ -29,11 +29,11 @@ export default {
         about_role: 'About this role',
         last_date: 'Apply Before',
         JobType: 'Job Type',
+        salaryText: 'By agreement',
         Salary: 'Salary',
         apply: 'Apply',
         desc: "Description",
         category: "Category",
-
         design: "Design",
         sales: "Sales",
         marketing: "Marketing",
@@ -47,7 +47,6 @@ export default {
         restaurants: "Restaurants",
         engineer: "Programming",
         hr: "Human Resource",
-
         Commission: 'Commission',
         Freelance: 'Freelance',
         FullTime: 'Full-time',
@@ -55,8 +54,6 @@ export default {
         PartTime: 'Part-time',
         Volunteer: 'Volunteer',
         Scholarship: 'Scholarship',
-
-
     },
     categories: {
         design: "Design",
@@ -87,12 +84,12 @@ export default {
         salary: "Salary range",
         search: "Search",
         reset: "Reset",
-        commission: 'Commission',
-        freelance: 'Freelance',
-        fullTime: 'Full-time',
-        internship: 'Internship',
-        partTime: 'Part-time',
-        volunteer: 'Volunteer',
+        Commission: 'Commission',
+        FreeLance: 'Freelance',
+        FullTime: 'Full-time',
+        Internship: 'Internship',
+        PartTime: 'Part-time',
+        Volunteer: 'Volunteer',
         Scholarship: 'Scholarship',
         construction: "Construction and Real Estate",
         design: "Design, Arts, Creative",

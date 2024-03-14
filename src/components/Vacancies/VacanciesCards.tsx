@@ -2,11 +2,14 @@ import React, { memo } from 'react'
 import { Vacancy } from '@/types/Types'
 import styles from './Vacancies.module.css'
 import Link from 'next/link'
+import { getScopedI18n } from '@/locales/server'
 export interface VacancyType {
     el: Vacancy
 }
 
-const VacanciesCards: React.FC<VacancyType> = ({ el }) => {
+const VacanciesCards: React.FC<VacancyType> = async ({ el }) => {
+
+    const t = await getScopedI18n('detail')
 
     return (
         <section className={styles.content}>
@@ -44,7 +47,15 @@ const VacanciesCards: React.FC<VacancyType> = ({ el }) => {
                         </ul>
                     </div>
                     <div>
-                        <span className={`${styles.salary} font-poppions-medium`}>{el.salary}</span>
+                        {el?.salary && el?.salary.length > 0 ? (
+                            <span className={`${styles.salary} font-poppions-medium`}>
+                                {el.salary}
+                            </span>
+                        ) : (
+                            <span className={`${styles.salary} font-poppions-medium`}>
+                                {t('salaryText')}
+                            </span>
+                        )}
                     </div>
                 </div>
             </Link>

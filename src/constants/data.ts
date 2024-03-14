@@ -1,5 +1,3 @@
-import { CategoryKey, JobCategoriesKey, JobKey } from "@/types/Types";
-
 export const VacanciesData = [
     {
         id: 1,
@@ -15,7 +13,7 @@ export const VacanciesData = [
             },
         ],
         date: '22-02-2024',
-        salary: "Razılaşma yolu ilə",
+        salary: "",
         category: "engineer",
         desc: "Stripe is looking for Social Media Marketing expert to help manage our online networks. You will be responsible for monitoring our social media channels, creating content, finding effective ways to engage the community and incentivize others to engage on our channels.",
         list: `<ul class='font-poppions-light'> <li> <Check /> Lorem ipsum dolor sit.  </li> <li> <Check /> You get energy from people and building the ideal work environment </li> <li> <Check /> Lorem ipsum dolor sit. </li> <li> <Check /> You get energy from people and building the ideal work environment </li> </ul>`
@@ -238,9 +236,9 @@ export const CategoriesData = [
 export const jobType = [
     { id: 'Commission', label: 'Commission' },
     { id: 'Freelance', label: 'Freelance' },
-    { id: 'Full-time', label: 'Full-time' },
+    { id: 'FullTime', label: 'FullTime' },
     { id: 'Internship', label: 'Internship' },
-    { id: 'Part-time', label: 'Part-time' },
+    { id: 'Parttime', label: 'PartTime' },
     { id: 'Volunteer', label: 'Volunteer' },
     { id: 'Scholarship', label: 'Scholarship' }
 ]
@@ -258,38 +256,4 @@ export const categories = [
     { id: 'healthcare', label: 'Healthcare' },
     { id: 'restaurants', label: 'Restaurants' },
     { id: 'hr', label: 'Hr' },
-];
-
-export const JobTranslations: JobKey[] = [
-    'Commission',
-    'Freelance',
-    'Full Time',
-    'Internship',
-    'Part Time',
-    'Volunteer',
-    'Scholarship',
-];
-
-export const JobCategories: JobCategoriesKey[] = [
-    'construction',
-    'design',
-    'education',
-    'healthcare',
-    'SosialServices',
-    'finance',
-];
-
-export const categoryTranslations: CategoryKey[] = [
-    'design',
-    'sales',
-    'marketing',
-    'finance',
-    'technology',
-    'engineer',
-    'bussiness',
-    'service',
-    'education',
-    'healthcare',
-    'restaurants',
-    'hr'
 ];
