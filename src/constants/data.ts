@@ -10,7 +10,7 @@ export const VacanciesData = [
         detail_jobs: [
             {
                 location: 'Baku, Azerbaijan',
-                time: 'Full time',
+                time: 'Commission',
                 time_post: "29 min ago"
             },
         ],
@@ -48,7 +48,7 @@ export const VacanciesData = [
         detail_jobs: [
             {
                 location: 'Berlin, Germanyn',
-                time: 'Internship',
+                time: 'FullTime',
                 time_post: "19 min ago"
             },
         ],
@@ -72,7 +72,7 @@ export const VacanciesData = [
         detail_jobs: [
             {
                 location: 'Marseille, France',
-                time: 'Commission',
+                time: 'Volunteer',
                 time_post: "19 min ago"
             },
         ],
@@ -148,7 +148,7 @@ export const VacanciesData = [
         detail_jobs: [
             {
                 location: 'San Diego, US',
-                time: 'Full time',
+                time: 'Volunteer',
                 time_post: "19 min ago"
             },
         ],
@@ -261,12 +261,12 @@ export const categories = [
 ];
 
 export const JobTranslations: JobKey[] = [
-    'commission',
-    'freelance',
-    'fullTime',
-    'internship',
-    'partTime',
-    'volunteer',
+    'Commission',
+    'Freelance',
+    'Full Time',
+    'Internship',
+    'Part Time',
+    'Volunteer',
     'Scholarship',
 ];
 

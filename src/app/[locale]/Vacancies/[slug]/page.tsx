@@ -6,6 +6,7 @@ import styles from '../Vacancy.module.css';
 import { useParams } from 'next/navigation';
 import { useScopedI18n } from '@/locales/client'
 import { VacanciesData } from '@/constants/data';
+import { getCategory, getLand } from '@/lib/utils/renderFunction';
 
 const Page = () => {
 
@@ -29,7 +30,11 @@ const Page = () => {
                                 <span className={styles.circle}></span>
                                 <span className='font-poppions-light'>{vacancy?.detail_jobs.map(el => el.location)}</span>
                                 <span className={styles.circle}></span>
-                                <span className='font-poppions-light'>{vacancy?.detail_jobs.map(el => el.time)}</span>
+                                <span className='font-poppions-light'>
+                                    {vacancy?.detail_jobs.map(el => (
+                                        getLand(el.time, t)
+                                    ))}
+                                </span>
                             </div>
                             <span className={`${styles.date} font-poppions-thin`}>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z" /></svg>
@@ -73,10 +78,12 @@ const Page = () => {
                                     <span className={`${styles.desc} font-poppions-medium`}>July 31, 2021</span>
                                 </li>
                                 <li>
-                                    <span className={`${styles.title} font-poppions-thin`}>{t('JobType')}</span>
-                                    <span className={`${styles.desc} font-poppions-medium`}>
-                                        {vacancy?.detail_jobs.map((el) => (
-                                            el.time
+                                    <span className={`${styles.title} font-poppions-thin`}>
+                                        {t('JobType')}
+                                    </span>
+                                    <span className={`${styles.title} font-poppions-medium`}>
+                                        {vacancy?.detail_jobs.map(el => (
+                                            getLand(el.time, t)
                                         ))}
                                     </span>
                                 </li>
@@ -90,7 +97,7 @@ const Page = () => {
                                     {t('category')}
                                 </h3>
                                 <button>
-                                    {vacancy?.category}
+                                    {vacancy && getCategory(vacancy.category, t)}
                                 </button>
                             </div>
                         </div>

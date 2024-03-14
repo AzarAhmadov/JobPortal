@@ -16,7 +16,7 @@ export default {
         categories: "Kategoriyalar",
         vacancies: "Vakansiyalar",
         create: "Vakansiya yarat",
-        selected:"Seçilmişlər"
+        selected: "Seçilmişlər"
     },
     hero: {
         top_text: 'Xəyalındakı',
@@ -32,7 +32,26 @@ export default {
         Salary: 'Maaş',
         apply: 'Müraciət et',
         desc: "Şirkət haqqında",
-        category: "Kateqoriya"
+        category: "Kateqoriya",
+        design: "Dizayn",
+        sales: "Satış",
+        marketing: "Marketinq",
+        finance: "Maaliyə",
+        technology: "Texnologiya",
+        bussiness: "Biznes",
+        service: "Xidmət sahələri",
+        available: "İş mövcuddur",
+        education: "Təhsil",
+        healthcare: "Səhiyyə",
+        restaurants: "İaşə",
+        engineer: "Programlaşdırma",
+        hr: "İnsan Resursları",
+        Commission: 'Komissiya',
+        Freelance: 'Sərbəst',
+        FullTime: 'Daimi',
+        Internship: 'Staj',
+        PartTime: 'Yarımştat',
+        Volunteer: 'Könüllü',
     },
     categories: {
         design: "Dizayn",
@@ -71,7 +90,6 @@ export default {
         volunteer: 'Könüllü',
         salary_title: "Əmək haqqı qeyd olunan vakansiyalar",
         more_filter: "Daha çox filter"
-
     },
     create: {
         title_1: "Vakansiya",

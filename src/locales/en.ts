@@ -16,7 +16,7 @@ export default {
         categories: "Categories",
         vacancies: "Vacancies",
         create: "Create a vacancy",
-        selected:"Selected"
+        selected: "Selected"
     },
     hero: {
         top_text: 'Find your',
@@ -32,7 +32,31 @@ export default {
         Salary: 'Salary',
         apply: 'Apply',
         desc: "Description",
-        category: "Category"
+        category: "Category",
+
+        design: "Design",
+        sales: "Sales",
+        marketing: "Marketing",
+        finance: "Finance",
+        technology: "Technology",
+        bussiness: "Bussiness",
+        service: "Services",
+        available: "jobs available",
+        education: "Education",
+        healthcare: "Healthcare",
+        restaurants: "Restaurants",
+        engineer: "Programming",
+        hr: "Human Resource",
+
+        Commission: 'Commission',
+        Freelance: 'Freelance',
+        FullTime: 'Full-time',
+        Internship: 'Internship',
+        PartTime: 'Part-time',
+        Volunteer: 'Volunteer',
+        Scholarship: 'Scholarship',
+
+
     },
     categories: {
         design: "Design",
