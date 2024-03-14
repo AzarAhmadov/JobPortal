@@ -63,11 +63,12 @@
 
 .detail {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 7px;
+    right: 7px;
     border: 1px solid #6661f4;
+    background: #6661f4;
     padding: 4px 10px;
-    color: #6661f4;
+    color: #fff;
     font-size: 13px;
     border-radius: 5px;
 }
