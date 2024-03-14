@@ -7,6 +7,7 @@ import { VacanciesData } from '@/constants/data';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { useScopedI18n } from '@/locales/client';
+import { getLand } from '@/lib/utils/renderFunction';
 
 const CatagoryFilter: React.FC = () => {
 
@@ -14,7 +15,8 @@ const CatagoryFilter: React.FC = () => {
     const filterByCategory = VacanciesData.filter(item => item.category === slug);
     const router = useRouter()
 
-    const t = useScopedI18n('notResult')
+    const n = useScopedI18n('notResult')
+    const t = useScopedI18n('detail')
 
     const handleLinkClick = (path: string) => {
         router.push(`/Vacancies/${path}`);
@@ -24,10 +26,10 @@ const CatagoryFilter: React.FC = () => {
         return <div className={`${styles.NoResult} font-poppions-light`}>
             <img src='/images/not-found.png' alt='not-found' />
             <p>
-                {t('not_result')}
+                {n('not_result')}
             </p>
             <Link href="/Categories">
-                {t('link')}
+                {n('link')}
             </Link>
         </div>
     }
@@ -51,7 +53,11 @@ const CatagoryFilter: React.FC = () => {
                             {el?.date}
                         </span>
                     </div>
-                    <span className={`${styles.detail} font-poppions-light`}>{el.detail_jobs.map((detail) => detail.time)}</span>
+                    <span className={`${styles.detail} font-poppions-light`}>
+                        {
+                            el.detail_jobs.map((detail) => getLand(detail.time, t))
+                        }
+                    </span>
                 </div>
             ))}
         </>
