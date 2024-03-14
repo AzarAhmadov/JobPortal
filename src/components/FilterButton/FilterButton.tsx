@@ -13,6 +13,7 @@ const FilterButton = () => {
     const searchParams = useSearchParams();
     const search = (searchParams.get('query') || '').toLowerCase().trim();
     const t = useScopedI18n('job')
+    const s = useScopedI18n('Search')
 
     return (
         <>
@@ -21,7 +22,7 @@ const FilterButton = () => {
                     {t('job_title')}
                     {search && (
                         <div className='font-poppions-light'>
-                            Result for :
+                            {s('search_text')} :
                             <span>{search}</span>
                         </div>
                     )}

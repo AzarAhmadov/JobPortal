@@ -11,6 +11,9 @@ export default {
         link_4: 'Selected',
         theme: 'Change theme',
     },
+    Search: {
+        search_text: "Result for"
+    },
     heading: {
         home: "Home",
         categories: "Categories",

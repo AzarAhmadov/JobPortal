@@ -11,6 +11,9 @@ export default {
         link_4: 'Seçilmişlər',
         theme: 'Görünüşü dəyiş',
     },
+    Search: {
+        search_text: "Açar söz"
+    },
     heading: {
         home: "Ana Səhifə",
         categories: "Kategoriyalar",
@@ -89,7 +92,7 @@ export default {
         Internship: 'Staj',
         PartTime: 'Yarımştat',
         Volunteer: 'Könüllü',
-        Scholarship:"Təqaüd",
+        Scholarship: "Təqaüd",
         salary_title: "Əmək haqqı qeyd olunan vakansiyalar",
         more_filter: "Daha çox filter"
     },
