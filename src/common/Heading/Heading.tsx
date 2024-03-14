@@ -5,6 +5,7 @@ import styles from './Heading.module.css';
 import Link from 'next/link';
 import { useScopedI18n } from '@/locales/client';
 import { usePathname } from 'next/navigation';
+import { getCategory } from '@/lib/utils/renderFunction';
 
 interface HeadingProps {
     link: string;
@@ -16,6 +17,7 @@ const Heading: React.FC<HeadingProps> = ({ link, path }) => {
     const path_name = usePathname();
     const parts = path_name.split("/");
     const thirdPart = parts[3]?.replace(/[-0-9]+/g, ' ').trim();
+    const c = useScopedI18n('categories');
 
     return (
         <section className={styles.banner}>
@@ -32,8 +34,10 @@ const Heading: React.FC<HeadingProps> = ({ link, path }) => {
                 </li>
                 <li>
                     {
-                        thirdPart && <span>
-                            {thirdPart.length > 20 ? thirdPart.slice(0, 20) + '..' : thirdPart}
+                        thirdPart
+                        &&
+                        <span>
+                            {thirdPart.length > 20 ? thirdPart.slice(0, 20) + '..' : getCategory(thirdPart, c)}
                         </span>
                     }
                 </li>
