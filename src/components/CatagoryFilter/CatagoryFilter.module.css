@@ -4,7 +4,7 @@
     border: 1px solid rgb(214, 221, 235);
     background: #fff;
     border-radius: 5px;
-    padding: 15px;
+    padding: 25px 15px;
     position: relative;
     justify-content: space-between;
     transition: 300ms all;
@@ -44,7 +44,7 @@
     border: 1px solid #6661f4;
 }
 
-.NoResult a:hover{
+.NoResult a:hover {
     transform: scale(1.1);
 }
 
@@ -75,7 +75,7 @@
 
 .card h4 {
     color: #000;
-    margin-top: 10px;
+    margin-top: 15px;
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
@@ -88,7 +88,7 @@
     display: flex;
     gap: 7px;
     font-size: 13px;
-    margin-bottom: 6px;
+    margin-bottom: 10px;
     align-items: center;
     color: #515B6F;
 }
@@ -156,7 +156,7 @@
 
 @media only screen and (max-width:578px) {
     .card {
-        padding: 12px;
+        padding: 14px;
     }
 
     .card img {
@@ -166,6 +166,7 @@
 
     .card h4 {
         font-size: 13px;
+        margin-top: 10px;
     }
 
     .salary {

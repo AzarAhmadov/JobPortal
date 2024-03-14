@@ -134,7 +134,102 @@ export const VacanciesData = [
         date: '22-02-2024',
         salary: "2000-3000 AZN",
         category: "design",
-        desc: "Stripe is looking for Social Media Marketing expert to help manage our online networks. You will be responsible for monitoring our social media channels, creating content, finding effective ways to engage the community and incentivize others to engage on our channels.r",
+        desc: "",
+        list: `<ul class='font-poppions-light'> <li> <Check /> Lorem ipsum dolor sit.  </li> <li> <Check /> You get energy from people and building the ideal work environment </li> <li> <Check /> Lorem ipsum dolor sit. </li> <li> <Check /> You get energy from people and building the ideal work environment </li> </ul>`
+    },
+    {
+        id: 4,
+        img: 'https://static-00.iconduck.com/assets.00/samsung-icon-2048x2048-1ej4ectz.png',
+        company_name: 'Samsung',
+        job: 'Risk koordinatoru (Şimal-qərb regionu üzrə)',
+        path: 'Risk-koordinatoru',
+        detail_jobs: [
+            {
+                location: 'Marseille, France',
+                time: 'Commission',
+                time_post: "19 min ago"
+            },
+        ],
+        date: '22-02-2024',
+        salary: "2000-3000 AZN",
+        category: "design",
+        desc: "",
+        list: `<ul class='font-poppions-light'> <li> <Check /> Lorem ipsum dolor sit.  </li> <li> <Check /> You get energy from people and building the ideal work environment </li> <li> <Check /> Lorem ipsum dolor sit. </li> <li> <Check /> You get energy from people and building the ideal work environment </li> </ul>`
+    },
+    {
+        id: 4,
+        img: 'https://static-00.iconduck.com/assets.00/samsung-icon-2048x2048-1ej4ectz.png',
+        company_name: 'Samsung',
+        job: 'Risk koordinatoru (Şimal-qərb regionu üzrə)',
+        path: 'Risk-koordinatoru',
+        detail_jobs: [
+            {
+                location: 'Marseille, France',
+                time: 'Commission',
+                time_post: "19 min ago"
+            },
+        ],
+        date: '22-02-2024',
+        salary: "2000-3000 AZN",
+        category: "design",
+        desc: "",
+        list: `<ul class='font-poppions-light'> <li> <Check /> Lorem ipsum dolor sit.  </li> <li> <Check /> You get energy from people and building the ideal work environment </li> <li> <Check /> Lorem ipsum dolor sit. </li> <li> <Check /> You get energy from people and building the ideal work environment </li> </ul>`
+    },
+    {
+        id: 4,
+        img: 'https://static-00.iconduck.com/assets.00/samsung-icon-2048x2048-1ej4ectz.png',
+        company_name: 'Samsung',
+        job: 'Risk koordinatoru (Şimal-qərb regionu üzrə)',
+        path: 'Risk-koordinatoru',
+        detail_jobs: [
+            {
+                location: 'Marseille, France',
+                time: 'Commission',
+                time_post: "19 min ago"
+            },
+        ],
+        date: '22-02-2024',
+        salary: "2000-3000 AZN",
+        category: "design",
+        desc: "",
+        list: `<ul class='font-poppions-light'> <li> <Check /> Lorem ipsum dolor sit.  </li> <li> <Check /> You get energy from people and building the ideal work environment </li> <li> <Check /> Lorem ipsum dolor sit. </li> <li> <Check /> You get energy from people and building the ideal work environment </li> </ul>`
+    },
+    {
+        id: 4,
+        img: 'https://static-00.iconduck.com/assets.00/samsung-icon-2048x2048-1ej4ectz.png',
+        company_name: 'Samsung',
+        job: 'Risk koordinatoru (Şimal-qərb regionu üzrə)',
+        path: 'Risk-koordinatoru',
+        detail_jobs: [
+            {
+                location: 'Marseille, France',
+                time: 'Commission',
+                time_post: "19 min ago"
+            },
+        ],
+        date: '22-02-2024',
+        salary: "2000-3000 AZN",
+        category: "design",
+        desc: "",
+        list: `<ul class='font-poppions-light'> <li> <Check /> Lorem ipsum dolor sit.  </li> <li> <Check /> You get energy from people and building the ideal work environment </li> <li> <Check /> Lorem ipsum dolor sit. </li> <li> <Check /> You get energy from people and building the ideal work environment </li> </ul>`
+    },
+    {
+        id: 4,
+        img: 'https://static-00.iconduck.com/assets.00/samsung-icon-2048x2048-1ej4ectz.png',
+        company_name: 'Samsung',
+        job: 'Risk koordinatoru (Şimal-qərb regionu üzrə)',
+        path: 'Risk-koordinatoru',
+        detail_jobs: [
+            {
+                location: 'Marseille, France',
+                time: 'Commission',
+                time_post: "19 min ago"
+            },
+        ],
+        date: '22-02-2024',
+        salary: "2000-3000 AZN",
+        category: "design",
+        desc: "",
         list: `<ul class='font-poppions-light'> <li> <Check /> Lorem ipsum dolor sit.  </li> <li> <Check /> You get energy from people and building the ideal work environment </li> <li> <Check /> Lorem ipsum dolor sit. </li> <li> <Check /> You get energy from people and building the ideal work environment </li> </ul>`
     },
     {
