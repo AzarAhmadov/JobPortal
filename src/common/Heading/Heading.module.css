@@ -36,6 +36,7 @@
 .list li {
     display: flex;
     align-items: center;
+    white-space: nowrap;
 }
 
 .list li a {
@@ -57,7 +58,7 @@
     }
 
     .list {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .circle {

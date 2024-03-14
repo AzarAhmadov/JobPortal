@@ -33,8 +33,7 @@ const Heading: React.FC<HeadingProps> = ({ link, path }) => {
                 <li>
                     {
                         thirdPart && <span>
-                            {thirdPart.length > 20 ? thirdPart.slice(0, 20) + '...' : thirdPart}
-                            {/* {thirdPart} */}
+                            {thirdPart.length > 20 ? thirdPart.slice(0, 20) + '..' : thirdPart}
                         </span>
                     }
                 </li>
