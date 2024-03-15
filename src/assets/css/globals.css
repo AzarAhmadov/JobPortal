@@ -403,6 +403,10 @@ body.theme .FilterButton_rowVacancies__YBlkN button svg {
     fill: #fff;
 }
 
+body.theme .Create_content__3uxOI button:hover {
+    color: #fff;
+}
+
 body::-webkit-scrollbar {
     width: 3px;
     height: 3px;

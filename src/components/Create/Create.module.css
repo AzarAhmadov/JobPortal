@@ -12,6 +12,15 @@
     font-size: 28px;
 }
 
+.disable {
+    opacity: 0.4;
+    user-select: none;
+}
+
+.disable:hover {
+    background: #6661f4 !important;
+}
+
 .quill {
     margin-bottom: 0;
     font-size: 20px;

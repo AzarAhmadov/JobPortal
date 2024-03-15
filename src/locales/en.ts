@@ -107,6 +107,8 @@ export default {
         title_1: "Create a",
         title_2: "vacancy",
         Company: "Company name",
+        optional:"Optional",
+        salary_txt:"1000 - 5000 $",
         Desc: "About company",
         Description: "Description",
         InputDesc: "Write about company",

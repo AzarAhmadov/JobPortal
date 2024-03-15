@@ -100,6 +100,8 @@ export default {
         title_1: "Vakansiya",
         title_2: "yarat",
         Company: "Şirkətin adı",
+        optional:"İstəyə bağlı",
+        salary_txt:"1000 - 5000 AZN",
         Desc: "Şirkət haqqında",
         Description: "Açıqlama",
         InputDesc: "Şirkət haqqında qısa məlumat verin",
