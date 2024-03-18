@@ -330,10 +330,10 @@ export const CategoriesData = [
 
 export const jobType = [
     { id: 'Commission', label: 'Commission' },
-    { id: 'Freelance', label: 'Freelance' },
-    { id: 'FullTime', label: 'FullTime' },
-    { id: 'Internship', label: 'Internship' },
-    { id: 'Parttime', label: 'PartTime' },
+    { id: 'Freelance', label: 'freelance' },
+    { id: 'FullTime', label: 'fullTime' },
+    { id: 'Internship', label: 'internship' },
+    { id: 'Parttime', label: 'partTime' },
     { id: 'Volunteer', label: 'Volunteer' },
     { id: 'Scholarship', label: 'Scholarship' }
 ]

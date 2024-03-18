@@ -12,7 +12,9 @@ const Vacancies: React.FC = async () => {
     return (
         <>
             <div className={styles.rowVacancies}>
+                
                 <FilterButton />
+
                 {
                     Vacancies.slice().reverse().map((el, idx) => (
                         <Suspense key={idx} fallback={<Loading />}>
