@@ -271,6 +271,18 @@ body.theme .Vacancy_right__xkgEO h3 {
     color: #fff;
 }
 
+body.theme .Vacancy_line__bBOS1 p strong {
+    color: #fff;
+}
+
+body.theme .Vacancy_line__bBOS1 p a {
+    color: #6661f4;
+}
+
+body.theme .Vacancy_line__bBOS1 p a strong {
+    color: #6661f4;
+}
+
 body.theme .Vacancy_left__6IbL7 h3 {
     color: #fff;
 }
