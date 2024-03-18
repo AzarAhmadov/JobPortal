@@ -161,7 +161,12 @@ const CreateVacancy: React.FC = () => {
                     />
 
                     <label htmlFor="Salary"> {t('Salary')} ({t('optional')}) </label>
-                    <input name='salary' type="number" id='Salary' placeholder={t('salary_txt')} min={0} />
+                    <input name='salary'
+                        type="text"
+                        id='Salary'
+                        placeholder={t('salary_txt')}
+                        pattern="[0-9]+"
+                    />
 
                     <label> {t('postDate')} </label>
                     <input
