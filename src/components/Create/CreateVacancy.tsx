@@ -165,7 +165,7 @@ const CreateVacancy: React.FC = () => {
 
                     <label> {t('postDate')} </label>
                     <input
-                        name='date'
+                        name='last_date'
                         id='date'
                         required
                         placeholder={t('datePlaceholder')}

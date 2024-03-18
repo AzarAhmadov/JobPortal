@@ -55,8 +55,8 @@ const vacancySchema = new mongoose.Schema(
 
         salary: String,
 
-        date: {
-            type: Date,
+        last_date: {
+            type: String,
             required: true,
         },
 

@@ -4,7 +4,7 @@ import { revalidatePath } from "next/cache";
 import { VacancyDB } from "../models/models";
 import { connectToDb } from "../utils/renderFunction";
 
-export const Vacancy = async(formData: FormData) => {
+export const Vacancy = async (formData: FormData) => {
     const {
         company_name,
         about_company,
@@ -17,7 +17,7 @@ export const Vacancy = async(formData: FormData) => {
         desc,
         salary,
         job_title,
-        date,
+        last_date,
         path
     } = Object.fromEntries(formData);
 
@@ -34,13 +34,13 @@ export const Vacancy = async(formData: FormData) => {
             apply_method_2,
             desc,
             salary,
-            date,
+            last_date,
             job_title,
             path
         });
 
         await newVacancy.save();
-        revalidatePath("/create");
+        revalidatePath("/Create");
         revalidatePath("/");
     } catch (err) {
         console.log(err);
