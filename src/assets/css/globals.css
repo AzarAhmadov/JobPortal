@@ -357,7 +357,7 @@ body.theme .Vacancies_noResults__aj1mU {
 }
 
 body.theme .Create_content__3uxOI {
-    border: 1px solid rgba(229, 229, 229, 0.255);
+    border: 1px solid rgba(229, 229, 229, 0.476);
     border-radius: 10px;
     box-shadow: 4px 10px 20px 0px rgba(0, 0, 0, 0.1);
 }
@@ -379,7 +379,7 @@ body.theme .Create_content__3uxOI form textarea {
 }
 
 body.theme .Create_content__3uxOI form textarea::placeholder {
-    color: #fff;
+    color: #ffffffc5;
 }
 
 body.theme .Vacancy_circle___vopa {

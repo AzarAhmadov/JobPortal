@@ -106,7 +106,7 @@ export default {
     create: {
         title_1: "Create a",
         title_2: "vacancy",
-        job_title:"Job title",
+        job_title:"Job name",
         datePlaceholder: "March 30, 2024",
         Company: "Company name",
         optional:"Optional",

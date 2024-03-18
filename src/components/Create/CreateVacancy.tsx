@@ -67,7 +67,7 @@ const CreateVacancy: React.FC = () => {
             <div className={styles.content}>
                 <form ref={formRef} onChange={handleInputChange} action={Vacancy} className='font-poppions-light'>
 
-                    <label htmlFor="job_name">Job Title</label>
+                    <label htmlFor="job_name">{t('job_title')}</label>
                     <input
                         required
                         name="job_title"
