@@ -107,6 +107,7 @@ export default {
         title_1: "Create a",
         title_2: "vacancy",
         job_title:"Job title",
+        datePlaceholder: "March 30, 2024",
         Company: "Company name",
         optional:"Optional",
         salary_txt:"1000 - 5000 $",

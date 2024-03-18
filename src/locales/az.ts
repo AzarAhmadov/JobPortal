@@ -100,6 +100,7 @@ export default {
         title_1: "Vakansiya",
         title_2: "yarat",
         job_title: "İşin adı",
+        datePlaceholder: "Mart 30, 2024",
         Company: "Şirkətin adı",
         optional: "İstəyə bağlı",
         salary_txt: "1000 - 5000 AZN",

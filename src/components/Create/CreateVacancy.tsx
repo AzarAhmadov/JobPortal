@@ -1,12 +1,11 @@
 'use client'
-'use client'
 
 import React, { useRef, useState } from 'react'
 import styles from './Create.module.css'
 import ReactQuill from 'react-quill';
 import { useScopedI18n } from '@/locales/client'
 import 'react-quill/dist/quill.snow.css';
-import { Vacancy } from '@/lib/actions/action';
+import { Vacancy } from '@/lib/actions/action'
 
 const CreateVacancy: React.FC = () => {
 
@@ -55,6 +54,7 @@ const CreateVacancy: React.FC = () => {
         setJobTitle(value);
         setPath(formattedPath);
     };
+
 
 
     return (
@@ -164,7 +164,13 @@ const CreateVacancy: React.FC = () => {
                     <input name='salary' type="number" id='Salary' placeholder={t('salary_txt')} min={0} />
 
                     <label> {t('postDate')} </label>
-                    <input name='date' id='date' required type="date" />
+                    <input
+                        name='date'
+                        id='date'
+                        required
+                        placeholder={t('datePlaceholder')}
+                        type="text"
+                    />
                     <button type='submit' className={`${!isFormValid && styles.disable} font-poppions-medium`} disabled={!isFormValid}> {t('Send')} </button>
                 </form>
             </div>
