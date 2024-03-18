@@ -432,6 +432,10 @@ body.theme .Vacancy_line__bBOS1 div ul {
     border-bottom: 1px solid #ffffff36;
 }
 
+body.theme .Vacancy_line__bBOS1 div ul:last-child {
+    border-bottom: none;
+}
+
 body.theme .Vacancy_line__bBOS1 div ul li {
     color: #ffffffd7;
 }
@@ -484,7 +488,7 @@ body::-webkit-scrollbar-thumb {
 
 @media only screen and (max-width:992px) {
     body.theme .Vacancy_line__bBOS1:last-child {
-        border-bottom: 1px solid #ffffff36;
+        border-bottom: 1px solid #ffffff36 !important;
     }
 }
 
