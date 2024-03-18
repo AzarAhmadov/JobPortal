@@ -1,11 +1,12 @@
 .apply {
     display: flex;
-    border: 1px solid rgb(214, 221, 235);
+    border: 1px solid rgba(214, 221, 235, 0.616);
     padding: 25px 20px;
     border-radius: 5px;
     background: #fff;
     width: 100%;
-    margin: 20px auto 0;
+    margin: 100px auto 0;
+
 }
 
 .line {
@@ -84,14 +85,23 @@
 
 .detailRow {
     display: flex;
-    gap: 45px;
+    gap: 55px;
     padding: 20px 0;
 }
 
-.detailRow div h3 {
+.right button {
+    margin-top: 10px;
+}
+
+.detailRow div h2 {
     font-size: 25px;
     margin-bottom: 17px;
     color: #3e3d3d;
+}
+
+.detailRow div p {
+    font-size: 16px;
+    line-height: 30px;
 }
 
 .detailRow div p {
@@ -114,10 +124,95 @@
 
 .left {
     width: 70%;
+    font-family: "Poppins", sans-serif;
+}
+
+.left div h2:first-child {
+    margin-top: 0;
+}
+
+.left strong {
+    font-weight: 500;
+}
+
+.left p {
+    margin-top: 20px;
+}
+
+.left div h2 {
+    font-weight: 500;
+    color: #000;
+    font-size: 23px;
+    margin: 17px 0;
+    color: #3e3d3d;
+}
+
+.left div ul {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #3e3d3d22;
+    padding-bottom: 25px;
+    padding-left: 23px;
+    gap: 14px;
+}
+
+.left div ul:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.about_company {
+    font-size: 16px;
+    line-height: 30px;
+    color: #515B6F;
+    border-bottom: 1px solid #3e3d3d22;
+    padding-bottom: 25px;
+}
+
+.left h2 {
+    margin-bottom: 17px;
+    font-size: 23px;
+}
+
+.left div ul li {
+    font-size: 16px;
+    position: relative;
+    color: #515B6F;
+}
+
+.left div p:last-child {
+    margin-bottom: 0;
+}
+
+.left div ul li::after {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #6661f4;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -20px;
+    content: "";
+}
+
+.left div h2 strong {
+    font-weight: 500;
+    color: #000;
+    font-size: 23px;
+    margin: 17px 0;
+    color: #3e3d3d;
 }
 
 .right {
     width: 30%;
+    height: fit-content;
+    position: sticky;
+    top: 100px;
+}
+
+.right h2 {
+    font-size: 23px !important;
 }
 
 .right ul {
@@ -162,13 +257,13 @@
     margin-top: 10px;
     display: flex;
     align-items: center;
-    font-size: 14px;
+    font-size: 15px;
     gap: 6px;
     color: #515B6F;
 }
 
 .date svg {
-    width: 14px;
+    width: 13px;
     fill: #515B6F;
 }
 
@@ -238,6 +333,7 @@
         text-align: center;
         position: relative;
         margin-bottom: 0;
+        margin-top: 85px;
         padding: 15px 20px;
     }
 
@@ -310,6 +406,10 @@
         content: "";
     }
 
+    .right {
+        margin-top: 20px;
+    }
+
     .top div span {
         position: relative;
         padding-left: 7px;
@@ -331,12 +431,23 @@
         display: none;
     }
 
+    .right h2 {
+        font-size: 21px !important;
+        text-align: center;
+    }
+
     .right ul li {
         margin-bottom: 5px;
     }
 
     .right ul li span {
         font-size: 16px;
+    }
+
+    .right button {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
     }
 
     .bookMark {
@@ -348,4 +459,24 @@
     .date {
         font-size: 15px;
     }
+
+    .left h2 {
+        text-align: center;
+        font-size: 21px !important;
+    }
+
+    .left div h2 {
+        font-size: 21px !important;
+        text-align: center;
+    }
+
+    .left div ul {
+        text-align: start;
+        gap: 5px;
+    }
+
+    .left div ul li {
+        font-size: 15px;
+    }
+
 }

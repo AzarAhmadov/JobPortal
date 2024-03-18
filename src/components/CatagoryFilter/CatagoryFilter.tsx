@@ -1,28 +1,20 @@
-'use client'
-
 import React from 'react';
 import styles from './CatagoryFilter.module.css';
-import { useParams } from 'next/navigation';
-import { VacanciesData } from '@/constants/data';
-import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { useScopedI18n } from '@/locales/client';
 import { getLand } from '@/lib/utils/renderFunction';
+import { getScopedI18n } from '@/locales/server';
+import { GetVacanciesByCategory } from '@/lib/data/data';
 
-const CatagoryFilter: React.FC = () => {
+const CatagoryFilter: React.FC<any> = async ({ params }) => {
 
-    const { slug } = useParams();
-    const filterByCategory = VacanciesData.filter(item => item.category === slug);
-    const router = useRouter()
+    const vacancies = await GetVacanciesByCategory(params);
 
-    const n = useScopedI18n('notResult')
-    const t = useScopedI18n('detail')
+    const n = await getScopedI18n('notResult')
+    const t = await getScopedI18n('detail')
+    const f = await getScopedI18n('filter')
 
-    const handleLinkClick = (path: string) => {
-        router.push(`/Vacancies/${path}`);
-    };
 
-    if (filterByCategory.length === 0) {
+    if (vacancies.length === 0) {
         return <div className={`${styles.NoResult} font-poppions-light`}>
             <img src='/images/not-found.png' alt='not-found' />
             <p>
@@ -34,17 +26,18 @@ const CatagoryFilter: React.FC = () => {
         </div>
     }
 
+
     return (
         <>
-            {filterByCategory.map((el, idx) => (
-                <div onClick={() => handleLinkClick(el.path)} className={styles.card} key={idx}>
+            {vacancies.map((el, idx) => (
+                <Link href={`/Vacancies/${el.path}/${el.id}`} className={styles.card} key={idx}>
                     <div>
-                        <img src={el.img} alt={el.job} loading='lazy' />
-                        <h4 className='font-poppions-medium'>{el.job}</h4>
+                        <img src={el.company_logo} alt={el.job_title} loading='lazy' />
+                        <h4 className='font-poppions-medium'>{el.job_title}</h4>
                         <ul className='font-poppions-light'>
                             <li>{el.company_name}</li>
                             <span className={styles.circle}></span>
-                            <li>{el.detail_jobs.map((detail) => detail.location)}</li>
+                            <li> {el.location}</li>
                         </ul>
                         {el?.salary && el?.salary.length > 0 ? (
                             <span className={`${styles.salary} font-poppions-medium`}>
@@ -57,15 +50,17 @@ const CatagoryFilter: React.FC = () => {
                         )}
                         <span className={`${styles.date} font-poppions-light`}>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z" /></svg>
-                            {el?.date}
+                            {(() => {
+                                const vacancyDate = new Date(el.createdAt).toLocaleDateString();
+                                const replacedDate = vacancyDate.replace(/\//g, "-");
+                                return replacedDate;
+                            })()}
                         </span>
                     </div>
                     <span className={`${styles.detail} font-poppions-light`}>
-                        {
-                            el.detail_jobs.map((detail) => getLand(detail.time, t))
-                        }
+                        {getLand(el.job_type, f)}
                     </span>
-                </div>
+                </Link>
             ))}
         </>
     );

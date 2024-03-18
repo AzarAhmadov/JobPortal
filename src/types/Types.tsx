@@ -1,16 +1,14 @@
 export type Vacancy = {
     id: number,
-    img: string;
+    company_logo: string;
     company_name: string;
-    job: string;
+    job_title: string;
     path: string;
-    detail_jobs: {
-        location: string;
-        time: string;
-        time_post: string;
-    }[];
+    location: string;
+    time: string;
     date: string;
     salary?: string;
     desc: string;
     category: string;
+    createdAt: Date;
 };

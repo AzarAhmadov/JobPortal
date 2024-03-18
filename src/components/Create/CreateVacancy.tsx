@@ -1,4 +1,5 @@
 'use client'
+'use client'
 
 import React, { useRef, useState } from 'react'
 import styles from './Create.module.css'
@@ -45,9 +46,16 @@ const CreateVacancy: React.FC = () => {
         setIsFormValid(isValid);
     };
 
-    const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-        event.preventDefault();
+    const [jobTitle, setJobTitle] = useState<string>('');
+    const [path, setPath] = useState<string>('');
+
+    const handleJobTitleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        const { value } = event.target;
+        const formattedPath = value.trim().replace(/\s+/g, '-');
+        setJobTitle(value);
+        setPath(formattedPath);
     };
+
 
     return (
         <section className={`${styles.create} container`}>
@@ -57,7 +65,31 @@ const CreateVacancy: React.FC = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 6h-3V4c0-1.103-.897-2-2-2H9c-1.103 0-2 .897-2 2v2H4c-1.103 0-2 .897-2 2v11c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V8c0-1.103-.897-2-2-2zm-5-2v2H9V4h6zM8 8h12v3H4V8h4zM4 19v-6h6v2h4v-2h6l.001 6H4z"></path></svg>
             </h2>
             <div className={styles.content}>
-                <form ref={formRef} onChange={handleInputChange} onSubmit={handleSubmit} action={Vacancy} className='font-poppions-light'>
+                <form ref={formRef} onChange={handleInputChange} action={Vacancy} className='font-poppions-light'>
+
+                    <label htmlFor="job_name">Job Title</label>
+                    <input
+                        required
+                        name="job_title"
+                        type="text"
+                        id="job_name"
+                        placeholder="Developer"
+                        value={jobTitle}
+                        onChange={handleJobTitleChange}
+                    />
+
+                    <div className={styles.hidden}>
+                        <label>Path</label>
+                        <input
+                            required
+                            name="path"
+                            type="text"
+                            id="path"
+                            placeholder="Path"
+                            value={path}
+                            onChange={(event) => setPath(event.target.value)}
+                        />
+                    </div>
 
                     <label htmlFor="Company"> {t("Company")} </label>
                     <input required name='company_name' type="text" id='Company' placeholder='Apple' />
@@ -129,7 +161,10 @@ const CreateVacancy: React.FC = () => {
                     />
 
                     <label htmlFor="Salary"> {t('Salary')} ({t('optional')}) </label>
-                    <input required name='salary' type="number" id='Salary' placeholder={t('salary_txt')} min={0} />
+                    <input name='salary' type="number" id='Salary' placeholder={t('salary_txt')} min={0} />
+
+                    <label> {t('postDate')} </label>
+                    <input name='date' id='date' required type="date" />
                     <button type='submit' className={`${!isFormValid && styles.disable} font-poppions-medium`} disabled={!isFormValid}> {t('Send')} </button>
                 </form>
             </div>

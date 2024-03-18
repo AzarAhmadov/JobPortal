@@ -156,6 +156,7 @@
     margin-top: 10px;
     color: #585858;
     font-size: 15px;
+    position: relative;
 }
 
 .list li {
