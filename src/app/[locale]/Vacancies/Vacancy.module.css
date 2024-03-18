@@ -6,7 +6,6 @@
     background: #fff;
     width: 100%;
     margin: 100px auto 0;
-
 }
 
 .line {
@@ -62,6 +61,7 @@
     color: #fff;
     border-radius: 5px;
     padding: 13px 40px;
+    white-space: nowrap;
     font-size: 18px;
     display: flex;
     align-items: center;
