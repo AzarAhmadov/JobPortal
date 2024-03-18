@@ -18,7 +18,7 @@ const Page: React.FC<PageParams> = async ({ params }) => {
     const replacedDate = vacancyDate.replace(/\//g, "-");
 
     const t = await getScopedI18n('detail')
-    const h = await getScopedI18n('heading')
+    const f = await getScopedI18n('filter')
 
     let ToLink;
 
@@ -94,7 +94,7 @@ const Page: React.FC<PageParams> = async ({ params }) => {
                                         {t('JobType')}
                                     </span>
                                     <span className={`${styles.title} font-poppions-medium`}>
-                                        {getLand(vacancy.job_type, t)}
+                                        {getLand(vacancy.job_type, f)}
                                     </span>
                                 </li>
                                 <li>

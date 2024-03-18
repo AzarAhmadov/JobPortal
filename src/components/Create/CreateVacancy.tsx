@@ -17,7 +17,7 @@ const CreateVacancy: React.FC = () => {
         toolbar: [
             [{ 'header': '2' }],
             ['bold'], ['underline'],
-            [{ 'list': 'ordered' },],
+            // [{ 'list': 'ordered' },],
             [{ 'list': 'bullet' },],
             ['link'],
         ]
@@ -165,7 +165,6 @@ const CreateVacancy: React.FC = () => {
                         type="text"
                         id='Salary'
                         placeholder={t('salary_txt')}
-                        pattern="[0-9]+"
                     />
 
                     <label> {t('postDate')} </label>

@@ -183,6 +183,12 @@
     font-size: 23px;
 }
 
+.left div p {
+    font-size: 16px;
+    margin: 0;
+    color: #515B6F;
+}
+
 .left div ul li {
     font-size: 16px;
     position: relative;
@@ -236,6 +242,10 @@
 
 .right ul li:last-child {
     margin-bottom: 0;
+}
+
+.right span {
+    color: #000;
 }
 
 .title {

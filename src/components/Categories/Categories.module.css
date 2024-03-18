@@ -113,7 +113,7 @@
 
     .list {
         grid-template-columns: repeat(2, 1fr);
-        gap: 14px;
+        gap: 12px;
     }
 
     .list li a div svg {
