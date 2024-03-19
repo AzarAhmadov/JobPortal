@@ -145,7 +145,7 @@
 }
 
 .left p {
-    margin-top: 20px;
+    padding-top: 20px;
 }
 
 .left div h2 {
@@ -177,6 +177,11 @@
     border-bottom: 1px solid #3e3d3d22;
     padding-bottom: 25px;
 }
+
+.about_company p {
+    padding-top: 0px;
+}
+
 
 .left h2 {
     margin-bottom: 17px;
