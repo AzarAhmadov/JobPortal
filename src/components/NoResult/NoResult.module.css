@@ -1,0 +1,55 @@
+.notFound {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.notFound img {
+    height: 240px;
+    object-fit: contain;
+}
+
+.notFound p {
+    max-width: 500px;
+    text-align: center;
+    color: #000;
+    padding: 35px 0;
+    font-size: 20px;
+}
+
+.notFound ul {
+    display: flex;
+    gap: 15px;
+}
+
+.notFound ul li a {
+    border: 1px solid #6661f4;
+    padding: 7px 30px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #6661f4;
+}
+
+.active {
+    background: #6661f4;
+    color: #fff !important;
+}
+
+@media only screen and (max-width:578px) {
+
+    .notFound img {
+        height: 130px;
+    }
+
+    .notFound p {
+        padding: 20px 0;
+        font-size: 17px;
+        width: 100%;
+    }
+
+    .notFound ul li a {
+        font-size: 16px;
+        padding: 6px 20px;
+    }
+}

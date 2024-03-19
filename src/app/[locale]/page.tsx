@@ -4,7 +4,9 @@ import Hero from '@/components/Hero/Hero';
 import Vacancies from '@/components/Vacancies/Vacancies';
 import styles from '../page.module.css';
 
-const Page: React.FC = () => {
+const Page: React.FC = ({ searchParams, }: { searchParams?: { query?: string; }; }) => {
+    
+    const q = searchParams?.query
 
     return (
         <>
@@ -12,7 +14,7 @@ const Page: React.FC = () => {
             <div className="container">
                 <div className={styles.row}>
                     <Filter />
-                    <Vacancies />
+                    <Vacancies q={q} />
                 </div>
             </div>
         </>
