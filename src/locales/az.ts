@@ -78,7 +78,9 @@ export default {
     },
     job: {
         job_title: "Vakansiyalar",
-        alert: "Axtardığınızı tapa bilmirik, bu vaxt işlərə baxa və ya əsas səhifəyə qayıda bilərsiniz"
+        back: "Ana Səhifə",
+        vacancies:"Vakansiyalar",
+        alert: "Təəssüf ki hal-hazırda axtardığınız sorğuya uyğun nəticə mövcud deyil."
     },
     filter: {
         job_type: "Vakansiyanın növü",

@@ -75,7 +75,9 @@ export default {
     },
     job: {
         job_title: "All jobs",
-        alert: "We can’t find what you are looking for, in the meantime you can browse jobs or return back to homepage"
+        back: "Home",
+        vacancies:"Vacancies",
+        alert: "Unfortunately, the answer to the question you asked is not currently available."
     },
     notResult: {
         not_result: "There is no vacancy in this category!",

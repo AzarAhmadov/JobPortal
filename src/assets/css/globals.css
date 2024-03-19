@@ -432,6 +432,10 @@ body.theme .Vacancy_left__6IbL7 .Vacancy_about_company__nuH6_ {
     border-bottom: 1px solid #ffffff36;
 }
 
+body.theme .NoResult_notFound__tr7V8 p {
+    color: #fff;
+}
+
 body.theme .Vacancy_line__bBOS1 div ul {
     border-bottom: 1px solid #ffffff36;
 }
