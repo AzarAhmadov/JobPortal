@@ -468,6 +468,17 @@ body.theme .LocaleSwitcher_switch__CDrlu {
     background: #515b6faa;
 }
 
+body.theme .admin_login__LAqP8{
+    border: 1px solid #ffffff5b;
+}
+
+body.theme .admin_login__LAqP8 h3 {
+    color: #fff;
+}
+
+body.theme .admin_content__NFoq6 {
+  background: #26384b8f;
+}
 
 body::-webkit-scrollbar {
     width: 3px;
