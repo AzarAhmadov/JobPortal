@@ -10,7 +10,7 @@ const LocaleSwitcher = () => {
     const currentLocale = useCurrentLocale()
 
     return (
-        <div>
+        <div className={styles.switch}>
             <select value={currentLocale} className={`${styles.select} font-poppions-light`} name="lang" onChange={(e) => changeLocale(e.target.value as "en" | "az")}>
                 <option value="en">🇺🇸 ENG</option>
                 <option value="az">🇦🇿 AZE</option>

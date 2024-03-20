@@ -87,6 +87,8 @@
 .list li input {
     width: 20px;
     display: flex;
+    border: none;
+    background: transparent;
     flex-shrink: 0;
 }
 

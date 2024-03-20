@@ -67,6 +67,8 @@
     height: 16px;
     display: flex;
     flex-shrink: 0;
+    border: none;
+    background: transparent;
 }
 
 .list li input[type="checkbox"] {

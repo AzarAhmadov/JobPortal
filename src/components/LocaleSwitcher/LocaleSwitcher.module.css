@@ -1,8 +1,9 @@
 .select {
     color: #000;
+    background: #fff;
     border: 1px solid #515b6f3a;
     border-radius: 10px;
-    width: 85px;
+    padding: 0 11px;
     height: 40px;
     font-size: 18px;
     appearance: none;
@@ -11,8 +12,25 @@
 
 @media only screen and (max-width:992px) {
     .select {
-        width: 100%;
+        background: transparent !important;
+    }
+
+    .switch {
+        background: #fff;
+        border: 1px solid #515b6f3a;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35px;
+    }
+
+    .select {
+        margin: 0 auto;
         background-color: transparent;
-        border: none;
+        border: none !important;
+        height: 30px;
+        position: relative;
+        top: -3px;
     }
 }
