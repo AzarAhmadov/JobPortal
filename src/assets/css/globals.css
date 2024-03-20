@@ -448,8 +448,24 @@ body.theme .Vacancy_line__bBOS1 div ul li {
     color: #ffffffd7;
 }
 
+body.theme .MobileMenu_sosial__c1G3w {
+    border-top: 1px solid #7c849333;
+}
+
+body.theme .MobileMenu_sosial__c1G3w a{
+    border: 1px solid #ffffff4d;
+}
+
+body.theme .MobileMenu_sosial__c1G3w a svg {
+    fill: #fff;
+}
+
 body.theme .Vacancy_right__xkgEO h2 {
     color: #fff;
+}
+
+body.theme .LocaleSwitcher_switch__CDrlu {
+    background: #515b6faa;
 }
 
 body::-webkit-scrollbar {

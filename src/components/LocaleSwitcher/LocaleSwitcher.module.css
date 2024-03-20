@@ -16,21 +16,25 @@
     }
 
     .switch {
-        background: #fff;
-        border: 1px solid #515b6f3a;
+        background: #001d45bc;
+        border: 1px solid #51546f3a;
         border-radius: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
+        width:  110px !important;
         height: 35px;
     }
 
     .select {
+        padding-left: 2px;
         margin: 0 auto;
         background-color: transparent;
         border: none !important;
         height: 30px;
         position: relative;
         top: -3px;
+        font-weight: medium;
+        color: #fff !important;
     }
 }

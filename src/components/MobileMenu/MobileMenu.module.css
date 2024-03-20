@@ -17,6 +17,32 @@
     -webkit-backdrop-filter: blur(6.4px);
 }
 
+.sosial {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    width: 100%;
+    bottom: 0;
+    gap: 15px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.sosial a {
+    display: flex;
+    border: 1px solid #3d3d3d42;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.sosial a svg {
+    width: 27px;
+    height: 27px;
+    fill: #000;
+}
+
 .nav.active {
     overflow: hidden;
     height: calc(100% - 60px);
@@ -75,7 +101,7 @@
     width: 100%;
 }
 
-.bottom li select{
+.bottom li select {
     background-color: #fff;
     border: 1px solid #3d3d3d63;
     border-radius: 20px;
