@@ -34,12 +34,12 @@
     display: flex;
     border: 1px solid #3d3d3d42;
     border-radius: 5px;
-    padding: 2px;
+    padding: 3px;
 }
 
 .sosial a svg {
-    width: 27px;
-    height: 27px;
+    width: 30px;
+    height: 30px;
     fill: #000;
 }
 

@@ -16,13 +16,13 @@
     }
 
     .switch {
-        background: #001d45bc;
+        background: #686666;
         border: 1px solid #51546f3a;
         border-radius: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
-        width:  110px !important;
+        width: 110px !important;
         height: 35px;
     }
 
