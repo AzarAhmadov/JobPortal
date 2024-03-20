@@ -61,7 +61,8 @@
 .list li a::before {
     width: 0%;
     height: 0%;
-    background-color: #6661f4;
+    box-shadow: 0px 8px 21px 0px rgba(0, 0, 0, 0.16);
+    background: linear-gradient(134.25deg, rgb(145, 129, 244) -5.847%, rgb(80, 56, 237) 109.546%);
     position: absolute;
     top: 50%;
     left: 50%;

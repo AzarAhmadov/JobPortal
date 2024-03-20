@@ -76,7 +76,7 @@ export default {
     job: {
         job_title: "All jobs",
         back: "Home",
-        vacancies:"Vacancies",
+        vacancies: "Vacancies",
         alert: "Unfortunately, the answer to the question you asked is not currently available."
     },
     notResult: {

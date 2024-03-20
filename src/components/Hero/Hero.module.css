@@ -88,7 +88,8 @@
 
 .form .search {
     color: #fff;
-    background: #6661f4;
+    box-shadow: 0px 8px 21px 0px rgba(0, 0, 0, 0.16);
+    background: linear-gradient(134.25deg, rgb(145, 129, 244) -5.847%, rgb(80, 56, 237) 109.546%);
     font-size: 18px;
     padding: 8px 14px;
     border-radius: 40px;
@@ -97,7 +98,7 @@
 }
 
 .form .search:hover {
-    background: #6661f4cf;
+    transform: scale(0.98);
 }
 
 @media only screen and (max-width:992px) {

@@ -32,15 +32,16 @@
 
 .sosial a {
     display: flex;
-    border: 1px solid #3d3d3d42;
+    box-shadow: 0px 8px 21px 0px rgba(0, 0, 0, 0.16);
+    background: linear-gradient(134.25deg, rgba(144, 129, 244, 0.408) -5.847%, rgb(80, 56, 237) 109.546%);
     border-radius: 5px;
-    padding: 3px;
+    padding: 4px;
 }
 
 .sosial a svg {
     width: 30px;
     height: 30px;
-    fill: #000;
+    fill: #fff;
 }
 
 .nav.active {
@@ -74,7 +75,8 @@
 }
 
 .nav ul li a.active {
-    background: #645fe1f4;
+    box-shadow: 0px 8px 21px 0px rgba(0, 0, 0, 0.16);
+    background: linear-gradient(134.25deg, rgb(145, 129, 244) -5.847%, rgb(80, 56, 237) 109.546%);
     color: #fff;
 }
 

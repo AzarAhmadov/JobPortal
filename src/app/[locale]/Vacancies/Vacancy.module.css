@@ -57,7 +57,8 @@
 }
 
 .row a {
-    background-color: #6661f4;
+    box-shadow: 0px 8px 21px 0px rgba(0, 0, 0, 0.16);
+    background: linear-gradient(134.25deg, rgb(145, 129, 244) -5.847%, rgb(80, 56, 237) 109.546%);
     color: #fff;
     border-radius: 5px;
     padding: 13px 40px;
@@ -71,6 +72,11 @@
 .row a svg {
     width: 20px;
     fill: #fff;
+    transition: 300ms all;
+}
+
+.row a:hover svg {
+    transform: scale(1.2);
 }
 
 .row a:hover {

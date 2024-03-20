@@ -16,8 +16,8 @@
     }
 
     .switch {
-        background: #686666;
-        border: 1px solid #51546f3a;
+        box-shadow: 0px 8px 21px 0px rgba(0, 0, 0, 0.16);
+        background: linear-gradient(134.25deg, rgb(129, 133, 244) -5.847%, rgb(80, 56, 237) 109.546%);
         border-radius: 50px;
         display: flex;
         justify-content: center;

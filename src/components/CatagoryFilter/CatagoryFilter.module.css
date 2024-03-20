@@ -4,7 +4,7 @@
     border: 1px solid rgb(214, 221, 235);
     background: #fff;
     border-radius: 5px;
-    padding: 25px 15px;
+    padding: 20px 15px;
     position: relative;
     justify-content: space-between;
     transition: 300ms all;
@@ -34,14 +34,13 @@
 }
 
 .NoResult a {
-    border: 1px solid #6661f4;
     color: #fff;
     padding: 10px 25px;
     border-radius: 5px;
     margin-top: 10px;
     transition: 300ms all;
-    background: #6661f4;
-    border: 1px solid #6661f4;
+    box-shadow: 0px 8px 21px 0px rgba(0, 0, 0, 0.16);
+    background: linear-gradient(134.25deg, rgb(145, 129, 244) -5.847%, rgb(80, 56, 237) 109.546%);
 }
 
 .NoResult a:hover {
@@ -66,7 +65,8 @@
     top: 7px;
     right: 7px;
     border: 1px solid #6661f4;
-    background: #6661f4;
+    box-shadow: 0px 8px 21px 0px rgba(0, 0, 0, 0.16);
+    background: linear-gradient(134.25deg, rgb(145, 129, 244) -5.847%, rgb(80, 56, 237) 109.546%);
     padding: 4px 10px;
     color: #fff;
     font-size: 13px;
@@ -80,24 +80,40 @@
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    margin-bottom: 10px;
     font-size: 17px;
 }
 
 .card ul {
     margin-top: 5px;
     display: flex;
-    gap: 7px;
+    gap: 4px;
     font-size: 13px;
     margin-bottom: 10px;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     color: #515B6F;
 }
 
-.circle {
+.card ul li {
+    position: relative;
+    padding-left: 10px;
+}
+
+.card ul li::after {
     width: 4px;
     height: 4px;
-    background-color: #00000094;
+    background: #515B6F;
     border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1px;
+    content: "";
+}
+
+.circle {
+    display: none;
 }
 
 .card p {
@@ -167,6 +183,7 @@
     .card h4 {
         font-size: 13px;
         margin-top: 10px;
+        margin-bottom: 5px;
     }
 
     .salary {
@@ -181,7 +198,7 @@
     .card ul {
         flex-direction: column;
         align-items: flex-start;
-        gap: 3px;
+        gap: 4px;
         font-size: 12px;
         margin-bottom: 6px;
     }

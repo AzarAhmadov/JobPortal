@@ -26,7 +26,6 @@ const CatagoryFilter: React.FC<any> = async ({ params }) => {
         </div>
     }
 
-
     return (
         <>
             {vacancies.map((el, idx) => (

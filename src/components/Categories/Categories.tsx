@@ -16,6 +16,7 @@ const Categories: React.FC = async () => {
     }
 
     const t = await getScopedI18n('detail');
+    const c = await getScopedI18n('categories');
 
     return (
         <section className={styles.content}>
@@ -28,7 +29,7 @@ const Categories: React.FC = async () => {
                                 <i dangerouslySetInnerHTML={{ __html: el.icon }} />
 
                                 <span className={styles.title}>
-                                    {getCategory(el.title, t)}
+                                    {getCategory(el.title.toLocaleLowerCase(), c)}
                                 </span>
 
                                 <div>

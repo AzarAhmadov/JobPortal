@@ -79,7 +79,7 @@ export default {
     job: {
         job_title: "Vakansiyalar",
         back: "Ana Səhifə",
-        vacancies:"Vakansiyalar",
+        vacancies: "Vakansiyalar",
         alert: "Təəssüf ki hal-hazırda axtardığınız sorğuya uyğun nəticə mövcud deyil."
     },
     filter: {
