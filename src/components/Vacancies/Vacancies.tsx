@@ -4,24 +4,45 @@ import VacanciesCards from './VacanciesCards'
 import Loading from './loading'
 import FilterButton from '../FilterButton/FilterButton'
 import { GetVacancies } from '@/lib/data/data'
-import LoadMore from '../LoadMore/LoadMore'
 import NoResult from '../NoResult/NoResult'
 
-const Vacancies: React.FC<any> = async ({ q }) => {
+interface IVacancies {
+    q: string | undefined,
+    type: string | undefined,
+    category: string | undefined,
+    salaried: string | undefined
+}
+
+const Vacancies: React.FC<IVacancies> = async ({ q, type, category, salaried }) => {
 
     const Vacancies = await GetVacancies()
-    const filteredVacancies = q ? Vacancies.filter(vacancy => {
-        const companyNameLower = vacancy.company_name.toLowerCase();
-        const jobTitleLower = vacancy.job_title.toLowerCase();
-        const categoryLower = vacancy.category.toLowerCase();
-        const qLower = q.toLowerCase();
 
-        return (
-            companyNameLower.includes(qLower) ||
-            jobTitleLower.includes(qLower) ||
-            categoryLower.includes(qLower)
-        );
-    }) : Vacancies;
+    const filteredVacancies = Vacancies.filter((vacancy) => {
+        const companyNameLower = vacancy?.company_name?.toLowerCase();
+        const jobTitleLower = vacancy?.job_title?.toLowerCase();
+        const categoryLower = vacancy?.category?.toLowerCase();
+        const jobTypeLower = vacancy?.job_type?.toLowerCase();
+        const salaryLower = vacancy?.salary?.toLowerCase();
+
+        const qLower = q ? q.toLowerCase() : '';
+        const typeLower = type ? type.toLowerCase() : '';
+        const categoryFilterLower = category ? category.toLowerCase() : '';
+        const salaryFilterLower = salaried ? salaried.toString().toLowerCase() : '';
+
+        const matchesQuery =
+            !qLower ||
+            companyNameLower?.includes(qLower) ||
+            jobTitleLower?.includes(qLower) ||
+            categoryLower?.includes(qLower);
+
+        const matchesType = !typeLower || jobTypeLower?.includes(typeLower);
+
+        const matchesCategory = !categoryFilterLower || categoryLower?.includes(categoryFilterLower);
+
+        const matchesSalaried = !salaryFilterLower || salaryLower.includes(salaryFilterLower) || salaryLower !== '';
+
+        return matchesQuery && matchesType && matchesCategory && matchesSalaried;
+    });
 
 
     return (
