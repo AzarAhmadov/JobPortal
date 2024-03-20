@@ -8,7 +8,7 @@ const page: React.FC = () => {
                 <h3> Login  </h3>
                 <form>
                     <input type="text" placeholder='Login' />
-                    <input type="password" placeholder='password' />
+                    <input type="password" placeholder='Password' />
                 </form>
                 <button>
                     Login
