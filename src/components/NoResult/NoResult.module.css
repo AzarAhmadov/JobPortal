@@ -3,10 +3,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 20px 0;
 }
 
 .notFound img {
-    height: 240px;
+    height: 230px;
     object-fit: contain;
 }
 
@@ -28,7 +29,13 @@
     padding: 7px 30px;
     border-radius: 5px;
     font-size: 20px;
+    transition: 300ms all;
     color: #6661f4;
+}
+
+.notFound ul li a:hover {
+    background: #6661f4;
+    color: #fff;
 }
 
 .active {

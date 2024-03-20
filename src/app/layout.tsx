@@ -25,7 +25,7 @@ export default function RootLayout({
                             {children}
                         </div>
                     </div>
-                    {/* <Analytics /> */}
+                    <Analytics />
                 </I18nProviderClientProvider>
             </body>
         </html>
