@@ -168,6 +168,7 @@ body.theme .Hero_form__dZhvn input::placeholder {
 
 body.theme .Vacancies_row__vd9T7 {
     border: 1px solid #ffffff2b;
+    background: transparent;
 }
 
 body.theme .CatagoryFilter_card__bdeuG {
@@ -452,7 +453,7 @@ body.theme .MobileMenu_sosial__c1G3w {
     border-top: 1px solid #7c849333;
 }
 
-body.theme .MobileMenu_sosial__c1G3w a{
+body.theme .MobileMenu_sosial__c1G3w a {
     border: 1px solid #ffffff4d;
 }
 
@@ -467,6 +468,7 @@ body.theme .Vacancy_right__xkgEO h2 {
 body.theme .LocaleSwitcher_switch__CDrlu {
     background: #515b6faa;
 }
+
 
 body::-webkit-scrollbar {
     width: 3px;
@@ -486,6 +488,12 @@ body::-webkit-scrollbar-thumb {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+html,
+body {
+    background-image: repeating-radial-gradient(circle at center center, transparent 0px, transparent 13px, rgba(0, 0, 0, 0.03) 13px, rgba(0, 0, 0, 0.03) 24px, transparent 24px, transparent 62px, rgba(0, 0, 0, 0.03) 62px, rgba(0, 0, 0, 0.03) 96px), repeating-radial-gradient(circle at center center, rgb(255, 255, 255) 0px, rgb(255, 255, 255) 14px, rgb(255, 255, 255) 14px, rgb(255, 255, 255) 18px, rgb(255, 255, 255) 18px, rgb(255, 255, 255) 28px, rgb(255, 255, 255) 28px, rgb(255, 255, 255) 32px);
+    background-size: 21px 21px;
 }
 
 /* Fonts area */
