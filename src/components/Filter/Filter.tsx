@@ -102,6 +102,7 @@ const Filter: React.FC = () => {
                                     <input
                                         type="checkbox"
                                         id={el.id}
+                                        readOnly
                                         checked={el.label === checkedJobType}
                                         onClick={() => handleJobTypeChange(el.label)}
                                     />
@@ -123,7 +124,7 @@ const Filter: React.FC = () => {
                         {
                             categories.map((el, idx) => (
                                 <li key={idx}>
-                                    <input type="checkbox" id={el.id} checked={el.label === checkedCategory} onChange={() => handleCategoryChange(el.label)} />
+                                    <input type="checkbox" readOnly id={el.id} checked={el.label === checkedCategory} onChange={() => handleCategoryChange(el.label)} />
                                     <label htmlFor={el.id}>{getCategory(el.id, t)}</label>
                                 </li>
                             ))
@@ -139,7 +140,7 @@ const Filter: React.FC = () => {
 
                     <ul className={`${styles.list} font-poppions-thin`}>
                         <li>
-                            <input type="checkbox" id="salary" checked={checkedSalary} onChange={handleSalaryChange} />
+                            <input type="checkbox" id="salary" readOnly checked={checkedSalary} onChange={handleSalaryChange} />
                             <label htmlFor="salary">{f('salary_title')}</label>
                         </li>
                     </ul>
