@@ -10,6 +10,7 @@ export default {
         link_3: 'Vakansiya yarat',
         link_4: 'Seçilmişlər',
         theme: 'Görünüşü dəyiş',
+        lang: 'Dili dəyiş',
     },
     Search: {
         search_text: "Açar söz"

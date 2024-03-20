@@ -10,6 +10,7 @@ export default {
         link_3: 'Create a vacancy',
         link_4: 'Selected',
         theme: 'Change theme',
+        lang: 'Change lanuage',
     },
     Search: {
         search_text: "Result for"
