@@ -55,14 +55,16 @@
 
 .list li {
     display: flex;
-    gap: 14px;
+    align-items: center;
+    gap: 10px;
     font-size: 17px;
     color: #515b6f;
     width: 260px;
 }
 
 .list li input {
-    width: 20px;
+    width: 16px;
+    height: 16px;
     display: flex;
     flex-shrink: 0;
 }
