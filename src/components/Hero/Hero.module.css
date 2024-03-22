@@ -59,6 +59,7 @@
     padding: 15px 20px;
     border: 1px solid #00000010;
     border-radius: 40px;
+    position: relative;
 }
 
 .form div {
@@ -72,6 +73,7 @@
     font-family: poppins;
     color: #000;
     font-size: 17px;
+    padding-right: 25px;
     padding-bottom: 7px;
     border-bottom: 1px solid #2e5a861e;
 }
@@ -84,6 +86,18 @@
     font-family: poppins;
     color: #00000087;
     font-size: 17px;
+}
+
+.reset {
+    background-color: transparent;
+    position: absolute;
+    right: 100px;
+    cursor: pointer;
+}
+
+.reset svg {
+    fill:#26A4FF;
+    height: 21px;
 }
 
 .form .search {
@@ -110,6 +124,10 @@
 @media only screen and (max-width:768px) {
     .hero {
         padding: 15px 0;
+    }
+
+    .reset {
+        right: 78px;
     }
 
     .hero h1 {
