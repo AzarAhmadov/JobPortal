@@ -38,9 +38,9 @@
     background: linear-gradient(134.25deg, rgb(145, 129, 244) -5.847%, rgb(80, 56, 237) 109.546%);
     background-size: 100%;
     background-repeat: repeat;
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
+    background-clip: text;
     margin-left: 6px;
 }
 
