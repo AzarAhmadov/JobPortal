@@ -6,12 +6,22 @@ import ReactQuill from 'react-quill';
 import { useScopedI18n } from '@/locales/client'
 import 'react-quill/dist/quill.snow.css';
 import { Vacancy } from '@/lib/actions/action'
+import { useRouter } from 'next/navigation';
 
 const CreateVacancy: React.FC = () => {
 
     const t = useScopedI18n('create')
     const [isFormValid, setIsFormValid] = useState(false);
     const formRef = useRef<HTMLFormElement>(null);
+    const router = useRouter()
+
+    const getJobSubmitted = () => {
+
+        if (isFormValid) {
+            router.push('/job-submitted')
+            window.location.href = '/job-submitted';
+        }
+    }
 
     const modules = {
         toolbar: [
@@ -54,8 +64,6 @@ const CreateVacancy: React.FC = () => {
         setJobTitle(value);
         setPath(formattedPath);
     };
-
-
 
     return (
         <section className={`${styles.create} container`}>
@@ -134,11 +142,11 @@ const CreateVacancy: React.FC = () => {
                     <label> {t('ApplyMethod')} </label>
                     <div className={styles.formFlex}>
                         <div>
-                            <input name='apply_method_1' type="text" placeholder='azar@gmail.com' />
+                            <input name='apply_method_1' type="mail" placeholder='azar@gmail.com' />
                         </div>
                         <span>{t('or')}</span>
                         <div>
-                            <input name='apply_method_2' type="text" id='Location' placeholder='azarahmadov.com' />
+                            <input name='apply_method_2' type="text" placeholder='azarahmadov.com' />
                         </div>
                     </div>
 
@@ -175,7 +183,7 @@ const CreateVacancy: React.FC = () => {
                         placeholder={t('datePlaceholder')}
                         type="text"
                     />
-                    <button type='submit' className={`${!isFormValid && styles.disable} font-poppions-medium`} disabled={!isFormValid}> {t('Send')} </button>
+                    <button onClick={getJobSubmitted} className={`${!isFormValid && styles.disable} font-poppions-medium`} disabled={!isFormValid}> {t('Send')} </button>
                 </form>
             </div>
         </section>

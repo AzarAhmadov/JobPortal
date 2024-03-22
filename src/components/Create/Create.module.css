@@ -191,12 +191,6 @@
     transition: 400ms all;
 }
 
-.content form button:hover {
-    background: transparent;
-    border: 1px solid #6661f4;
-    color: #000;
-}
-
 .content form .formFlex {
     display: flex;
     justify-content: space-between;
