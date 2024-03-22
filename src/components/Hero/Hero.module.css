@@ -59,13 +59,17 @@
     padding: 15px 20px;
     border: 1px solid #00000010;
     border-radius: 40px;
-    position: relative;
 }
 
 .form div {
     display: flex;
     align-items: center;
     gap: 15px;
+}
+
+.form div div {
+    width: 100%;
+    position: relative;
 }
 
 .form input {
@@ -75,7 +79,8 @@
     font-size: 17px;
     padding-right: 25px;
     padding-bottom: 7px;
-    border-bottom: 1px solid #2e5a861e;
+    border-bottom: 1px solid #78787843;
+    border-radius: none !important;
 }
 
 .form svg {
@@ -91,12 +96,12 @@
 .reset {
     background-color: transparent;
     position: absolute;
-    right: 100px;
+    right: -5px;
     cursor: pointer;
 }
 
 .reset svg {
-    fill:#26A4FF;
+    fill: #26A4FF;
     height: 21px;
 }
 
@@ -127,7 +132,7 @@
     }
 
     .reset {
-        right: 78px;
+        right: -7px;
     }
 
     .hero h1 {

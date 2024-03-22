@@ -436,6 +436,14 @@ body.theme .Job_job__T2nN6{
     background: transparent;
 }
 
+body.theme .dashboard_row__0j3vG div{
+    border: 1px solid #ffffff44;
+}
+
+body.theme .dashboard_row__0j3vG div svg{
+    fill: #fff;
+}
+
 body.theme .Job_job__T2nN6 div h2{
     color: #fff;
 }
