@@ -4,6 +4,9 @@ export default {
         link_2: 'Categories',
         Create: 'Create a vacancy'
     },
+    jobSubmit: {
+        txt: 'Job request created successfully will be shared after verification 🙂'
+    },
     mobile_menu: {
         link_1: 'Find jobs',
         link_2: 'Categories',

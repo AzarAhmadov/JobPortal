@@ -4,6 +4,9 @@ export default {
         link_2: 'Kateqoriyalar',
         Create: 'Vakansiya yarat'
     },
+    jobSubmit: {
+        txt: 'İş tələbi uğurla yaradıldı yoxlanıldıqdan sonra paylaşılacaq 🙂'
+    },
     mobile_menu: {
         link_1: 'Vakansiyalar',
         link_2: 'Kateqoriyalar',
