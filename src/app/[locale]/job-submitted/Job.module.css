@@ -18,18 +18,23 @@
 .job h2 {
     max-width: 500px;
     font-size: 23px;
-    color: #08a248;
+    background: linear-gradient(134.25deg, rgb(72, 185, 54) -10%, rgb(52, 118, 61) 120%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
 }
 
 @media only screen and (max-width:578px) {
     .job img {
-        height: 350px;
-        width: 350px;
+        height: 330px;
+        width: 330px;
     }
 
     .job h2 {
         max-width: 360px;
-        margin-top: -15px;
-        font-size: 18px;
+        margin-top: -18px;
+        font-size: 19px;
     }
 }

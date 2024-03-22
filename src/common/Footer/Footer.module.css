@@ -6,7 +6,12 @@
 }
 
 .logo span {
-    color: #6661f4;
+    background: linear-gradient(134.25deg, rgb(145, 129, 244) -5.847%, rgb(80, 56, 237) 109.546%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
     margin-left: 6px;
 }
 
@@ -40,8 +45,8 @@
     }
 
     .logo svg {
-       width: 21px;
-       margin-left: 2px;
+        width: 21px;
+        margin-left: 2px;
     }
 
     .footer p {

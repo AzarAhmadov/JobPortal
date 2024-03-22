@@ -7,7 +7,7 @@ const page = () => {
             <img src="/images/job-submitted.png" alt="job-submitted" loading='lazy' />
             <h2 className='font-poppions-medium'>
                 İş tələbi uğurla yaradıldı
-                yoxlanıldıqdan sonra paylaşılacaq 🙂
+                yoxlanıldıqdan sonra paylaşılacaq
             </h2>
         </section>
     )
