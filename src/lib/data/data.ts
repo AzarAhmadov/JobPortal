@@ -48,7 +48,7 @@ export const GetVacancy = async (id: string) => {
 export const GetVacanciesByCategory = async (category: string) => {
     try {
         connectToDb();
-        const vacancies = await VacancyDB.find({ category: category });
+        const vacancies = await VacancyDBAdmin.find({ category: category });
         return vacancies;
     } catch (err) {
         console.log(err);
