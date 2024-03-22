@@ -13,12 +13,9 @@ const CreateVacancy: React.FC = () => {
     const t = useScopedI18n('create')
     const [isFormValid, setIsFormValid] = useState(false);
     const formRef = useRef<HTMLFormElement>(null);
-    const router = useRouter()
-
     const getJobSubmitted = () => {
 
         if (isFormValid) {
-            router.push('/job-submitted')
             window.location.href = '/job-submitted';
         }
     }

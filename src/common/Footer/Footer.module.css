@@ -26,6 +26,9 @@
     justify-content: center;
     border-top: 1px solid #00000019;
     padding: 18px 0;
+    background: #fff;
+    position: relative;
+    z-index: 10;
 }
 
 .footer p {
