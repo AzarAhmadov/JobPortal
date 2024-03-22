@@ -1,19 +1,16 @@
 .content {
-    max-width: 1200px;
-    margin: 90px auto 0;
-    padding: 0 20px 20px;
+    margin-top: 85px;
+    padding-bottom: 30px;
 }
 
 .content h2 {
-    padding: 20px 0 30px;
-    margin-bottom: 25px;
+    padding: 20px 0 10px;
     text-align: center;
     font-size: 27px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 15px;
-    border-bottom: 1px solid #00000012;
 }
 
 .content h2 svg {
@@ -25,6 +22,27 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.checked {
+    text-align: center;
+    width: 100%;
+    font-size: 17px;
+    top: -25px;
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.checked svg {
+    height: 20px;
+    fill: green;
 }
 
 .content .row img {
@@ -49,9 +67,20 @@
 }
 
 .content h3 {
-    margin: 40px 0 20px;
-    font-size: 20px;
+    margin: 50px 0 20px;
+    font-size: 22px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #00000018;
+}
+
+.content h3 svg {
+    height: 23px;
+    fill: rgb(94, 72, 241);
 }
 
 .content .row div:hover {
@@ -104,10 +133,6 @@
 
 @media only screen and (max-width:768px) {
 
-    .content h2 {
-        padding: 0 0 20px;
-    }
-
     .content .row {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -117,10 +142,6 @@
 
 
 @media only screen and (max-width:568px) {
-    .content {
-        margin: 82px auto 0;
-        padding: 0 10px;
-    }
 
     .content .row {
         display: grid;
@@ -130,17 +151,29 @@
 
     .content h2 {
         font-size: 20px;
-        padding-bottom: 15px;
-        margin-bottom: 20px;
+        padding: 0;
     }
 
     .content h2 svg {
         height: 23px;
     }
 
+    .content h3 {
+        font-size: 18px;
+        margin: 30px 0 20px;
+    }
+
+    .content h3 svg {
+        height: 18px;
+    }
+
     .content .row img {
         width: 40px;
         height: 40px;
+    }
+
+    .checked {
+        top: -10px;
     }
 
     .content .row div h4 {
