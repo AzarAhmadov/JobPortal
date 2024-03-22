@@ -111,6 +111,21 @@
     width: 100%;
 }
 
+.ok {
+    box-shadow: 0px 8px 21px 0px rgba(0, 0, 0, 0.16);
+    background: linear-gradient(134.25deg, rgb(243, 87, 87) -5.847%, rgb(210, 5, 5) 109.546%);
+    padding: 6px 0;
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 17px;
+    cursor: pointer;
+    width: 100%;
+}
+
 .reset svg {
     fill: #fff;
     width: 20px;
@@ -118,6 +133,10 @@
 
 .reset:hover {
     background: #6661f4d8;
+}
+
+.action:last-child {
+    padding-top: 10px;
 }
 
 .action {

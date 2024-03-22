@@ -91,6 +91,7 @@ export default {
         categories: "Kateqoriyalar",
         salary: "Maaş aralığı",
         search: "Axtar",
+        close:"Bağla",
         reset: "Sıfırla",
         Commission: 'Komissiya',
         freelance: 'Uzaqdan',

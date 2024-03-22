@@ -92,6 +92,7 @@ export default {
         categories: "Categories",
         salary: "Salary range",
         search: "Search",
+        close:"Close",
         reset: "Reset",
         Commission: 'Commission',
         freelance: 'Freelance',
