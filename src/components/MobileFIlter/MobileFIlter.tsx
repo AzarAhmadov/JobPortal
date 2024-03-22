@@ -104,7 +104,7 @@ const MobileFIlter: React.FC<ToogleProps> = ({ toggle, isToggled }) => {
                                             id={el.id}
                                             readOnly
                                             checked={el.label === checkedJobType}
-                                            onClick={() => handleJobTypeChange(el.label)}
+                                            onChange={() => handleJobTypeChange(el.label)}
                                         />
 
                                         <label htmlFor={el.id}>{getLand(el.label, t)}</label>
