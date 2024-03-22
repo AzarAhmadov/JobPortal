@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../Vacancy.module.css';
+import styles from './postDetail.module.css';
 import { getCategory, getLand } from '@/lib/utils/renderFunction';
 import { GetVacanciesByAdminByOne, GetVacancy } from '@/lib/data/data';
 import { getScopedI18n } from '@/locales/server';
@@ -13,7 +13,7 @@ export interface PageParams {
 const Page: React.FC<PageParams> = async ({ params }) => {
 
     const { slug } = params;
-    const vacancy = await GetVacanciesByAdminByOne(slug[1]);
+    const vacancy = await GetVacancy(slug[1]);
     const vacancyDate = new Date(vacancy.createdAt).toLocaleDateString();
     const replacedDate = vacancyDate.replace(/\//g, "-");
 
@@ -61,7 +61,17 @@ const Page: React.FC<PageParams> = async ({ params }) => {
                         </div>
                     </div>
                 </div>
-
+                <div className={`${styles.src} font-poppions-light`}>
+                    <span>
+                        {vacancy?.company_logo}
+                    </span>
+                    <span>
+                        {vacancy.apply_method_1}
+                    </span>
+                    <span>
+                        {vacancy.apply_method_2}
+                    </span>
+                </div>
                 <div className={styles.detail}>
                     <div className={styles.detailRow}>
                         <div className={styles.left}>
@@ -88,7 +98,7 @@ const Page: React.FC<PageParams> = async ({ params }) => {
                                 <li>
                                     <span className={`${styles.title} font-poppions-thin`}>{t('last_date')}</span>
                                     <span className={`${styles.desc} font-poppions-medium`}>{vacancy?.last_date}</span>
-                                </li>
+                                </li >
                                 <li>
                                     <span className={`${styles.title} font-poppions-thin`}>
                                         {t('JobType')}
@@ -109,7 +119,7 @@ const Page: React.FC<PageParams> = async ({ params }) => {
                                         </span>
                                     )}
                                 </li>
-                            </ul>
+                            </ul >
                             <div>
                                 <h2 className='font-poppions-medium'>
                                     {t('category')}
@@ -118,9 +128,9 @@ const Page: React.FC<PageParams> = async ({ params }) => {
                                     {vacancy && getCategory(vacancy.category, t)}
                                 </button>
                             </div>
-                        </div>
-                    </div>
-                </div>
+                        </div >
+                    </div >
+                </div >
             </div >
         </>
     );

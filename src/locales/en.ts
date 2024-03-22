@@ -110,6 +110,9 @@ export default {
         salary_title: "Show only with salary",
         more_filter: "More filter"
     },
+    noVacancy: {
+        txt: "The vacancy has not been shared yet"
+    },
     create: {
         title_1: "Create a",
         title_2: "vacancy",

@@ -86,12 +86,15 @@ export default {
         vacancies: "Vakansiyalar",
         alert: "Təəssüf ki hal-hazırda axtardığınız sorğuya uyğun nəticə mövcud deyil."
     },
+    noVacancy: {
+        txt: "Hələki vakansiya paylaşılmayıb"
+    },
     filter: {
         job_type: "Vakansiyanın növü",
         categories: "Kateqoriyalar",
         salary: "Maaş aralığı",
         search: "Axtar",
-        close:"Bağla",
+        close: "Bağla",
         reset: "Sıfırla",
         Commission: 'Komissiya',
         freelance: 'Uzaqdan',

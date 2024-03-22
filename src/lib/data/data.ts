@@ -1,4 +1,4 @@
-import { VacancyDB } from "../models/models";
+import { VacancyDB, VacancyDBAdmin } from "../models/models";
 import { connectToDb } from "../utils/renderFunction";
 
 export const GetVacancies = async () => {
@@ -9,6 +9,28 @@ export const GetVacancies = async () => {
     } catch (err) {
         console.log(err);
         throw new Error("Failed to fetch getVacancy!");
+    }
+};
+
+export const GetVacanciesByAdmin = async () => {
+    try {
+        connectToDb();
+        const vacancies_admin = await VacancyDBAdmin.find();
+        return vacancies_admin;
+    } catch (err) {
+        console.log(err);
+        throw new Error("Failed to fetch getVacancy!");
+    }
+};
+
+export const GetVacanciesByAdminByOne = async (id: string) => {
+    try {
+        connectToDb();
+        const vacancy = await VacancyDBAdmin.findOne({ _id: id });
+        return vacancy;
+    } catch (err) {
+        console.log(err);
+        throw new Error("Failed to fetch getVacancyById!");
     }
 };
 

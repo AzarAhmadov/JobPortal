@@ -1,0 +1,522 @@
+.apply {
+    display: flex;
+    border: 1px solid rgba(214, 221, 235, 0.693);
+    padding: 25px 20px;
+    border-radius: 5px;
+    background: #fff;
+    width: 100%;
+    margin: 100px auto 0;
+}
+
+.src {
+    font-size: 11px;
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+
+}
+
+.line {
+    border-bottom: 1px solid #3e3d3d22;
+    padding: 20px 0;
+}
+
+.line:first-child {
+    padding-top: 0;
+}
+
+.line:last-child {
+    border-bottom: none;
+}
+
+.job {
+    font-size: 21px;
+}
+
+.apply img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top div {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    margin-top: 6px;
+    font-size: 17px;
+    color: #515B6F;
+}
+
+.circle {
+    width: 6px;
+    height: 6px;
+    background: #515B6F;
+    border-radius: 50%;
+}
+
+.row a {
+    box-shadow: 0px 8px 21px 0px rgba(0, 0, 0, 0.16);
+    background: linear-gradient(134.25deg, rgb(145, 129, 244) -5.847%, rgb(80, 56, 237) 109.546%);
+    color: #fff;
+    border-radius: 5px;
+    padding: 13px 40px;
+    white-space: nowrap;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.row a svg {
+    width: 20px;
+    fill: #fff;
+    transition: 300ms all;
+}
+
+.row a:hover svg {
+    transform: scale(1.2);
+}
+
+.row a:hover {
+    background-color: #6661f4cc;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.detailRow {
+    display: flex;
+    gap: 55px;
+    padding: 20px 0;
+}
+
+.right button {
+    margin-top: 10px;
+}
+
+.detailRow div h2 {
+    font-size: 25px;
+    margin-bottom: 17px;
+    color: #3e3d3d;
+}
+
+.detailRow div p {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.detailRow div p {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.detailRow div ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.detailRow div ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.left {
+    width: 70%;
+    font-family: "Poppins", sans-serif;
+}
+
+.left div h2:first-child {
+    margin-top: 0;
+}
+
+.left strong {
+    color: #000;
+    font-weight: 500;
+}
+
+.left a {
+    color: #6661f4;
+}
+
+.left a strong {
+    color: #6661f4;
+}
+
+.left p {
+    padding-top: 20px;
+}
+
+.left div h2 {
+    font-weight: 500;
+    color: #000;
+    font-size: 23px;
+    margin: 17px 0;
+    color: #3e3d3d;
+}
+
+.left div ul {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #3e3d3d22;
+    padding-bottom: 25px;
+    padding-left: 23px;
+    gap: 14px;
+}
+
+.left div ul:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.about_company {
+    font-size: 16px;
+    line-height: 30px;
+    color: #515B6F;
+    border-bottom: 1px solid #3e3d3d22;
+    padding-bottom: 25px;
+}
+
+.about_company p {
+    padding-top: 0px;
+}
+
+.left h2 {
+    margin-bottom: 17px;
+    font-size: 23px;
+}
+
+.left div p {
+    font-size: 16px;
+    margin: 0;
+    color: #515B6F;
+}
+
+.left div ul li {
+    font-size: 16px;
+    position: relative;
+    color: #515B6F;
+}
+
+.left div p:last-child {
+    margin-bottom: 0;
+}
+
+.left div ul li::after {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #6661f4;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -20px;
+    content: "";
+}
+
+.left div h2 strong {
+    font-weight: 500;
+    color: #000;
+    font-size: 23px;
+    margin: 17px 0;
+    color: #3e3d3d;
+}
+
+.right {
+    width: 30%;
+    height: fit-content;
+    position: sticky;
+    top: 100px;
+}
+
+.right h2 {
+    font-size: 23px !important;
+}
+
+.right ul {
+    margin-top: 30px;
+}
+
+.right ul li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.right ul li:last-child {
+    margin-bottom: 0;
+}
+
+.right span {
+    color: #000;
+}
+
+.title {
+    font-size: 17px;
+    color: #515B6F;
+}
+
+.desc {
+    font-size: 17px;
+    color: #202430;
+}
+
+.right div {
+    border-top: 1px solid #515b6f1f;
+    padding-top: 30px;
+    margin-top: 30px;
+}
+
+.right div button {
+    box-shadow: 0px 8px 21px 0px rgba(66, 65, 65, 0.16);
+    background: linear-gradient(134.25deg, rgb(22, 21, 22) -5.847%, rgb(72, 70, 79) 109.546%);
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 50px;
+}
+
+.date {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    gap: 6px;
+    color: #515B6F;
+}
+
+.date svg {
+    width: 13px;
+    fill: #515B6F;
+}
+
+.rightArea {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.bookMark {
+    width: 50px;
+    height: 50px;
+    border-right: 1px solid #3e3d3d42;
+    padding-right: 15px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:992px) {
+
+    .detailRow {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .left h3 {
+        font-size: 13px;
+    }
+
+    .right {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .line:last-child {
+        border-bottom: 1px solid #3e3d3d22;
+    }
+
+    .detailRow div h3 {
+        font-size: 20px;
+    }
+
+    .detailRow div p {
+        font-size: 15px;
+        line-height: 27px;
+    }
+
+    .detailRow div ul li {
+        font-size: 15px;
+        line-height: 27px;
+    }
+}
+
+@media only screen and (max-width:860px) {
+
+    .detailRow {
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+
+    .apply {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+        position: relative;
+        margin-bottom: 0;
+        margin-top: 85px;
+        padding: 15px 20px;
+    }
+
+    .apply img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .row {
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .bookMark {
+        position: absolute;
+        top: 5px;
+        right: 0px;
+        border: none;
+    }
+
+    .rightArea {
+        width: 100%;
+    }
+
+    .job {
+        margin: 15px auto 0;
+        text-align: start;
+        font-size: 19px;
+    }
+
+    .row a {
+        margin-top: 15px;
+        justify-content: center;
+        width: 100%;
+        padding: 10px 0;
+        font-size: 16px;
+        display: flex;
+    }
+
+    .row a svg {
+        width: 17px;
+    }
+
+    .top div {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 8px;
+        padding-left: 11px;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .top div h4 {
+        position: relative;
+        padding-left: 7px;
+    }
+
+    .top div h4::after {
+        width: 5px;
+        height: 5px;
+        position: absolute;
+        top: 50%;
+        left: -9px;
+        transform: translateY(-50%);
+        background: #515B6F;
+        border-radius: 50%;
+        content: "";
+    }
+
+    .right {
+        margin-top: 20px;
+    }
+
+    .top div span {
+        position: relative;
+        padding-left: 7px;
+    }
+
+    .top div span::after {
+        width: 5px;
+        height: 5px;
+        position: absolute;
+        top: 50%;
+        left: -10px;
+        transform: translateY(-50%);
+        background: #515B6F;
+        border-radius: 50%;
+        content: "";
+    }
+
+    .circle {
+        display: none;
+    }
+
+    .right h2 {
+        font-size: 21px !important;
+        text-align: center;
+    }
+
+    .right ul li {
+        margin-bottom: 5px;
+    }
+
+    .right ul li span {
+        font-size: 16px;
+    }
+
+    .right button {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .bookMark {
+        width: 40px;
+        height: 40px;
+        padding-right: 10px;
+    }
+
+    .date {
+        font-size: 15px;
+    }
+
+    .left h2 {
+        text-align: center;
+        font-size: 21px !important;
+    }
+
+    .left div h2 {
+        font-size: 21px !important;
+        text-align: center;
+    }
+
+    .left div ul {
+        text-align: start;
+        gap: 11px;
+    }
+
+    .left div ul li {
+        font-size: 15px;
+    }
+
+}

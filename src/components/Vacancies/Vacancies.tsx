@@ -3,8 +3,9 @@ import styles from './Vacancies.module.css'
 import VacanciesCards from './VacanciesCards'
 import Loading from './loading'
 import FilterButton from '../FilterButton/FilterButton'
-import { GetVacancies } from '@/lib/data/data'
+import { GetVacanciesByAdmin } from '@/lib/data/data'
 import NoResult from '../NoResult/NoResult'
+import { getScopedI18n } from '@/locales/server'
 
 interface IVacancies {
     q: string | undefined,
@@ -15,7 +16,17 @@ interface IVacancies {
 
 const Vacancies: React.FC<IVacancies> = async ({ q, type, category, salaried }) => {
 
-    const Vacancies = await GetVacancies()
+    const Vacancies = await GetVacanciesByAdmin()
+
+    const t = await getScopedI18n('noVacancy')
+
+    if (Vacancies.length === 0) {
+        return (
+            <p className={`${styles.noVacancy} font-poppions-light`}>
+                {t('txt')} 🙁
+            </p>
+        )
+    }
 
     const filteredVacancies = Vacancies.filter((vacancy) => {
         const companyNameLower = vacancy?.company_name?.toLowerCase();
@@ -43,7 +54,6 @@ const Vacancies: React.FC<IVacancies> = async ({ q, type, category, salaried }) 
 
         return matchesQuery && matchesType && matchesCategory && matchesSalaried;
     });
-
 
     return (
         <>

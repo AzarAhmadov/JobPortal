@@ -2,13 +2,13 @@ import React from 'react'
 import Link from 'next/link'
 import styles from './Categories.module.css'
 import { getCategory } from '@/lib/utils/renderFunction'
-import { GetVacancies } from '@/lib/data/data'
+import { GetVacancies, GetVacanciesByAdmin } from '@/lib/data/data'
 import { getScopedI18n } from '@/locales/server'
 import { CategoriesData } from '@/constants/data'
 
 const Categories: React.FC = async () => {
 
-    const Vacancies = await GetVacancies()
+    const Vacancies = await GetVacanciesByAdmin()
 
     const filteredByCategoryLength = (categoryName: string) => {
         const filteredVacancies = Vacancies.filter((el) => el.category.toLowerCase() === categoryName.toLowerCase());
