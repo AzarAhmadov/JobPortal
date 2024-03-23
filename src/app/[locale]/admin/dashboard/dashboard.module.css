@@ -33,6 +33,11 @@
     bottom: 60px;
     right: 10px;
     z-index: 100;
+}
+
+.create a {
+    color: #fff;
+    display: flex;
     border-radius: 50%;
     width: 45px;
     height: 45px;
@@ -40,11 +45,6 @@
     place-items: center;
     box-shadow: 0px 8px 21px 0px rgba(66, 65, 65, 0.16);
     background: linear-gradient(134.25deg, rgb(145, 129, 244) -5.847%, rgb(80, 56, 237) 109.546%);
-}
-
-.create a {
-    color: #fff;
-    display: flex;
 }
 
 .create a svg {
