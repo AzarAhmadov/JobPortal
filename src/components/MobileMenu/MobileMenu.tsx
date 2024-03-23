@@ -59,12 +59,12 @@ const MobileMenu: React.FC<ToogleProps> = ({ toggle, isToggled }) => {
                             {t('link_3')}
                         </Link>
                     </li>
-                    <li onClick={toggle}>
+                    {/* <li onClick={toggle}>
                         <Link href='/Selected' className={isActive(['/az/Selected', '/en/Selected']) ? styles.active : ''}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M18 2H6c-1.103 0-2 .897-2 2v18l8-4.572L20 22V4c0-1.103-.897-2-2-2zm0 16.553-6-3.428-6 3.428V4h12v14.553z"></path></svg>
                             {t('link_4')}
                         </Link>
-                    </li>
+                    </li> */}
                 </ul>
 
                 <ul className={`${styles.bottom} font-poppions-thin`}>
