@@ -432,23 +432,31 @@ body.theme .Vacancy_left__6IbL7 .Vacancy_about_company__nuH6_ {
     border-bottom: 1px solid #ffffff36;
 }
 
-body.theme .Job_job__T2nN6{
+body.theme .Job_job__T2nN6 {
     background: transparent;
 }
 
-body.theme .dashboard_row__0j3vG div{
+body.theme .dashboard_content__zlLBG h3 {
+    border-bottom: 1px solid #ffffff24;
+}
+
+body.theme .dashboard_delete__YqOY7 form button svg {
+    fill: red !important;
+}
+
+body.theme .dashboard_row__0j3vG div {
     border: 1px solid #ffffff44;
 }
 
-body.theme .dashboard_row__0j3vG div svg{
+body.theme .dashboard_row__0j3vG div svg {
     fill: #fff;
 }
 
-body.theme .Job_job__T2nN6 div h2{
+body.theme .Job_job__T2nN6 div h2 {
     color: #fff;
 }
 
-body.theme .Footer_footer__RCIY5{
+body.theme .Footer_footer__RCIY5 {
     background: transparent;
 }
 
