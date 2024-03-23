@@ -129,5 +129,4 @@ const vacancySchemaAdmin = new mongoose.Schema(
 );
 
 export const VacancyDB = mongoose.models?.Vacancy || mongoose.model("Vacancy", vacancySchema);
-
 export const VacancyDBAdmin = mongoose.models?.VacancyAdmin || mongoose.model("VacancyAdmin", vacancySchemaAdmin);
