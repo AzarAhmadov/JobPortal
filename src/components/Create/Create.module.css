@@ -174,7 +174,11 @@
     background-position: right 5px center;
     background-repeat: no-repeat;
     font-size: 16px;
-    color: #00000097;
+    color: #000;
+}
+
+.content form select option::placeholder {
+    color: #000;
 }
 
 .content form button {

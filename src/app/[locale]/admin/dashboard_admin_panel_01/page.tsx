@@ -1,4 +1,4 @@
-import Login from '@/components/Login/Login'
+import DashBoard from '@/components/DashBoard/DashBoard'
 import { Metadata } from 'next';
 import React from 'react'
 
@@ -9,10 +9,10 @@ export const metadata: Metadata = {
     },
 };
 
-const page = () => {
+const Page: React.FC = async () => {
     return (
-        <Login />
+        <DashBoard />
     )
 }
 
-export default page
+export default Page

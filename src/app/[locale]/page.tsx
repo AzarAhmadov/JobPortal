@@ -10,7 +10,7 @@ const Page: React.FC = ({ searchParams, }: { searchParams?: { query?: string; ty
     const type = searchParams?.type
     const category = searchParams?.category
     const salaried = searchParams?.salaried
-
+    
     return (
         <>
             <Hero />

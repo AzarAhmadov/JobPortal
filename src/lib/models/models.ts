@@ -128,5 +128,21 @@ const vacancySchemaAdmin = new mongoose.Schema(
     { timestamps: true }
 );
 
+const vacancySchemaAdminPanel = new mongoose.Schema(
+    {
+        login: {
+            type: String,
+            required: true,
+        },
+        password: {
+            type: String,
+            required: true,
+        },
+
+    },
+    { timestamps: true }
+);
+
+export const VacancyDBAdminPanel = mongoose.models?.VacancyAdminPanel || mongoose.model("VacancyAdminPanel", vacancySchemaAdminPanel);
 export const VacancyDB = mongoose.models?.Vacancy || mongoose.model("Vacancy", vacancySchema);
 export const VacancyDBAdmin = mongoose.models?.VacancyAdmin || mongoose.model("VacancyAdmin", vacancySchemaAdmin);

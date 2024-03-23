@@ -1,13 +1,16 @@
 import { Analytics } from "@vercel/analytics/react"
 import '@/assets/css/globals.css'
 import I18nProviderClientProvider from "@/components/I18nProviderClientProvider/I18nProviderClientProvider";
+import { Metadata } from "next";
 
-export const metadata = {
-    metadataBase: new URL("https://jobhubcenter.vercel.app"),
-    title: "Job Hub Center",
-    description: "Job Portal is a new online platform for job seekers. You can easily find what you want.",
+export const metadata: Metadata = {
+    metadataBase: new URL("http://jobhubcenter.vercel.app/"),
+    title: {
+        default: "Vakansiyalar | Job Hub Center | İş elanları",
+        template: `%s | Job Hub Center`,
+    },
+    description: "Job Hub Center ilə işəgötürmə proseslərini idarə edin, aktiv vakansiyalar, iş elanları, məşğulluq, təcrübə proqramları və part time iş elanlarına müraciət edin"
 };
-
 export default function RootLayout({
     children,
 }: Readonly<{
@@ -17,6 +20,8 @@ export default function RootLayout({
         <html lang="en">
             <head>
                 <link rel="icon" type="image/x-icon" href="/images/logo.png" />
+                <link rel="author" href="https://azarahmadov.com" />
+                <meta name="author" content="JobHubCenter LLC" />
             </head>
             <body className='body'>
                 <I18nProviderClientProvider>

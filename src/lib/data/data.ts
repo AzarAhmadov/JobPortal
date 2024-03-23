@@ -55,4 +55,3 @@ export const GetVacanciesByCategory = async (category: string) => {
         throw new Error(`Failed to fetch vacancies for category: ${category}`);
     }
 };
-

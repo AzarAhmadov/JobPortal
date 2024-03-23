@@ -6,8 +6,8 @@ import { getScopedI18n } from '@/locales/server';
 
 export const metadata = {
     metadataBase: new URL("https://jobhubcenter.vercel.app/Categories"),
-    title: "Categories | Job Hub Center",
-    description: "Categories",
+    title: "Categories",
+    description: "Job Hub Center ilə işəgötürmə proseslərini idarə edin, aktiv vakansiyalar, iş elanları, məşğulluq, təcrübə proqramları və part time iş elanlarına müraciət edin"
 };
 export interface PagePropsParams {
     params: {

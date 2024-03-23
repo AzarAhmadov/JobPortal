@@ -102,8 +102,8 @@ const CreateVacancy: React.FC = () => {
                     <label htmlFor="Description"> {t('Desc')} ({t('optional')}) </label>
                     <textarea name="about_company" placeholder={t('InputDesc')} className='font-poppions-light' id="Description"></textarea>
 
-                    <label htmlFor="logo"> {t('Logo')} </label>
-                    <input required name='company_logo' type="text" id='logo' placeholder={t('Logoİnput')} />
+                    {/* <label htmlFor="logo"> {t('Logo')} </label>
+                    <input required name='company_logo' type="text" id='logo' placeholder={t('Logoİnput')} /> */}
 
                     <label htmlFor="type"> {t('Type')} </label>
                     <select required name="job_type" className='font-poppions-light' id="type">

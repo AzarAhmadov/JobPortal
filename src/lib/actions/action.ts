@@ -1,7 +1,7 @@
 "use server"
 
 import { revalidatePath } from "next/cache";
-import { VacancyDB, VacancyDBAdmin } from "../models/models";
+import { VacancyDB, VacancyDBAdmin, VacancyDBAdminPanel } from "../models/models";
 import { connectToDb } from "../utils/renderFunction";
 
 export const Vacancy = async (formData: FormData) => {
@@ -122,4 +122,24 @@ export const VacancyPostFromAdminDelete = async (formData: FormData) => {
         return { error: "Something went wrong!" };
     }
 
+}
+
+export const AdminLogin = async (formData: FormData) => {
+    const {
+        login, password
+    } = Object.fromEntries(formData);
+
+    try {
+        connectToDb();
+        const newAdmin = new VacancyDBAdminPanel({
+            login, password
+        });
+
+        await newAdmin.save();
+        revalidatePath("/admin");
+        revalidatePath("/");
+    } catch (err) {
+        console.log(err);
+        return { error: "Something went wrong!" };
+    }
 }

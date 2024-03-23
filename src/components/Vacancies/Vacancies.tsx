@@ -6,6 +6,7 @@ import FilterButton from '../FilterButton/FilterButton'
 import { GetVacanciesByAdmin } from '@/lib/data/data'
 import NoResult from '../NoResult/NoResult'
 import { getScopedI18n } from '@/locales/server'
+import Pagination from '../Pagination/Pagination'
 
 interface IVacancies {
     q: string | undefined,
@@ -35,7 +36,7 @@ const Vacancies: React.FC<IVacancies> = async ({ q, type, category, salaried }) 
         const jobTypeLower = vacancy?.job_type?.toLowerCase();
         const salaryLower = vacancy?.salary?.toLowerCase();
 
-        const qLower = q ? q.toLowerCase() : '';
+        const qLower = q ? q.toLowerCase() || q.toUpperCase() : '';
         const typeLower = type ? type.toLowerCase() : '';
         const categoryFilterLower = category ? category.toLowerCase() : '';
         const salaryFilterLower = salaried ? salaried.toString().toLowerCase() : '';
@@ -71,7 +72,7 @@ const Vacancies: React.FC<IVacancies> = async ({ q, type, category, salaried }) 
                     <NoResult />
                 )}
 
-                {/* <LoadMore /> */}
+                {/* <Pagination /> */}
             </div>
         </>
     );

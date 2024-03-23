@@ -1,8 +1,16 @@
 import React from 'react';
 import styles from './postDetail.module.css';
 import { getCategory, getLand } from '@/lib/utils/renderFunction';
-import { GetVacanciesByAdminByOne, GetVacancy } from '@/lib/data/data';
+import { GetVacancy } from '@/lib/data/data';
 import { getScopedI18n } from '@/locales/server';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    robots: {
+        index: false,
+        nocache: true,
+    },
+};
 
 export interface PageParams {
     params: {

@@ -1,13 +1,32 @@
 import React from 'react';
 import styles from '../Vacancy.module.css';
 import { getCategory, getLand } from '@/lib/utils/renderFunction';
-import { GetVacanciesByAdminByOne, GetVacancy } from '@/lib/data/data';
+import { GetVacanciesByAdminByOne } from '@/lib/data/data';
 import { getScopedI18n } from '@/locales/server';
+import { Metadata } from 'next';
 
 export interface PageParams {
     params: {
         slug: string;
     };
+}
+
+export async function generateMetadata({ params }: PageParams): Promise<Metadata> {
+    const vacancy = await GetVacanciesByAdminByOne(params.slug[1]);
+    if (!vacancy)
+        return {
+            title: "Not Found",
+            description: "The page is not found",
+        };
+
+    return {
+        title: vacancy.job_title,
+        description: cleanHTMLTags(vacancy?.desc),
+    };
+}
+
+function cleanHTMLTags(html: string): string {
+    return html ? html.replace(/<[^>]+>/g, '') : '';
 }
 
 const Page: React.FC<PageParams> = async ({ params }) => {
