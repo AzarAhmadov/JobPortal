@@ -347,9 +347,14 @@
 
 @media only screen and (max-width:860px) {
 
+    .left .about_company p {
+        text-align: start;
+        font-size: 15px;
+    }
+
     .left div p {
-        text-align: center;
         font-size: 16px;
+        text-align: center;
     }
 
     .detailRow {
