@@ -1,18 +1,20 @@
 'use client'
 
-import { FC } from 'react'
+import { FC, ReactNode } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
 import styles from './Pagination.module.css'
 
 interface PaginationControlsProps {
     hasNextPage: boolean
     hasPrevPage: boolean
+    filteredVacancies: any
 }
 
 const Pagination: FC<PaginationControlsProps> = (
     {
         hasNextPage,
         hasPrevPage,
+        filteredVacancies
     }
 ) => {
     const router = useRouter()
@@ -21,7 +23,7 @@ const Pagination: FC<PaginationControlsProps> = (
     const page = parseInt(searchParams.get('page') ?? '1', 10)
     const per_page = parseInt(searchParams.get('per_page') ?? '10', 10)
 
-    const totalItems = 22;
+    const totalItems = filteredVacancies.length;
     const totalPages = Math.ceil(totalItems / per_page)
 
     return (
