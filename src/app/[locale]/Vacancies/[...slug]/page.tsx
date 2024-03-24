@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: PageParams): Promise<Metadata
 }
 
 function cleanHTMLTags(html: string): string {
-    return html ? html.replace(/<[^>]+>/g, '') : '';
+    return html ? html.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim() : '';
 }
 
 const Page: React.FC<PageParams> = async ({ params }) => {

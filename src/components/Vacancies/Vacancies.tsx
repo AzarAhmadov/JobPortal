@@ -76,11 +76,14 @@ const Vacancies: React.FC<IVacancies> = async ({ q, type, category, salaried, st
                 )}
 
                 {
-                    entries.length != 0 && <Pagination
-                        hasNextPage={end < Vacancies.length}
-                        hasPrevPage={start > 0}
-                    />
+                    entries.length === 0 || entries.length !== 10 ? null : (
+                        <Pagination
+                            hasNextPage={end < Vacancies.length}
+                            hasPrevPage={start > 0}
+                        />
+                    )
                 }
+
             </div>
         </>
     );
