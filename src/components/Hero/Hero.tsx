@@ -80,7 +80,7 @@ const Hero: React.FC = () => {
                             }
                         </div>
 
-                        <button className={`${styles.search} font-poppions-light`}>
+                        <button name='search' className={`${styles.search} font-poppions-light`}>
                             {t('search')}
                         </button>
                     </div>

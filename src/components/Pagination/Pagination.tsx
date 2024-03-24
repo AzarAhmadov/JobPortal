@@ -27,6 +27,7 @@ const Pagination: FC<PaginationControlsProps> = (
         <div className={styles.pagination}>
             {hasPrevPage && (
                 <button
+                    name='arrow_left'
                     onClick={() => {
                         router.push(`/?page=${Number(page) - 1}&per_page=${per_page}`)
                     }}>
@@ -39,6 +40,7 @@ const Pagination: FC<PaginationControlsProps> = (
             </div>
             {hasNextPage && (
                 <button
+                    name='arrow_right'
                     onClick={() => {
                         router.push(`/?page=${Number(page) + 1}&per_page=${per_page}`)
                     }}>
