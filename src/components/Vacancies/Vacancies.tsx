@@ -7,15 +7,16 @@ import { GetVacanciesByAdmin } from '@/lib/data/data'
 import NoResult from '../NoResult/NoResult'
 import { getScopedI18n } from '@/locales/server'
 import Pagination from '../Pagination/Pagination'
-
 interface IVacancies {
-    q: string | undefined,
-    type: string | undefined,
-    category: string | undefined,
-    salaried: string | undefined
+    q: string | undefined;
+    type: string | undefined;
+    category: string | undefined;
+    salaried: string | undefined;
+    start: number;
+    end: number;
 }
 
-const Vacancies: React.FC<IVacancies> = async ({ q, type, category, salaried }) => {
+const Vacancies: React.FC<IVacancies> = async ({ q, type, category, salaried, start, end }) => {
 
     const Vacancies = await GetVacanciesByAdmin()
 
@@ -56,14 +57,16 @@ const Vacancies: React.FC<IVacancies> = async ({ q, type, category, salaried }) 
         return matchesQuery && matchesType && matchesCategory && matchesSalaried;
     });
 
+    const entries = filteredVacancies.slice(start, end);
+
     return (
         <>
             <div className={styles.rowVacancies}>
 
                 <FilterButton />
 
-                {filteredVacancies.length > 0 ? (
-                    filteredVacancies.reverse().map((el, idx) => (
+                {entries.length > 0 ? (
+                    entries.reverse().map((el, idx) => (
                         <Suspense key={idx} fallback={<Loading />}>
                             <VacanciesCards el={el} key={idx} />
                         </Suspense>
@@ -72,7 +75,12 @@ const Vacancies: React.FC<IVacancies> = async ({ q, type, category, salaried }) 
                     <NoResult />
                 )}
 
-                {/* <Pagination /> */}
+                {
+                    entries.length != 0 && <Pagination
+                        hasNextPage={end < Vacancies.length}
+                        hasPrevPage={start > 0}
+                    />
+                }
             </div>
         </>
     );
