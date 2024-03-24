@@ -4,9 +4,10 @@ import VacanciesCards from './VacanciesCards'
 import Loading from './loading'
 import FilterButton from '../FilterButton/FilterButton'
 import { GetVacanciesByAdmin } from '@/lib/data/data'
-import NoResult from '../NoResult/NoResult'
+const NoResult = dynamic(() => import('../NoResult/NoResult'), { ssr: false });
 import { getScopedI18n } from '@/locales/server'
 import Pagination from '../Pagination/Pagination'
+import dynamic from 'next/dynamic'
 interface IVacancies {
     q: string | undefined;
     type: string | undefined;
