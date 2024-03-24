@@ -76,8 +76,8 @@ const Vacancies: React.FC<IVacancies> = async ({ q, type, category, salaried, st
                 )}
 
                 {
-                    entries.length != 0 && <Pagination
-                        hasNextPage={end < Vacancies.length}
+                    filteredVacancies.length != 0 && <Pagination
+                        hasNextPage={end < filteredVacancies.length}
                         hasPrevPage={start > 0}
                     />
                 }
