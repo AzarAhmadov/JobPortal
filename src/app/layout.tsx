@@ -22,10 +22,6 @@ export default function RootLayout({
             <head>
                 <link rel="icon" type="image/x-icon" href="/images/logo.png" />
                 <link rel="author" href="https://azarahmadov.com" />
-                <meta property="og:description" content="Job Hub Center ilə işəgötürmə proseslərini idarə edin, aktiv vakansiyalar, iş elanları, məşğulluq, təcrübə proqramları və part time iş elanlarına müraciət edin" />
-                <meta property="og:url" content="http://jobhubcenter.com" />
-                <meta property="og:type" content="website" />
-                <link rel="canonical" href="http://jobhubcenter.com" />
                 <meta name="author" content="Job Hub Center LLC" />
             </head>
             <body className='body'>
