@@ -2,10 +2,11 @@
 
 import useToggle from '@/hooks/useToggle'
 import React from 'react'
-import MobileFIlter from '../MobileFIlter/MobileFIlter'
+const MobileFIlter = dynamic(() => import('../MobileFIlter/MobileFIlter'), { ssr: false });
 import styles from './FilterButton.module.css'
 import { useSearchParams } from 'next/navigation'
 import { useScopedI18n } from '@/locales/client'
+import dynamic from 'next/dynamic';
 
 const FilterButton = () => {
 
