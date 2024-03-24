@@ -1,4 +1,3 @@
-import { Analytics } from "@vercel/analytics/react"
 import '@/assets/css/globals.css'
 import I18nProviderClientProvider from "@/components/I18nProviderClientProvider/I18nProviderClientProvider";
 import { Metadata } from "next";
@@ -31,7 +30,6 @@ export default function RootLayout({
                             {children}
                         </div>
                     </div>
-                    <Analytics />
                 </I18nProviderClientProvider>
             </body>
         </html>
