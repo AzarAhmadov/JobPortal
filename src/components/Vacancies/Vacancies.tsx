@@ -59,10 +59,8 @@ const Vacancies: React.FC<IVacancies> = async ({ q, type, category, salaried, st
     const entries = filteredVacancies.slice(start, end);
 
     return (
-        <div className={styles.rowVacancies}>
-
+        <section className={styles.rowVacancies}>
             <FilterButton />
-
             {entries.length > 0 ? (
                 entries.reverse().map((el, idx) => (
                     <Suspense key={idx} fallback={<Loading />}>
@@ -72,7 +70,6 @@ const Vacancies: React.FC<IVacancies> = async ({ q, type, category, salaried, st
             ) : (
                 <NoResult />
             )}
-
             {(filteredVacancies.length !== 0 && entries.length > 0) && (
                 <Pagination
                     filteredVacancies={filteredVacancies}
@@ -80,8 +77,7 @@ const Vacancies: React.FC<IVacancies> = async ({ q, type, category, salaried, st
                     hasPrevPage={start > 0}
                 />
             )}
-            
-        </div>
+        </section>
     );
 };
 
