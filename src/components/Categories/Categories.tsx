@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import styles from './Categories.module.css'
 import { getCategory } from '@/lib/utils/renderFunction'
-import { GetVacancies, GetVacanciesByAdmin } from '@/lib/data/data'
+import { GetVacanciesByAdmin } from '@/lib/data/data'
 import { getScopedI18n } from '@/locales/server'
 import { CategoriesData } from '@/constants/data'
 
