@@ -38,7 +38,7 @@ const Vacancies: React.FC<IVacancies> = async ({ q, type, category, salaried, st
         const jobTypeLower = vacancy?.job_type?.toLowerCase() || '';
         const salaryLower = vacancy?.salary?.toLowerCase() || '';
 
-        const qLower = q ? q.toLowerCase() : '';
+        const qLower = q ? q.trim().toLowerCase() : '';
         const typeLower = type ? type.toLowerCase() : '';
         const categoryFilterLower = category ? category.toLowerCase() : '';
         const salaryFilterLower = salaried ? salaried.toString().toLowerCase() : '';

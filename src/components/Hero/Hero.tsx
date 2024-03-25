@@ -32,7 +32,7 @@ const Hero: React.FC = () => {
 
     const handleSubmit = (event: any) => {
         event.preventDefault();
-        const searchTerm = inputRef.current.value;
+        const searchTerm = inputRef.current.value.trim();
         handleSearch(searchTerm);
     }
 
