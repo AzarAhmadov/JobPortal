@@ -13,6 +13,20 @@
     transform: rotate(90deg);
 }
 
+.section ::-webkit-scrollbar {
+    width: 1px;
+    height: 1px;
+}
+
+.section ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.section ::-webkit-scrollbar-thumb {
+    background-color: #6661f4;
+    outline: 1px solid slategrey;
+}
+
 .section .active ul {
     max-height: 250px;
     overflow: auto;
