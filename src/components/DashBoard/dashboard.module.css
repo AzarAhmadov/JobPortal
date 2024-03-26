@@ -51,11 +51,10 @@
     text-align: center;
     width: 100%;
     color: #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border: 1px solid #00000018;
     font-size: 14px;
+    display: grid;
+    place-items: center;
 }
 
 .content .row .contentRow li div {
@@ -178,14 +177,34 @@
 
     .content .row .contentRow li {
         white-space: nowrap;
-        min-width: max-content;
-        padding: 5px 10px;
+        min-width: 70px;
         font-size: 10px;
+        padding-top: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 0;
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .action {
+        max-width: 100px;
+        margin-top: 0 !important;
+        padding-top: 4px !important;
+    }
+
+    .action div {
+        display: flex;
+        justify-content: center;
+        
     }
 
     .content .row .contentRow li img {
         width: 25px;
         height: 25px;
+        margin-top: -5px;
     }
 
     .content .row .contentRow li div svg {

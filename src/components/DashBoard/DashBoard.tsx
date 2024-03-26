@@ -57,7 +57,7 @@ const DashBoard: React.FC<any> = async ({ start, end }) => {
                                 <li>
                                     {el.last_date}
                                 </li>
-                                <li>
+                                <li className={styles.action}>
                                     <div>
                                         <form action={deleteVacansy}>
                                             <input type="hidden" name="id" value={el.id} />
@@ -126,7 +126,7 @@ const DashBoard: React.FC<any> = async ({ start, end }) => {
                                 <li>
                                     {el.last_date}
                                 </li>
-                                <li>
+                                <li className={styles.action}>
                                     <div>
                                         <form action={VacancyPostFromAdminDelete}>
                                             <input type="hidden" name="id" value={el.id} />
