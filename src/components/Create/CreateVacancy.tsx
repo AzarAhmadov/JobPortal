@@ -51,16 +51,6 @@ const CreateVacancy: React.FC = () => {
         setIsFormValid(isValid);
     };
 
-    const [jobTitle, setJobTitle] = useState<string>('');
-    const [path, setPath] = useState<string>('');
-
-    const handleJobTitleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        const { value } = event.target;
-        const formattedPath = value.trim().replace(/\s+/g, '-');
-        setJobTitle(value);
-        setPath(formattedPath);
-    };
-
     return (
         <section className={`${styles.create} container`}>
             <h2 className='font-poppions-light'>
@@ -78,22 +68,7 @@ const CreateVacancy: React.FC = () => {
                         type="text"
                         id="job_name"
                         placeholder="Developer"
-                        value={jobTitle}
-                        onChange={handleJobTitleChange}
                     />
-
-                    <div className={styles.hidden}>
-                        <label>Path</label>
-                        <input
-                            required
-                            name="path"
-                            type="text"
-                            id="path"
-                            placeholder="Path"
-                            value={path}
-                            onChange={(event) => setPath(event.target.value)}
-                        />
-                    </div>
 
                     <label htmlFor="Company"> {t("Company")} </label>
                     <input required name='company_name' type="text" id='Company' placeholder='Apple' />

@@ -15,11 +15,6 @@ const vacancySchema = new mongoose.Schema(
 
         about_company: String,
 
-        path: {
-            type: String,
-            required: true,
-        },
-
         job_type: {
             type: String,
             required: true,

@@ -51,14 +51,6 @@ const AdminPostForm: React.FC = () => {
         setIsFormValid(isValid);
     };
 
-    const [jobTitle, setJobTitle] = useState<string>('');
-
-    const handleJobTitleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        const { value } = event.target;
-        const formattedPath = value.trim().replace(/\s+/g, '-');
-        setJobTitle(value);
-    };
-
     return (
         <section className={`${styles.create} container`}>
             <h2 className='font-poppions-light'>
@@ -77,8 +69,6 @@ const AdminPostForm: React.FC = () => {
                         type="text"
                         id="job_name"
                         placeholder="Developer"
-                        value={jobTitle}
-                        onChange={handleJobTitleChange}
                     />
 
                     <label htmlFor='path'>Url</label>
