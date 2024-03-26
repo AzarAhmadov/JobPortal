@@ -8,16 +8,6 @@
     margin: 100px auto 0;
 }
 
-.src {
-    font-size: 11px;
-    margin-top: 20px;
-    text-align: center;
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
-
-}
-
 .line {
     border-bottom: 1px solid #3e3d3d22;
     padding: 20px 0;
@@ -160,10 +150,6 @@
     color: #6661f4;
 }
 
-.left p {
-    padding-top: 20px;
-}
-
 .left div h2 {
     font-weight: 500;
     color: #000;
@@ -196,6 +182,7 @@
 
 .about_company p {
     padding-top: 0px;
+    margin-bottom: 0 !important;
 }
 
 .left h2 {
@@ -207,16 +194,14 @@
     font-size: 16px;
     margin: 0;
     color: #515B6F;
+    margin-bottom: 20px;
+
 }
 
 .left div ul li {
     font-size: 16px;
     position: relative;
     color: #515B6F;
-}
-
-.left div p:last-child {
-    margin-bottom: 0;
 }
 
 .left div ul li::after {
@@ -362,6 +347,18 @@
 
 @media only screen and (max-width:860px) {
 
+    .left .about_company p {
+        text-align: start;
+        font-size: 15px;
+    }
+
+    .left div p {
+        margin-top: -10px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        text-align: center;
+    }
+
     .detailRow {
         padding-top: 10px;
         padding-bottom: 30px;
@@ -425,8 +422,9 @@
         align-items: flex-start;
         gap: 8px;
         padding-left: 11px;
-        font-size: 16px;
+        font-size: 15px;
         margin-top: 10px;
+        text-align: start;
     }
 
     .top div h4 {
