@@ -7,19 +7,24 @@ import styles from './Pagination.module.css'
 interface PaginationControlsProps {
     hasNextPage: boolean
     hasPrevPage: boolean
+    data: any
 }
 
 const PaginationDashboard: FC<PaginationControlsProps> = (
     {
         hasNextPage,
         hasPrevPage,
+        data
     }
 ) => {
     const router = useRouter()
     const searchParams = useSearchParams()
 
-    const page = searchParams.get('page') ?? '1'
-    const per_page = searchParams.get('per_page') ?? '5'
+    const page = parseInt(searchParams.get('page') ?? '1', 10)
+    const per_page = parseInt(searchParams.get('per_page') ?? '10', 10)
+
+    const totalItems = data.length;
+    const totalPages = Math.ceil(totalItems / per_page)
 
     return (
         <div className={styles.pagination}>
@@ -33,7 +38,7 @@ const PaginationDashboard: FC<PaginationControlsProps> = (
             </button>
 
             <div>
-                {page} / {Math.ceil(10 / Number(per_page))}
+                {page} / {totalPages}
             </div>
 
             <button

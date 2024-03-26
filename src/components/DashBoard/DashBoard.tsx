@@ -78,6 +78,7 @@ const DashBoard: React.FC<any> = async ({ start, end }) => {
                         <PaginationDashboard
                             hasNextPage={end < Vacancies.length}
                             hasPrevPage={start > 0}
+                            data={Vacancies}
                         />
                     )
                 }
@@ -147,6 +148,7 @@ const DashBoard: React.FC<any> = async ({ start, end }) => {
                         <PaginationDashboard
                             hasNextPage={end < VacanciesAdmin.length}
                             hasPrevPage={start > 0}
+                            data={VacanciesAdmin}
                         />
                     )
                 }
