@@ -19,7 +19,7 @@
 .content .row .header li {
     width: 100%;
     background: rgb(37, 29, 93) 109.546%;
-    border: 1px solid #fff;
+    border: 1px solid #7c7c7c76;
     padding: 7px 0;
     color: #fff;
     font-size: 18px;
@@ -35,8 +35,8 @@
 }
 
 .content .row .contentRow img {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -136,7 +136,7 @@
 }
 
 .content h3 {
-    margin: 50px 0 20px;
+    margin: 50px 0 10px;
     font-size: 22px;
     text-align: center;
     display: flex;
@@ -178,8 +178,27 @@
 
     .content .row .contentRow li {
         white-space: nowrap;
-        width: 300px;
+        min-width: max-content;
         padding: 5px 10px;
+        font-size: 10px;
     }
 
+    .content .row .contentRow li img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .content .row .contentRow li div svg {
+        width: 15px;
+        height: 15px;
+    }
+
+    .content h3 {
+        margin: 30px 0 10px;
+        font-size: 20px;
+    }
+
+    .content h3 svg {
+        height: 20px;
+    }
 }
