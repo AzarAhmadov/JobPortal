@@ -429,8 +429,8 @@ body.theme .dashboard_content__kith5 .dashboard_row__080rq .dashboard_contentRow
     border: 1px solid #ffffff1a;
 }
 
-body.theme .dashboard_content__kith5 .dashboard_row__080rq .delete {
-    fill: red;
+body.theme .dashboard_content__kith5 h3 {
+    border-bottom: 1px solid #ffffff2c;
 }
 
 body.theme .dashboard_content__kith5 .dashboard_row__080rq .dashboard_contentRow__elGiW li div svg {
