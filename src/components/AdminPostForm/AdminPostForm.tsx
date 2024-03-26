@@ -52,13 +52,11 @@ const AdminPostForm: React.FC = () => {
     };
 
     const [jobTitle, setJobTitle] = useState<string>('');
-    const [path, setPath] = useState<string>('');
 
     const handleJobTitleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const { value } = event.target;
         const formattedPath = value.trim().replace(/\s+/g, '-');
         setJobTitle(value);
-        setPath(formattedPath);
     };
 
     return (
@@ -83,18 +81,14 @@ const AdminPostForm: React.FC = () => {
                         onChange={handleJobTitleChange}
                     />
 
-                    <div className={styles.hidden}>
-                        <label>Path</label>
-                        <input
-                            required
-                            name="path"
-                            type="text"
-                            id="path"
-                            placeholder="Path"
-                            value={path}
-                            onChange={(event) => setPath(event.target.value)}
-                        />
-                    </div>
+                    <label htmlFor='path'>Url</label>
+                    <input
+                        required
+                        name="path"
+                        type="text"
+                        id="path"
+                        placeholder="Url"
+                    />
 
                     <label htmlFor="Company"> {t("Company")} </label>
                     <input required name='company_name' type="text" id='Company' placeholder='Apple' />
