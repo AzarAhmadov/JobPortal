@@ -424,6 +424,19 @@ body.theme .AdminPost_content__SA7Ql form select {
     background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;"%3E%3Cpath d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"%3E%3C/path%3E%3C/svg%3E');
 }
 
+body.theme .dashboard_content__kith5 .dashboard_row__080rq .dashboard_contentRow__elGiW li {
+    color: #fff;
+    border: 1px solid #ffffff1a;
+}
+
+body.theme .dashboard_content__kith5 .dashboard_row__080rq .delete {
+    fill: red;
+}
+
+body.theme .dashboard_content__kith5 .dashboard_row__080rq .dashboard_contentRow__elGiW li div svg {
+    fill: #fff;
+}
+
 body.theme .AdminPost_content__SA7Ql {
     border: 1px solid #ffffff65;
     box-shadow: none;

@@ -3,11 +3,9 @@ import styles from './dashboard.module.css'
 import { GetVacancies, GetVacanciesByAdmin } from '@/lib/data/data'
 import { deleteVacansy, VacancyPostFromAdminDelete } from '@/lib/actions/action'
 import Link from 'next/link'
-import { IVacancies } from '../Vacancies/Vacancies'
-import Pagination from '../Pagination/Pagination'
 import PaginationDashboard from '../PaginationDashboard/PaginationDashboard'
 
-const DashBoard: React.FC<IVacancies> = async ({ start, end }) => {
+const DashBoard: React.FC<any> = async ({ start, end }) => {
 
     const Vacancies = await GetVacancies()
     const VacanciesAdmin = await GetVacanciesByAdmin()

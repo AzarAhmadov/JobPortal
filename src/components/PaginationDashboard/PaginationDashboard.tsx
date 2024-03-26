@@ -13,7 +13,6 @@ const PaginationDashboard: FC<PaginationControlsProps> = (
     {
         hasNextPage,
         hasPrevPage,
-        pages
     }
 ) => {
     const router = useRouter()
