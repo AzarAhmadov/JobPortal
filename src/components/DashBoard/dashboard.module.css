@@ -3,6 +3,83 @@
     padding-bottom: 30px;
 }
 
+.content .row {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 6px;
+}
+
+.content .row .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.content .row .header li {
+    width: 100%;
+    background: rgb(37, 29, 93) 109.546%;
+    border: 1px solid #fff;
+    padding: 7px 0;
+    color: #fff;
+    font-size: 18px;
+}
+
+.content .row .contentRow {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    overflow: auto;
+}
+
+.content .row .contentRow img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.content .row .contentRow:nth-child(even) {
+    background-color: #0000000c;
+    color: #fff;
+}
+
+.content .row .contentRow li {
+    padding: 3px 0;
+    text-align: center;
+    width: 100%;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #00000018;
+    font-size: 14px;
+}
+
+.content .row .contentRow li div {
+    display: flex;
+    margin-top: 6px;
+    gap: 15px;
+}
+
+.content .row .contentRow li div button {
+    background: transparent;
+}
+
+.content .row .contentRow li div .delete {
+    fill: red;
+    cursor: pointer;
+}
+
+.content .row .contentRow li div svg {
+    width: 20px;
+    height: 20px;
+    fill: #000;
+    cursor: pointer;
+}
+
 .content h2 {
     padding: 20px 0 10px;
     text-align: center;
@@ -16,16 +93,6 @@
 .content h2 svg {
     height: 30px;
     fill: rgb(90, 67, 239);
-}
-
-.content .row {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
 }
 
 .create {
@@ -55,39 +122,17 @@
 .checked {
     text-align: center;
     width: 100%;
-    font-size: 17px;
-    top: 0px;
-    position: absolute;
+    font-size: 19px;
     display: flex;
     gap: 10px;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 
 .checked svg {
     height: 20px;
     fill: green;
-}
-
-.content .row img {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-.content .row div {
-    border: 1px solid #00000020;
-    border-radius: 5px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 6px;
-    position: relative;
-    transition: 400ms all;
 }
 
 .content h3 {
@@ -107,104 +152,34 @@
     fill: rgb(94, 72, 241);
 }
 
-.content .row div:hover {
-    background: #0979921a;
-}
-
-.content .row div span {
-    font-size: 14px;
-}
-
-.content .row div .delete {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-}
-
-.delete button {
-    background: transparent;
-    cursor: pointer;
-}
-
-.delete button svg {
-    height: 17px;
-    fill: red;
-}
-
-.content .row div .edit {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-
-.edit button {
-    background: transparent;
-    cursor: pointer;
-}
-
-.edit button svg {
-    height: 17px;
-    fill: #000;
-}
-
-.content .row div h4 {
-    font-weight: 500;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
-
-@media only screen and (max-width:768px) {
-
-    .content .row {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 15px;
-    }
-}
-
-
-@media only screen and (max-width:568px) {
-
-    .content .row {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-    }
-
+@media only screen and (max-width:992px) {
     .content h2 {
-        font-size: 20px;
         padding: 0;
+    }
+}
+
+@media only screen and (max-width:578px) {
+    .content h2 {
+        gap: 7px;
+        font-size: 22px;
     }
 
     .content h2 svg {
-        height: 23px;
+        height: 25px;
     }
 
-    .content h3 {
-        font-size: 18px;
-        margin: 30px 0 20px;
-    }
-
-    .content h3 svg {
-        height: 18px;
-    }
-
-    .content .row img {
-        width: 40px;
-        height: 40px;
-    }
-
-    .checked {
-        top: -10px;
-    }
-
-    .content .row div h4 {
-        font-size: 13px;
-    }
-
-    .content .row div span {
+    .content .row .header li {
         font-size: 12px;
     }
+
+    .content .row .contentRow {
+        overflow: auto;
+    }
+
+    .content .row .contentRow li {
+        white-space: nowrap;
+        width: 300px;
+        padding: 5px 10px;
+    }
+
 }

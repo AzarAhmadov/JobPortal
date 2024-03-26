@@ -8,7 +8,6 @@ export const Vacancy = async (formData: FormData) => {
     const {
         company_name,
         about_company,
-        company_logo,
         job_type,
         category,
         location,
@@ -26,7 +25,6 @@ export const Vacancy = async (formData: FormData) => {
         const newVacancy = new VacancyDB({
             company_name,
             about_company,
-            company_logo,
             job_type,
             category,
             location,

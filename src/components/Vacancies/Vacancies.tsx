@@ -8,7 +8,7 @@ const NoResult = dynamic(() => import('../NoResult/NoResult'), { ssr: false });
 import { getScopedI18n } from '@/locales/server'
 import Pagination from '../Pagination/Pagination'
 import dynamic from 'next/dynamic'
-interface IVacancies {
+export interface IVacancies {
     q: string | undefined;
     type: string | undefined;
     category: string | undefined;

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 const AdminPost = () => {
     return (
-        <main >
+        <main>
             <AdminPostForm />
         </main>
     )

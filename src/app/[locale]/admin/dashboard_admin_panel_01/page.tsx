@@ -9,9 +9,14 @@ export const metadata: Metadata = {
     },
 };
 
-const Page: React.FC = async () => {
+const Page: React.FC = async ({ searchParams }: any) => {
+    const page = searchParams && 'page' in searchParams ? searchParams['page'] : '1';
+    const per_page = searchParams && 'per_page' in searchParams ? searchParams['per_page'] : '10';
+    const start = (Number(page) - 1) * Number(per_page);
+    const end = start + Number(per_page)
+
     return (
-        <DashBoard />
+        <DashBoard start={start} end={end} />
     )
 }
 

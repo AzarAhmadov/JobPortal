@@ -20,11 +20,6 @@ const vacancySchema = new mongoose.Schema(
             required: true,
         },
 
-        company_logo: {
-            type: String,
-            required: true,
-        },
-
         job_type: {
             type: String,
             required: true,
