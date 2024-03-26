@@ -126,6 +126,7 @@ const CreateVacancy: React.FC = () => {
                         <option value="healthcare"> {t('healthcare')} </option>
                         <option value="restaurants"> {t('restaurants')} </option>
                         <option value="engineer"> {t('engineer')} </option>
+                        <option value="services"> {t('service')} </option>
                         <option value="hr"> {t('hr')} </option>
                     </select>
 
