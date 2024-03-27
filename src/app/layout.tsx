@@ -8,7 +8,7 @@ export const metadata: Metadata = {
         default: "Vakansiyalar | İş elanları | Job Hub Center",
         template: `%s | Job Hub Center`,
     },
-    description: "Job Hub Center ilə işəgötürmə proseslərini idarə edin, aktiv vakansiyalar, iş elanları, məşğulluq, təcrübə proqramları və part time iş elanlarına müraciət edin"
+    description: "Job Hub Center ilə işəgötürmə proseslərini idarə edin,iş elanları,təcrübə proqramları və part time iş elanlarına müraciət edin"
 };
 
 export default function RootLayout({
@@ -21,8 +21,12 @@ export default function RootLayout({
             <head>
                 <link rel="icon" type="image/x-icon" href="/images/logo.png" />
                 <link rel="author" href="https://azarahmadov.com" />
-                <meta name="author" content="Job Hub Center LLC" />
-                <meta name="keywords" content="iş,iş elanları,iş tapmaq,vakansiyalar,vakansiya,azərbaycan vakansiya saytı,məşğulluq,keryera,iş axtarma,iş müraciəti,iş tapmaq platformu,işlər,jobhubcenter,Azar Ahmadov,azarahmadov,jobhubcenter,bakıda işlər,iş elanları,elanlar" />
+                <meta name="author" content="Azar Ahmadov" />
+                <meta name="creator" content="Azar Ahmadov" />
+                <meta name="publisher" content="jobhubcenter.com/az" />
+                <meta name="robots" content="index, follow" />
+                <meta name="keywords" content="vakansiyalar,iş elanları, vakansiyalar 2024" />
+                <meta name="copyright" content="© 2024 jobhubcenter.com - Bütün hüquqlar qorunur" />
             </head>
             <body className='body'>
                 <I18nProviderClientProvider>
