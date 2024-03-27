@@ -8,7 +8,7 @@ export const metadata: Metadata = {
         default: "Vakansiyalar | İş elanları | Job Hub Center",
         template: `%s | Job Hub Center`,
     },
-    description: "Job Hub Center ilə işəgötürmə proseslərini idarə edin,iş elanları,təcrübə proqramları və part time iş elanlarına müraciət edin"
+    description: "Job Hub Center ilə iş elanları,təcrübə proqramları və part time iş elanlarına müraciət edin"
 };
 
 export default function RootLayout({
