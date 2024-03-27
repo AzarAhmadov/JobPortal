@@ -30,10 +30,10 @@ export default function RootLayout({
                     <div className='row'>
                         <div>
                             {children}
+                            <Analytics />
                         </div>
                     </div>
                 </I18nProviderClientProvider>
-                <Analytics />
             </body>
         </html>
     );
