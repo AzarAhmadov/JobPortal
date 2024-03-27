@@ -1,7 +1,6 @@
 import '@/assets/css/globals.css'
 import I18nProviderClientProvider from "@/components/I18nProviderClientProvider/I18nProviderClientProvider";
 import { Metadata } from "next";
-import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
     metadataBase: new URL("http://jobhubcenter.vercel.app/az"),
@@ -30,7 +29,6 @@ export default function RootLayout({
                     <div className='row'>
                         <div>
                             {children}
-                            <Analytics />
                         </div>
                     </div>
                 </I18nProviderClientProvider>
