@@ -26,8 +26,8 @@ export default {
         selected: "Selected"
     },
     hero: {
-        top_text: 'Find your',
-        bottom_line_text: 'dream job',
+        top_text: 'Vacancies |',
+        bottom_line_text: 'job postings',
         bottom_text: 'Join the 76 people who found their dream job with Job Portal in the last 30 days.',
         search: 'Search',
         placeholder: 'Job title or keyword'

@@ -26,8 +26,8 @@ export default {
         selected: "Seçilmişlər"
     },
     hero: {
-        top_text: 'Xəyalındakı',
-        bottom_line_text: 'işə qovuş',
+        top_text: 'Vakansiyalar |',
+        bottom_line_text: 'İş elanları',
         bottom_text: 'İş Portalı ilə son 30 gündə arzuladıqları işi tapan 76 nəfərə qoşulun.',
         search: 'Axtar',
         placeholder: 'İş adı və ya açar söz',

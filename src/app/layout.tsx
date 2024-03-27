@@ -6,7 +6,7 @@ import { Analytics } from "@vercel/analytics/react"
 export const metadata: Metadata = {
     metadataBase: new URL("http://jobhubcenter.vercel.app/az"),
     title: {
-        default: "Vakansiyalar | Job Hub Center | İş elanları",
+        default: "Vakansiyalar | İş elanları | Job Hub Center",
         template: `%s | Job Hub Center`,
     },
     description: "Job Hub Center ilə işəgötürmə proseslərini idarə edin, aktiv vakansiyalar, iş elanları, məşğulluq, təcrübə proqramları və part time iş elanlarına müraciət edin"
