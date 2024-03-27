@@ -20,7 +20,7 @@ export default {
     },
     heading: {
         home: "Ana Səhifə",
-        categories: "Kategoriyalar",
+        categories: "Kateqoriyalar",
         vacancies: "Vakansiyalar",
         create: "Vakansiya yarat",
         selected: "Seçilmişlər"
