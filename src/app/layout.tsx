@@ -3,7 +3,7 @@ import I18nProviderClientProvider from "@/components/I18nProviderClientProvider/
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    metadataBase: new URL("http://jobhubcenter.vercel.app/az"),
+    metadataBase: new URL("http://jobhubcenter.com/az"),
     title: {
         default: "Vakansiyalar | İş elanları | Job Hub Center",
         template: `%s | Job Hub Center`,
