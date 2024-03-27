@@ -92,7 +92,7 @@ export default {
         categories: "Categories",
         salary: "Salary range",
         search: "Search",
-        close:"Close",
+        close: "Close",
         reset: "Reset",
         Commission: 'Commission',
         freelance: 'Freelance',
@@ -106,7 +106,7 @@ export default {
         education: "Education",
         finance: "Finance, Business and Administration",
         healthcare: "Healthcare Services",
-        SosialServices: "Services",
+        services: "Services",
         salary_title: "Show only with salary",
         more_filter: "More filter"
     },
