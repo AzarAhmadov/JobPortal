@@ -22,6 +22,12 @@ export async function generateMetadata({ params }: PageParams): Promise<Metadata
     return {
         title: vacancy.job_title,
         description: cleanHTMLTags(vacancy?.desc),
+        alternates: {
+            canonical: `/Vacancies/${vacancy.path}/${vacancy._id}`,
+            languages: {
+                "en-CA": `/Vacancies/${vacancy.path}/${vacancy._id}`,
+            },
+        },
     };
 }
 
