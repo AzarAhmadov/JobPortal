@@ -23,7 +23,7 @@ export default function RootLayout({
                 <link rel="icon" type="image/x-icon" href="/images/logo.png" />
                 <link rel="author" href="https://azarahmadov.com" />
                 <meta name="author" content="Job Hub Center LLC" />
-                <meta name="keywords" content="iş,iş elanları,iş tapmaq,vakansiyalar,vakansiya,azərbaycan vakansiya saytı,məşğulluq,keryera,iş axtarma,iş müraciəti,iş tapmaq platformu,işlər,jobhubcenter,Azar Ahmadov,azarahmadov,job board,bakıda işlər,iş elanları,elanlar" />
+                <meta name="keywords" content="iş,iş elanları,iş tapmaq,vakansiyalar,vakansiya,azərbaycan vakansiya saytı,məşğulluq,keryera,iş axtarma,iş müraciəti,iş tapmaq platformu,işlər,jobhubcenter,Azar Ahmadov,azarahmadov,jobhubcenter,bakıda işlər,iş elanları,elanlar" />
             </head>
             <body className='body'>
                 <I18nProviderClientProvider>
