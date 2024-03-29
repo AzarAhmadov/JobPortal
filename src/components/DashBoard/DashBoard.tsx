@@ -7,8 +7,8 @@ import PaginationDashboard from '../PaginationDashboard/PaginationDashboard'
 
 const DashBoard: React.FC<any> = async ({ start, end }) => {
 
-    const Vacancies = await GetVacancies()
-    const VacanciesAdmin = await GetVacanciesByAdmin()
+    const Vacancies = (await GetVacancies()).reverse()
+    const VacanciesAdmin = (await GetVacanciesByAdmin()).reverse()
 
     const entries = VacanciesAdmin.slice(start, end);
     const entriesV = Vacancies.slice(start, end);
