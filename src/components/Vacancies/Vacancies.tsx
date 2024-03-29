@@ -21,6 +21,8 @@ const Vacancies: React.FC<IVacancies> = async ({ q, type, category, salaried, st
 
     const Vacancies = await GetVacanciesByAdmin()
 
+    const reversedVacancies = Vacancies.reverse();
+
     const t = await getScopedI18n('noVacancy')
 
     if (Vacancies.length === 0) {
@@ -31,7 +33,7 @@ const Vacancies: React.FC<IVacancies> = async ({ q, type, category, salaried, st
         )
     }
 
-    const filteredVacancies = Vacancies.filter((vacancy) => {
+    const filteredVacancies = reversedVacancies.filter((vacancy) => {
         const companyNameLower = vacancy?.company_name?.toLowerCase() || '';
         const jobTitleLower = vacancy?.job_title?.toLowerCase() || '';
         const categoryLower = vacancy?.category?.toLowerCase() || '';
@@ -62,7 +64,7 @@ const Vacancies: React.FC<IVacancies> = async ({ q, type, category, salaried, st
         <section className={styles.rowVacancies}>
             <FilterButton />
             {entries.length > 0 ? (
-                entries.reverse().map((el, idx) => (
+                entries.map((el, idx) => (
                     <Suspense key={idx} fallback={<Loading />}>
                         <VacanciesCards el={el} key={idx} />
                     </Suspense>

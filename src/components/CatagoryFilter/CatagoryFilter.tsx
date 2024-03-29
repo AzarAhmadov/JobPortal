@@ -28,7 +28,7 @@ const CatagoryFilter: React.FC<any> = async ({ params }) => {
 
     return (
         <>
-            {vacancies.map((el, idx) => (
+            {vacancies.reverse().map((el, idx) => (
                 <Link href={`/Vacancies/${el.path}/${el.id}`} className={styles.card} key={idx}>
                     <div>
                         <img src={el.company_logo} alt={el.job_title} loading='lazy' />
