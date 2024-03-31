@@ -422,7 +422,7 @@
         justify-content: flex-start;
         align-items: flex-start;
         gap: 8px;
-        padding-left: 11px;
+        padding-left: 12px;
         font-size: 15px;
         margin-top: 10px;
         text-align: start;
@@ -473,6 +473,10 @@
     .right h2 {
         font-size: 21px !important;
         text-align: center;
+    }
+
+    .right div{
+        padding-top: 17px;
     }
 
     .right ul li {
