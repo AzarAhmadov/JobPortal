@@ -34,7 +34,8 @@ export default {
     },
     detail: {
         about_role: 'Vakansiya haqqında',
-        last_date: 'Son tarix',
+        last_date: 'Son müraciət tarixi',
+        postPublished: 'Elan yerləşdirilib',
         salaryText: "Razılaşma yolu ilə",
         JobType: 'Vakansiya növü',
         Salary: 'Maaş',
@@ -109,8 +110,7 @@ export default {
     create: {
         title_1: "Vakansiya",
         title_2: "yarat",
-        job_title: "İşin adı",
-        datePlaceholder: "Mart 30, 2024",
+        job_title: "İşin adı",        
         Company: "Şirkətin adı",
         optional: "İstəyə bağlı",
         salary_txt: "1000 - 5000 AZN",
@@ -120,7 +120,7 @@ export default {
         Logo: "Şirkətin logosu",
         Logoİnput: "Şirkətin logosunun url-ini yerləşdirin",
         Type: "Tipi",
-        postDate: 'Son tarix',
+        postDate: 'Son müraciət tarixi',
         category: "Kateqoriya",
         TypeText: "Seçim edin",
         commission: 'Komissiya',

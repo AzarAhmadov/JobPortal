@@ -162,7 +162,7 @@ const AdminPostForm: React.FC = () => {
                         name='last_date'
                         id='date'
                         required
-                        placeholder={t('datePlaceholder')}
+                        placeholder='27.04.24'
                         type="text"
                     />
                     <button onClick={getJobSubmitted} className={`${!isFormValid && styles.disable} font-poppions-medium`} disabled={!isFormValid}> {t('Send')} </button>

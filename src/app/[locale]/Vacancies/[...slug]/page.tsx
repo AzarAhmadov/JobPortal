@@ -39,9 +39,11 @@ const Page: React.FC<PageParams> = async ({ params }) => {
 
     const { slug } = params;
     const vacancy = await GetVacanciesByAdminByOne(slug[1]);
-    const vacancyDate = new Date(vacancy.createdAt).toLocaleDateString();
-    const replacedDate = vacancyDate.replace(/\//g, "-");
-
+    const vacancyDate = new Date(vacancy.createdAt);
+    const day = String(vacancyDate.getDate()).padStart(2, '0');
+    const month = String(vacancyDate.getMonth() + 1).padStart(2, '0');
+    const year = vacancyDate.getFullYear();
+    const formattedDate = `${day}.${month}.${year}`;
     const t = await getScopedI18n('detail')
     const f = await getScopedI18n('filter')
 
@@ -72,7 +74,7 @@ const Page: React.FC<PageParams> = async ({ params }) => {
                             </div>
                             <span className={`${styles.date} font-poppions-thin`}>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z" /></svg>
-                                {replacedDate}
+                                {formattedDate}
                             </span>
                         </div>
                         <div className={styles.rightArea}>
@@ -112,6 +114,10 @@ const Page: React.FC<PageParams> = async ({ params }) => {
                                 {t('about_role')}
                             </h2>
                             <ul>
+                                <li>
+                                    <span className={`${styles.title} font-poppions-thin`}> {t('postPublished')} </span>
+                                    <span className={`${styles.desc} font-poppions-medium`}>{formattedDate}</span>
+                                </li>
                                 <li>
                                     <span className={`${styles.title} font-poppions-thin`}>{t('last_date')}</span>
                                     <span className={`${styles.desc} font-poppions-medium`}>{vacancy?.last_date}</span>

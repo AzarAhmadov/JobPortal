@@ -35,6 +35,7 @@ export default {
     detail: {
         about_role: 'About this role',
         last_date: 'Apply Before',
+        postPublished: 'Job Posted On',
         JobType: 'Job Type',
         salaryText: 'By agreement',
         Salary: 'Salary',
@@ -117,7 +118,6 @@ export default {
         title_1: "Create a",
         title_2: "vacancy",
         job_title: "Job name",
-        datePlaceholder: "March 30, 2024",
         Company: "Company name",
         optional: "Optional",
         salary_txt: "1000 - 5000 $",
