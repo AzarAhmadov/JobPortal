@@ -3,7 +3,7 @@ import { NextRequest } from 'next/server'
 
 const I18Middleware = createI18nMiddleware({
     locales: ['en', 'az'],
-    defaultLocale: 'az',
+    defaultLocale: 'en',
 })
 
 export function middleware(request: NextRequest) {
