@@ -4,8 +4,11 @@ import Link from 'next/link';
 import { getLand } from '@/lib/utils/renderFunction';
 import { getScopedI18n } from '@/locales/server';
 import { GetVacanciesByCategory } from '@/lib/data/data';
+interface FilterProps {
+    params: string
+}
 
-const CatagoryFilter: React.FC<any> = async ({ params }) => {
+const CatagoryFilter: React.FC<FilterProps> = async ({ params }) => {
 
     const vacancies = await GetVacanciesByCategory(params);
 
