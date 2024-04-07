@@ -13,7 +13,6 @@ const CatagoryFilter: React.FC<any> = async ({ params }) => {
     const t = await getScopedI18n('detail')
     const f = await getScopedI18n('filter')
 
-
     if (vacancies.length === 0) {
         return <div className={`${styles.NoResult} font-poppions-light`}>
             <img src='/images/not-found.png' alt='not-found' />
@@ -50,9 +49,12 @@ const CatagoryFilter: React.FC<any> = async ({ params }) => {
                         <span className={`${styles.date} font-poppions-light`}>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z" /></svg>
                             {(() => {
-                                const vacancyDate = new Date(el.createdAt).toLocaleDateString();
-                                const replacedDate = vacancyDate.replace(/\//g, "-");
-                                return replacedDate;
+                                const vacancyDate = new Date(el.createdAt);
+                                const day = String(vacancyDate.getDate()).padStart(2, '0');
+                                const month = String(vacancyDate.getMonth() + 1).padStart(2, '0');
+                                const year = vacancyDate.getFullYear();
+                                const formattedDate = `${day}.${month}.${year}`;
+                                return formattedDate;
                             })()}
                         </span>
                     </div>
