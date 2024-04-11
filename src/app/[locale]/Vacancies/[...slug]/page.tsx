@@ -116,11 +116,16 @@ const Page: React.FC<PageParams> = async ({ params }) => {
                             <ul>
                                 <li>
                                     <span className={`${styles.title} font-poppions-thin`}> {t('postPublished')} </span>
-                                    <span className={`${styles.desc} font-poppions-medium`}>{formattedDate}</span>
+                                    <span className={`${styles.desc} font-poppions-medium`}>{formattedDate}
+                                    </span>
                                 </li>
                                 <li>
-                                    <span className={`${styles.title} font-poppions-thin`}>{t('last_date')}</span>
-                                    <span className={`${styles.desc} font-poppions-medium`}>{vacancy?.last_date}</span>
+                                    <span className={`${styles.title} font-poppions-thin`}>
+                                        {t('last_date')}
+                                    </span>
+                                    <p className={`${styles.desc} font-poppions-medium`}>
+                                        {vacancy?.last_date}
+                                    </p>
                                 </li>
                                 <li>
                                     <span className={`${styles.title} font-poppions-thin`}>
