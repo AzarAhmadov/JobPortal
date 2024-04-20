@@ -1,7 +1,6 @@
 import React from 'react'
 import Heading from '@/common/Heading/Heading';
 import CatagoryFilter from '@/components/CatagoryFilter/CatagoryFilter'
-import styles from './Categories.module.css'
 import { getScopedI18n } from '@/locales/server';
 
 export const metadata = {
@@ -14,20 +13,27 @@ export interface PagePropsParams {
         slug: string;
         paramsProps?: string;
     };
+    searchParams?: {
+        page?: string;
+        per_page?: string;
+    };
 }
 
-const Page: React.FC<PagePropsParams> = async ({ params }) => {
+const Page: React.FC<PagePropsParams> = async ({ params, searchParams }) => {
 
     const h = await getScopedI18n('heading')
     const paramsProps = params.slug;
 
+    const page = searchParams && 'page' in searchParams ? searchParams['page'] : '1';
+    const per_page = searchParams && 'per_page' in searchParams ? searchParams['per_page'] : '8';
+    const start = (Number(page) - 1) * Number(per_page);
+    const end = start + Number(per_page)
+
     return (
         <>
             <Heading link={h('categories')} path='/Categories' />
-            <div className={`${styles.content} container`}>
-                <div className={styles.row}>
-                    <CatagoryFilter params={paramsProps} />
-                </div>
+            <div className='container'>
+                <CatagoryFilter end={end} start={start} params={paramsProps} />
             </div>
         </>
     )

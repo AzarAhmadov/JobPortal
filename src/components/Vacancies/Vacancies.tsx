@@ -19,9 +19,7 @@ export interface IVacancies {
 
 const Vacancies: React.FC<IVacancies> = async ({ q, type, category, salaried, start, end }) => {
 
-    const Vacancies = await GetVacanciesByAdmin()
-
-    const reversedVacancies = Vacancies.reverse();
+    const Vacancies = (await GetVacanciesByAdmin()).reverse()
 
     const t = await getScopedI18n('noVacancy')
 
@@ -33,7 +31,7 @@ const Vacancies: React.FC<IVacancies> = async ({ q, type, category, salaried, st
         )
     }
 
-    const filteredVacancies = reversedVacancies.filter((vacancy) => {
+    const filteredVacancies = Vacancies.filter((vacancy) => {
         const companyNameLower = vacancy?.company_name?.toLowerCase() || '';
         const jobTitleLower = vacancy?.job_title?.toLowerCase() || '';
         const categoryLower = vacancy?.category?.toLowerCase() || '';
@@ -45,12 +43,7 @@ const Vacancies: React.FC<IVacancies> = async ({ q, type, category, salaried, st
         const categoryFilterLower = category ? category.toLowerCase() : '';
         const salaryFilterLower = salaried ? salaried.toString().toLowerCase() : '';
 
-        const matchesQuery =
-            !qLower ||
-            companyNameLower.includes(qLower) ||
-            jobTitleLower.includes(qLower) ||
-            categoryLower.includes(qLower);
-
+        const matchesQuery = !qLower || companyNameLower.includes(qLower) || jobTitleLower.includes(qLower);
         const matchesType = !typeLower || jobTypeLower.includes(typeLower);
         const matchesCategory = !categoryFilterLower || categoryLower.includes(categoryFilterLower);
         const matchesSalaried = !salaryFilterLower || salaryLower.includes(salaryFilterLower) || salaryLower !== '';

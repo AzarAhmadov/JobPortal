@@ -64,6 +64,7 @@ const Pagination: FC<PaginationControlsProps> = (
             <div className={`${styles.count} font-poppions-light`}>
                 {page} / {totalPages}
             </div>
+
             {hasNextPage && (
                 <button
                     name='arrow_right'

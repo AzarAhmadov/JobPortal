@@ -1,3 +1,43 @@
+.row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.content {
+    padding-top: 25px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.pagination {
+    padding-bottom: 20px;
+    padding-top: 5px;
+}
+
+@media only screen and (max-width:992px) {
+    .row {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width:568px) {
+    .row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .content {
+        padding: 15px 15px;
+    }
+}
+
 .card {
     display: flex;
     flex-direction: column;
@@ -42,6 +82,7 @@
     box-shadow: 0px 8px 21px 0px rgba(0, 0, 0, 0.16);
     background: linear-gradient(134.25deg, rgb(145, 129, 244) -5.847%, rgb(80, 56, 237) 109.546%);
 }
+
 
 .NoResult a:hover {
     transform: scale(1.1);
