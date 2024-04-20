@@ -20,7 +20,7 @@ const CatagoryFilter: React.FC<FilterProps> = async ({ params, end, start }) => 
     const t = await getScopedI18n('detail')
     const f = await getScopedI18n('filter')
 
-    if (vacancies.length === 0) {
+    if (vacancies.length === 0 || start > vacancies.length) {
         return <div className={`${styles.NoResult} font-poppions-light`}>
             <img src='/images/not-found.png' alt='not-found' />
             <p>
@@ -74,11 +74,15 @@ const CatagoryFilter: React.FC<FilterProps> = async ({ params, end, start }) => 
             </div>
 
             <div className={styles.pagination}>
-                <PaginationCategories
-                    hasNextPage={end < vacancies.length}
-                    hasPrevPage={start > 0}
-                    data={vacancies}
-                />
+                {
+                    (vacancies.length !== 0 && entries.length > 0 && start < vacancies.length) && (
+                        <PaginationCategories
+                            hasNextPage={end < vacancies.length}
+                            hasPrevPage={start > 0}
+                            data={vacancies}
+                        />
+                    )
+                }
             </div>
         </section>
     );
