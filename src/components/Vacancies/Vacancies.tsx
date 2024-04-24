@@ -53,7 +53,9 @@ const Vacancies: React.FC<IVacancies> = async ({ q, type, category, salaried, st
 
     const entries = filteredVacancies.slice(start, end);
 
-    if (filteredVacancies.length === 0) return <div className={styles.Center}> <NoResult /></div>
+    if (entries.length === 0 && filteredVacancies.length > 10) {
+        return <div className={styles.Center}><NoResult /></div>;
+    }
 
     return (
         <section className={styles.rowVacancies}>
