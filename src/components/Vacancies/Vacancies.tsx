@@ -53,7 +53,7 @@ const Vacancies: React.FC<IVacancies> = async ({ q, type, category, salaried, st
 
     const entries = filteredVacancies.slice(start, end);
 
-    if (entries.length === 0 && filteredVacancies.length > 10) {
+    if (entries.length === 0 && filteredVacancies.length > 50) {
         return <div className={styles.Center}><NoResult /></div>;
     }
 
@@ -77,7 +77,7 @@ const Vacancies: React.FC<IVacancies> = async ({ q, type, category, salaried, st
                     </Suspense>
                 ))
             )}
-            {(entries.length > 0) && (
+            {entries.length > 0 && filteredVacancies.length > 0 && (
                 <Pagination
                     filteredVacancies={filteredVacancies}
                     hasNextPage={end < filteredVacancies.length}
