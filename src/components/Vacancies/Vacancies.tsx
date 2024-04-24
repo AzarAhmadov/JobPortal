@@ -53,6 +53,8 @@ const Vacancies: React.FC<IVacancies> = async ({ q, type, category, salaried, st
 
     const entries = filteredVacancies.slice(start, end);
 
+    if (filteredVacancies.length === 0) return <div className={styles.Center}> <NoResult /></div>
+
     return (
         <section className={styles.rowVacancies}>
             <FilterButton />
@@ -63,9 +65,13 @@ const Vacancies: React.FC<IVacancies> = async ({ q, type, category, salaried, st
                     </Suspense>
                 ))
             ) : (
-                <NoResult />
+                filteredVacancies.map((el, idx) => (
+                    <Suspense key={idx} fallback={<Loading />}>
+                        <VacanciesCards el={el} key={idx} />
+                    </Suspense>
+                ))
             )}
-            {(filteredVacancies.length !== 0 && entries.length > 0) && (
+            {(entries.length > 0) && (
                 <Pagination
                     filteredVacancies={filteredVacancies}
                     hasNextPage={end < filteredVacancies.length}
@@ -77,5 +83,3 @@ const Vacancies: React.FC<IVacancies> = async ({ q, type, category, salaried, st
 };
 
 export default Vacancies;
-
-

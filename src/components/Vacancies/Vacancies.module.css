@@ -20,6 +20,12 @@
     border-radius: 5px;
 }
 
+.Center {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
 .skeletonAreaRow ul {
     display: flex;
     flex-direction: column;
