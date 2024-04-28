@@ -346,7 +346,7 @@
     }
 }
 
-@media only screen and (max-width:860px) {
+@media only screen and (max-width:992px) {
 
     .left .about_company p {
         text-align: start;
@@ -475,7 +475,7 @@
         text-align: center;
     }
 
-    .right div{
+    .right div {
         padding-top: 17px;
     }
 
