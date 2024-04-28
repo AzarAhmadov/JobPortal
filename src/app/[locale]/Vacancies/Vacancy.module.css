@@ -309,6 +309,7 @@
 
 @media only screen and (max-width:992px) {
 
+
     .detailRow {
         flex-direction: column;
         gap: 0px;
@@ -350,7 +351,8 @@
 
     .left .about_company p {
         text-align: start;
-        font-size: 15px;
+        margin-top: 2px;
+        font-size: 14px;
     }
 
     .left div p {
