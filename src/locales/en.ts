@@ -115,6 +115,7 @@ export default {
         txt: "The vacancy has not been shared yet"
     },
     create: {
+        location: "Baku, Azerbaijan",
         title_1: "Create a",
         title_2: "vacancy",
         job_title: "Job name",

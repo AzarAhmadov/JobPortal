@@ -108,9 +108,10 @@ export default {
         more_filter: "Daha çox filter"
     },
     create: {
+        location: "Bakı, Azərbaycan",
         title_1: "Vakansiya",
         title_2: "yarat",
-        job_title: "İşin adı",        
+        job_title: "İşin adı",
         Company: "Şirkətin adı",
         optional: "İstəyə bağlı",
         salary_txt: "1000 - 5000 AZN",

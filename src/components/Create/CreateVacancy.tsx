@@ -106,7 +106,7 @@ const CreateVacancy: React.FC = () => {
                     </select>
 
                     <label htmlFor="Location"> {t('Location')} </label>
-                    <input required name='location' type="text" id='Location' placeholder='Baku, Azerbaijan' />
+                    <input required name='location' type="text" id='Location' placeholder={t("location")} />
 
                     <label> {t('ApplyMethod')} </label>
                     <div className={styles.formFlex}>
