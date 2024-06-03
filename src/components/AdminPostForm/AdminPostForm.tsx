@@ -12,6 +12,7 @@ const AdminPostForm: React.FC = () => {
     const t = useScopedI18n('create')
     const [isFormValid, setIsFormValid] = useState(false);
     const formRef = useRef<HTMLFormElement>(null);
+    
     const getJobSubmitted = () => {
 
         if (isFormValid) {

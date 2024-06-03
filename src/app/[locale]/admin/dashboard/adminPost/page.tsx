@@ -16,5 +16,5 @@ const AdminPost = () => {
         </main>
     )
 }
-
+``
 export default AdminPost

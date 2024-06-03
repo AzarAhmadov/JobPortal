@@ -1,4 +1,4 @@
-import { GetVacanciesByAdmin, GetVacanciesByCategory } from "@/lib/data/data";
+import { GetVacanciesByAdmin } from "@/lib/data/data";
 
 export default async function sitemap() {
     const baseUrl = 'https://jobhubcenter.vercel.app/az';

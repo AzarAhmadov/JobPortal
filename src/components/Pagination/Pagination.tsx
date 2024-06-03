@@ -1,6 +1,6 @@
 'use client'
 
-import { FC } from 'react'
+import { FC, memo } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
 import styles from './Pagination.module.css'
 
@@ -79,4 +79,4 @@ const Pagination: FC<PaginationControlsProps> = (
     )
 }
 
-export default Pagination
+export default memo(Pagination)

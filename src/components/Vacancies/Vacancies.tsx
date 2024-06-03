@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react'
+import React, { Suspense, memo } from 'react'
 import styles from './Vacancies.module.css'
 import VacanciesCards from './VacanciesCards'
 import Loading from './loading'
@@ -8,14 +8,7 @@ const NoResult = dynamic(() => import('../NoResult/NoResult'), { ssr: false });
 import { getScopedI18n } from '@/locales/server'
 import Pagination from '../Pagination/Pagination'
 import dynamic from 'next/dynamic'
-export interface IVacancies {
-    q: string | undefined;
-    type: string | undefined;
-    category: string | undefined;
-    salaried: string | undefined;
-    start: number;
-    end: number;
-}
+import { IVacancies } from '@/types/Types'
 
 const Vacancies: React.FC<IVacancies> = async ({ q, type, category, salaried, start, end }) => {
 
@@ -88,4 +81,4 @@ const Vacancies: React.FC<IVacancies> = async ({ q, type, category, salaried, st
     );
 };
 
-export default Vacancies;
+export default memo(Vacancies);

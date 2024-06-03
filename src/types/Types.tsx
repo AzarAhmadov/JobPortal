@@ -12,3 +12,23 @@ export type Vacancy = {
     category: string;
     createdAt: Date;
 };
+
+export interface IVacancies {
+    q: string | undefined;
+    type: string | undefined;
+    category: string | undefined;
+    salaried: string | undefined;
+    start: number;
+    end: number;
+}
+
+export interface PagePropsParams {
+    params: {
+        slug: string;
+        paramsProps?: string;
+    };
+    searchParams?: {
+        page?: string;
+        per_page?: string;
+    };
+}

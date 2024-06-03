@@ -3,6 +3,7 @@ import styles from './postDetail.module.css';
 import { getCategory, getLand } from '@/lib/utils/renderFunction';
 import { GetVacancy } from '@/lib/data/data';
 import { getScopedI18n } from '@/locales/server';
+
 export interface PageParams {
     params: {
         slug: string;
