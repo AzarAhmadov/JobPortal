@@ -8,6 +8,7 @@ Live : https://jobhubcenter.com/en
 - Next.js 14 | Server Actions
 - TypeScript
 - MongoDB | Mongoose
+- Reacti18
 
 ## Features
 - Advanced Search and Filtering Options:
