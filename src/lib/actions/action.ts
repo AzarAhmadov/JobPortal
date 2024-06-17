@@ -3,6 +3,8 @@
 import { revalidatePath } from "next/cache";
 import { VacancyDB, VacancyDBAdmin, VacancyDBAdminPanel } from "../models/models";
 import { connectToDb } from "../utils/renderFunction";
+import { redirect } from "next/navigation";
+import { cookies } from "next/headers";
 
 export const Vacancy = async (formData: FormData) => {
     const {
@@ -135,4 +137,15 @@ export const AdminLogin = async (formData: FormData) => {
     } catch (err) {
         return { error: "Something went wrong!" };
     }
+}
+
+export const LoginAccount = async (formData: FormData) => {
+    const login = formData.get('login')
+    const password = formData.get('password')
+
+    if (login === process.env.NEXT_PUBLIC_USER && password === process.env.NEXT_PUBLIC_PASSWORD) {
+        redirect('admin/dashboard')
+    }
+
+    cookies().set('token', '0');
 }
