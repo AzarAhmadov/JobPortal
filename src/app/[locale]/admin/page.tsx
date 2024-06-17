@@ -9,7 +9,8 @@ export const metadata: Metadata = {
     },
 };
 
-const page = () => {
+const page = async () => {
+
     return (
         <Login />
     )

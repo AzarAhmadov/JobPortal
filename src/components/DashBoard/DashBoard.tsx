@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import styles from './dashboard.module.css'
 import { GetVacancies, GetVacanciesByAdmin } from '@/lib/data/data'
 import { deleteVacansy, VacancyPostFromAdminDelete } from '@/lib/actions/action'
@@ -163,4 +163,4 @@ const DashBoard: React.FC<any> = async ({ start, end }) => {
     )
 }
 
-export default DashBoard
+export default memo(DashBoard)

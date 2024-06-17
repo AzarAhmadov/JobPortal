@@ -41,7 +41,6 @@ export const Vacancy = async (formData: FormData) => {
         revalidatePath("/Create");
         revalidatePath("/");
     } catch (err) {
-        console.log(err);
         return { error: "Something went wrong!" };
     }
 }
@@ -85,7 +84,6 @@ export const VacancyPostFromAdmin = async (formData: FormData) => {
         revalidatePath("/Create");
         revalidatePath("/");
     } catch (err) {
-        console.log(err);
         return { error: "Something went wrong!" };
     }
 }
@@ -100,7 +98,6 @@ export const deleteVacansy = async (formData: FormData) => {
         revalidatePath("/dashboard");
         revalidatePath("/");
     } catch (err) {
-        console.log(err);
         return { error: "Something went wrong!" };
     }
 };
@@ -116,7 +113,6 @@ export const VacancyPostFromAdminDelete = async (formData: FormData) => {
         revalidatePath("/dashboard");
         revalidatePath("/");
     } catch (err) {
-        console.log(err);
         return { error: "Something went wrong!" };
     }
 
@@ -137,7 +133,6 @@ export const AdminLogin = async (formData: FormData) => {
         revalidatePath("/admin");
         revalidatePath("/");
     } catch (err) {
-        console.log(err);
         return { error: "Something went wrong!" };
     }
 }

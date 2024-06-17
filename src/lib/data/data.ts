@@ -7,7 +7,6 @@ export const GetVacancies = async () => {
         const vacancies = await VacancyDB.find();
         return vacancies;
     } catch (err) {
-        console.log(err);
         throw new Error("Failed to fetch getVacancy!");
     }
 };
@@ -18,7 +17,6 @@ export const GetVacanciesByAdmin = async () => {
         const vacancies_admin = await VacancyDBAdmin.find();
         return vacancies_admin;
     } catch (err) {
-        console.log(err);
         throw new Error("Failed to fetch getVacancy!");
     }
 };
@@ -29,7 +27,6 @@ export const GetVacanciesByAdminByOne = async (id: string) => {
         const vacancy = await VacancyDBAdmin.findOne({ _id: id });
         return vacancy;
     } catch (err) {
-        console.log(err);
         throw new Error("Failed to fetch getVacancyById!");
     }
 };
@@ -40,7 +37,6 @@ export const GetVacancy = async (id: string) => {
         const vacancy = await VacancyDB.findOne({ _id: id });
         return vacancy;
     } catch (err) {
-        console.log(err);
         throw new Error("Failed to fetch getVacancyById!");
     }
 };
@@ -51,7 +47,6 @@ export const GetVacanciesByCategory = async (category: string) => {
         const vacancies = await VacancyDBAdmin.find({ category: category });
         return vacancies;
     } catch (err) {
-        console.log(err);
         throw new Error(`Failed to fetch vacancies for category: ${category}`);
     }
 };
